@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 27, 2016, 1:13:24 AM
+    Author     : Sakthikanth
+*/
+
+.account_type_hdr{
+    padding: 10px;
+    font-size: 20px;
+    color: green;
+    
+}
+
+.person_det_cont{
+    display: inline-block;
+    padding: 20px;
+    padding-right: 70px;
+    
+}
+.form_container{
+    text-align: center;
+    
+}
+.single_inp_det div{
+    display: inline-block;
+    width: 200px;
+}
+.input_cont input,textarea{
+    width: 300px;
+}
+.person_det_cont .orig_pers_ttl{
+    padding: 20px;
+    color: maroon;
+    font-size: 20px;
+    
+}
+.input_cont input{
+    padding: 10px;
+    border:1px solid lightgrey;
+    font-size: 16px;
+        
+}
+.input_cont{
+    padding: 7px;
+}
+.inp_disc{
+    
+    font-size: 20px;
+    color: grey;
+}
+.loan_details div{
+    display: inline-block;
+    padding: 10px;
+}
+.amnt_inp input,textarea{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    
+}
+.loan_amount_hold{
+    font-size: 20px;
+    color: grey;
+    
+}
+.subt_holder{
+    
+    padding: 10px;
+    
+}
+.subt_btn{
+    display: inline-block;
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px  #004d40;
+}
+
+
+
+#rupees_conv,#int_rupees_conv,#remain_rupees_conv,#int_perc_conv
+{
+    padding: 10px;
+    font-size: 20px;
+    color: navy;
+       width: 200px;
+}
+
+.input_cont input,.amnt_inp,textarea{
+    font-size: 20px;
+    color: maroon;
+}
+
+input:first-letter{
+    text-transform: uppercase;
+    
+}
+select{
+    padding: 5px;
+    border: 1px solid lightgrey;
+}
+.input_con input,.input_con textarea{
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 250px;
+}
+.loan_amount_hold{
+    width: 300px;
+    text-align: left
+}
+.subt_btn{
+    border: 0px !important;;
+}
+.form_container{
+    text-align: center !important;
+}
+input{
+    text-transform:capitalize;
+}
+
+.loan_details .amnt_inp{
+    width: 300px !important;;
+} 

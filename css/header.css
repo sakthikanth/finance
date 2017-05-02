@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2016, 11:20:11 PM
+    Author     : Sakthikanth
+*/
+body{
+    margin: 0px;
+        background-color: #f5f5f5;
+
+}
+.titlebar_nav{
+    padding: 10px;
+     border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 2px 0px #004d40;
+    
+}
+a{
+    color: white !important;;;
+}
+
+li,.titlebar_nav,ul,.dropdown-toggle{
+    background-color: #34495e !important;
+}
+.input-group{
+    margin-top: 5px;
+}
+
+.titlebar_input{
+    font-size: 20px;
+}
+.middle_item_container{
+    text-align: center;
+}
+.middle_items{
+    padding: 10px;
+     display: inline-block;
+}
+.mid_item_inner{
+    background-color: whitesmoke;
+   padding: 50px;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 5px 0px lightgrey;
+    font-size:20px;
+    cursor: pointer;
+}
+.fin_name_cont{
+    text-align: center;
+}
+.fin_name_cont div{
+    display: inline-block;
+}
+.fin_name_cont .acct_hdr{
+    font-size: 20px;
+    padding: 10px;
+    color: grey;
+}
+.accnt_ttl{
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+.fin_name_cont{
+    border:1px solid lightgrey;
+}
+
+
+
+
+.pagination a{
+    color: maroon !important;
+}
+
+.srch-cont{
+    position: absolute;
+    z-index: 10 !important;;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 2px 0px lightgrey; 
+    
+}
+
+
+.srch-cont .pers_item{
+    padding: 10px;
+    font-size: 18px;
+    color: #34495e;
+    border-bottom: 1px solid lightgrey
+}
+ul input{
+    border: 0px !important;;
+    border-radius: 0px !important;
+    //padding: 10px !important;;
+    //height: 40px !important;;
+    width: 280px;
+    
+}
+ul>li>button{
+      border: 0px !important;;
+    border-radius: 0px !important;
+    padding: 8.9px !important;;
+  //  height: 40px !important;;
+    
+}
+.srch_cont{
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 2px 0px lightgrey;
+    border-top: 0px;
+    z-index: 10;
+    width: 280px;
+}
+
+.srch_cont .each_person{
+ padding: 7px;
+    font-size: 18px;
+    border-bottom: 1px solid lightgrey
+}
+.each_person:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+    
+}
+.prof_info button{
+    border: 1px solid lightgrey;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    height: 30px;
+    box-shadow: 0px 0px 3px 0px lightgrey;
+   
+    
+}
+ul button{
+   
+}
+.set_date_val{
+  //  padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid lightgrey;
+    font-weight: bold;
+}
+.date_changer{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 222;
+    margin: 0px;
+    margin-left: -10px;
+    //margin-top: -30px;
+    
+}
+.date_changer div{
+    padding: 10px;
+}
+.date_changer select,.date_changer button{
+    padding: 10px;
+}
+.date_changer option,.date_changer button{
+    font-weight: bold;
+    font-size: 16px;
+}
+.date_changer button{
+    padding-right: 40px;
+    padding-left: 40px;
+}

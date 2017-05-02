@@ -1,0 +1,258 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 27, 2016, 11:45:36 AM
+    Author     : Sakthikanth
+*/
+
+.single_inp_det{
+    padding: 10px;
+}
+.single_inp_det .input_cont{
+    font-size: 26px;
+    color: maroon;
+}
+.amnt_inp{
+    color: maroon;
+    font-size: 16px;
+}
+.side_holder{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+   // border: 1px solid lightgrey;
+}
+.person_det_cont{
+    
+}
+.tot_det_holder{
+    border-top: 1px solid lightgrey;
+    
+}
+.bottom_holder{
+   // border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    
+}
+.main_info{
+    text-align: right;
+    
+}
+.bottom_holder{
+   
+   // padding: 20px;
+    
+}
+.loan_details .amnt_inp{
+    font-size: 18px;
+}
+.main_info font{
+    color: grey;
+}
+.account_type_hdr{
+   // border-bottom: 1px solid lightgrey;
+}
+
+.payment_container{
+    text-align: center;
+    
+}
+.payment_items_cont{
+    padding: 10px;
+}
+.payment_sts_hold{
+    text-align: center
+}
+.payment_sts{
+
+    padding: 10px;
+    font-size: 25px;
+    color: green;
+    background-color: #4a148c;
+    display: block;
+    color: white;
+    //padding-right: 100px;
+   // padding-left: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 0px #1b5e20;
+}
+
+
+.item_val_cont .item_inp_cont{
+    padding: 10px;
+}
+.item_inp_cont input{
+    padding: 10px;
+    border: 1px solid grey;
+    
+}
+.item_submit_cont{
+    padding: 10px;
+    
+}
+.item_submit_cont button{
+    padding: 10px;
+    border: 0px;
+    background-color: #006064;
+    color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.int_container .payment_item{
+    background-color: green;
+    
+}
+.int_container button{
+    background-color: green;
+    font-size: 16px;
+}
+.asal_container button{
+    background-color: #006064
+}
+.asal_container,.int_container{
+    display: inline-block;
+   
+}
+.asal_container{
+    text-align: left;
+}
+.int_container{
+    text-align: right
+}
+.item_val_cont input{
+    font-size: 20px;
+}
+.month_val input{
+    width: 100px;
+}
+.month_val font{
+    font-size: 20px;
+}
+body{
+    background-color: #f1f8e9;
+}
+.account_info{
+    display: inline-block
+}
+.account_info{
+    text-align: left;
+  //  float: left;
+   
+}
+.main_info{
+    padding: 10px;
+}
+.main_info div{
+    
+}
+
+
+.main_info{
+    text-align: left
+}
+.account_info{
+    text-align: right
+}
+.due_det_text{
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+    color: green;
+     
+}
+.col-lg-12{
+    padding-left:  10px;
+    padding-right: 10px;
+}
+.side_holder{
+    text-align: left;
+    padding: 10px;
+    padding-left: 50px;
+    
+}
+table{
+    border: 1px solid lightgrey;
+    
+}
+td,th{
+    font-size: 16px;
+    border: 1px solid lightgrey;
+}
+
+.payment_items_cont{
+    
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 2px 0px lightgrey;
+    
+}
+
+.item_submit_cont{
+    text-align: center;
+    
+}
+.item_submit_cont button{
+box-shadow: 0px 0px 1px 0px #006064;
+}
+.prof_info div{
+    padding: 5px;
+}
+.tot_due_to_pay{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    color: maroon;
+    
+}
+
+.payment_sts{
+    cursor: pointer;
+}
+.int_container .payment_sts{
+    background-color: green;
+    
+}
+.asal_container{
+    text-align: center;
+}
+.int_container{
+    text-align: center;
+}
+.main_info{
+    padding: 15px;
+}
+.payment_container{
+    padding: 10px;
+}
+.asal_container .inp_disc,.int_container .inp_disc{
+    padding: 10px;
+}
+#pay_int_btn{
+    border: 0px ;
+    color: white;
+    padding: 10px;
+}
+.logs_holder .payment_sts{
+    background-color:lightgray;
+    box-shadow: 0px 0px 0px 0px white;
+    color: navy;
+    border: 1px solid lightgrey;
+    border-bottom: 0px;
+    
+}
+span #asal_amt_vals{
+    font-size: 20px;
+    color: maroon
+}
+
+.input_con{
+    font-size: 20px;
+    color: maroon
+}
+.form_container{
+    border:1px solid lightgrey;
+    
+}

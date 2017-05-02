@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 15, 2018, 3:59:03 PM
+    Author     : Sakthikanth
+*/
+
+td{
+    font-size: 16px;
+    color: currentColor;
+}
+td font{
+    color: maroon;
+}
+table{
+    border: 1px solid lightgrey;
+}
+thead th{
+}
+.date_hint{
+  //  display: inline-block;
+    text-align: right;
+    color: green ;
+    font-size: 30px;
+}
+.PG_ttl{
+    //display: inline-block;
+}
+.day_selector{
+    text-align: center;
+    font-size: 20px;
+    color: maroon;
+}
+select{
+    border: 1px solid lightgray;
+    padding: 5px;
+    
+}
+.day_selector button{
+    border: 1px solid lightgray;
+    padding: 5px;
+    background-color: #0d47a1;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+option{
+    padding: 5px;
+}
+.tot_day_bal th{
+    padding: 10px !important;;
+    font-size: 15px;
+}
+.change_item{
+    text-align: center;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    font-size: 18px;
+     border:2px solid navy;
+}
+.change_item:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border:2px solid navy;
+    color: navy;
+    
+}
+.show_more_btn,.show_more_btn:hover{
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 2px 0px lightgrey;
+    color: #34495e;
+}
+.show_more_btn:hover{
+    background-color: #34495e;
+    color: white;
+}

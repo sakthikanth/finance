@@ -1,0 +1,21 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+session_start();
+if(empty($_SESSION['user_id']))
+{
+    echo "ns";
+}else{
+    require 'my.php';
+    $id=$_REQUEST['ids'];
+    $q=q("delete from users where users_id=$id");
+    if($q){
+        echo "s";
+    }else{
+        echo "n";
+    }
+}
