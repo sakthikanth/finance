@@ -199,7 +199,7 @@
                             $exp=$name;
                             $remain=$amts-$exp;
                             $q23=q("INSERT INTO `amount_status` (`log_id`, `date_entry`, `money_out`, `mo_reason`, `remain_bal`, `fin_id`, `cust_id`, `loan_type`,`my_date`,`exp_id`) "
-                                                                . "VALUES (NULL, '$entries_date', '$exp', '$pers_nm[$m]', $remain, $fin_id, '', '','$date','$lst_id');");
+                                                                . "VALUES (NULL, '$entries_date', '$exp', '$pers_nm[$m]', $remain, $fin_id, 0, 0,'$date','$lst_id');");
                         }
                        } 
               }
