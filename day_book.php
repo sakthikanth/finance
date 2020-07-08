@@ -302,8 +302,10 @@ and open the template in the editor.
                                 $hide_prev=1;
                             }
                             
-                            for($n=0;$n<count($money_out);$n++){
-                                if(count($money_out)==1){
+                            $total_count = is_array($log_id) ? count($log_id) : 1;
+
+                            for($n=0;$n<count($total_count);$n++){
+                                if(count($total_count)==1){
                                    
                                     $acc_types=$loan_type;
                                     $cus_ids=$cust_id;
