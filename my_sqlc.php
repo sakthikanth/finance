@@ -7,7 +7,7 @@
  */
 $host="localhost";
 $user="root";
-$password="";
+$password="password";
 $database="velmurugan";
 
 $dbc=new mysqli($host, $user, $password, $database);
