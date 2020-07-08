@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>networking - Can't connect to WPA2 Enterprise PEAP - Ask Ubuntu</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/Sites/askubuntu/img/favicon.ico?v=eff8fd315b9e">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/Sites/askubuntu/img/apple-touch-icon.png?v=e16e1315edd6">
+    <link rel="search" type="application/opensearchdescription+xml" title="Ask Ubuntu" href="http://askubuntu.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AskUbuntu">
+    <meta name="twitter:domain" content="askubuntu.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/Sites/askubuntu/img/apple-touch-icon@2.png?v=c492c9229955&amp;a">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Can&#39;t connect to WPA2 Enterprise PEAP">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="My university uses WPA2 Enterprise encryption for students to login their wireless. In NetworkManager I have keyed in everything that they needed
+
+
+Security : WPA &amp;amp; WPA2 Enterprise 
+Authenticat...">
+    <meta property="og:url" content="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap">
+    <link rel="canonical" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap">
+
+    
+    
+    <script type="text/javascript" async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/ados"></script><script async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/quant.js.download"></script><script async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/beacon.js.download"></script><script async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/analytics.js.download"></script><script type="text/javascript" async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/ados.js.download"></script><script src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/jquery.min.js.download"></script>
+    <script src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/stub.en.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Can&#39;t connect to WPA2 Enterprise PEAP&#39;" href="http://askubuntu.com/feeds/question/279762">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:279762});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('89', '279762');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+                        StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToReputationNotifications('89');
+                StackExchange.realtime.subscribeToTopBarNotifications('89');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1475167695,"routeName":"Questions/Show","site":{"name":"Ask Ubuntu","description":"Q&A for Ubuntu users and developers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdsB7sSAAAAAAzjgEF_Hd8vXv-C42sa_KyofaGR","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":89,"enableInsertDocLinkDialog":false,"enableSocialMediaInSharePopup":true},"user":{"fkey":"9af7639a793deec84f8f78c7f64ec72e","rep":0,"isAnonymous":true,"isAnonymousOnThisSite":true},"realtime":{"newest":true,"active":true,"tagged":true,"workerIframeDomain":"http://cdn.sstatic.net"}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"snippets":{"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"6dc8ab516e2d","js/moderator.en.js":"20845a7207f0","js/full-anon.en.js":"be0bec0661aa","js/full.en.js":"7e7a33b6d602","js/wmd.en.js":"c1ee0f2ef487","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"12144888d605","js/help.en.js":"a56fdf9b9ff2","js/tageditor.en.js":"bd4fb7a0a976","js/tageditornew.en.js":"4568be0a302a","js/inline-tag-editing.en.js":"4fa1a4a3339e","js/revisions.en.js":"47de10a8358f","js/review.en.js":"a36506ec2834","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"6c3c85a4cd29","js/explore-qlist.en.js":"88f824a42b1a","js/events.en.js":"fd77294cd0e2","js/keyboard-shortcuts.en.js":"690fd0189679","js/external-editor.en.js":"71095ef40e9d"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<script async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/full-anon.en.js.download"></script><script async="" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/post-validation.en.js.download"></script><script type="text/javascript" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/adFeedback.js.download"></script><link rel="stylesheet" href="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/adFeedback.css"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"><div class="nav-global"><div class="nav-global-wrapper"><ul><li><a href="http://www.ubuntu.com/">Ubuntu</a></li><li><a href="http://community.ubuntu.com/">Community</a></li><li><a href="http://askubuntu.com/" class="active">Ask!</a></li><li><a href="http://developer.ubuntu.com/">Developer</a></li><li><a href="http://design.ubuntu.com/">Design</a></li><li></li><li><a href="http://discourse.ubuntu.com/">Discourse</a></li><li><a href="http://www.ubuntu.com/certification">Hardware</a></li><li><a href="http://insights.ubuntu.com/">Insights</a></li><li><a href="https://jujucharms.com/">Juju</a></li><li><a href="http://shop.ubuntu.com/">Shop</a></li><li class="more"><a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#">More <span>›</span></a><ul><li><a href="http://apps.ubuntu.com/">Apps</a></li><li><a href="https://help.ubuntu.com/">Help</a></li><li><a href="http://ubuntuforums.org/">Forum</a></li><li><a href="http://www.launchpad.net/">Launchpad</a></li><li><a href="http://maas.ubuntu.com/">MAAS</a></li><li><a href="http://www.canonical.com/">Canonical</a></li></ul></li></ul></div></div> <script> $(function() { $(".nav-global .more > a").click(function(e){ $(this).closest(".more").toggleClass("open"); return false; }); $(document).click(function(){ $(".nav-global .more.open").removeClass("open"); }); }); </script></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="http://askubuntu.com/">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+                    <a href="http://chat.stackexchange.com/?tab=site&amp;host=askubuntu.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://askubuntu.com/users/logout" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:8 })">log out</a>
+    </div>
+
+
+
+
+    <a href="http://askubuntu.com/" class="current-site-link site-link js-gps-track" data-id="89" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-askubuntu" title="Ask Ubuntu"></div>
+        Ask Ubuntu
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.askubuntu.com/" class="site-link js-gps-track" data-id="91" data-gps-track="
+            site.switch({ target_site:91, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-askubuntumeta" title="Ask Ubuntu Meta"></div>
+        Ask Ubuntu Meta
+    </a>
+
+                </li>
+        </ul>
+    </div>
+    <div class="header" id="your-communities-header">
+        <h3>
+                <a href="http://stackexchange.com/users/8416893/?tab=accounts">your communities</a>
+        </h3>
+            
+            <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" id="edit-pinned-sites">edit</a>
+            <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" id="cancel-pinned-sites" style="display: none;">cancel</a>
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <ul class="my-sites">
+                    <li>
+                        
+
+
+
+    <a href="http://stackoverflow.com/" class="site-link js-gps-track" data-id="1" data-gps-track="
+            site.switch({ target_site:1, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+            <span class="rep-score">1</span>
+    </a>
+
+                    </li>
+            </ul>
+                <div class="pinned-site-editor-container" style="display: none;">
+                    <input id="js-site-search-txt" type="text" class="site-filter-input" value="" placeholder="Add a Stack Exchange community">
+                    <input type="submit" id="pin-site-btn" value="Add" disabled="disabled">
+                    <ul class="js-found-sites found-sites"></ul>
+                    <ul class="pinned-site-list sortable" data-custom-list="False">
+                    </ul>
+                    <input type="submit" value="Save" id="save-pinned-sites-btn" disabled="disabled">
+                    <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" id="reset-pinned-sites">reset to default list</a>
+                </div>
+    </div>
+    <div class="header">
+        <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a></h3>
+        <a href="http://blog.stackoverflow.com/" class="fr">company blog</a>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 161 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="You have unread inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="">1</span>
+    </a>
+    <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" class="topbar-icon icon-achievements yes-hover js-achievements-button" data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                <a href="https://askubuntu.com/users/join?ssrc=head&amp;returnurl=http%3a%2f%2faskubuntu.com%2fquestions%2f279762%2fcant-connect-to-wpa2-enterprise-peap" class="login-link">join this community</a>
+
+                            <a href="http://askubuntu.com/tour">tour</a>
+        <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://askubuntu.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://askubuntu.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.askubuntu.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://business.stackoverflow.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://askubuntu.com/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://askubuntu.com/">
+                    Ask Ubuntu
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://askubuntu.com/questions">Questions</a></li>
+                                                <li><a id="nav-tags" href="http://askubuntu.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://askubuntu.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://askubuntu.com/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://askubuntu.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://askubuntu.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="http://cdn.sstatic.net/Sites/askubuntu/img/apple-touch-icon.png?v=e16e1315edd6">
+
+
+    <div id="herobox">
+        <div id="hero-content">
+                <div id="close"><a title="click to minimize">_</a></div>
+            <div id="blurb">
+                Ask Ubuntu is a question and answer site for Ubuntu users and developers. Join them; it only takes a minute:
+                <br>
+                <br>
+                <a href="http://askubuntu.com/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2faskubuntu.com%2fquestions%2f279762%2fcant-connect-to-wpa2-enterprise-peap" id="tell-me-more" class="button">Join</a>
+            </div>
+            <div id="desc">
+                <b>Here's how it works:</b>
+                <ol id="hiw">
+                    <li id="q">Anybody can ask a question
+                    </li>
+                    <li id="an">Anybody can answer
+                    </li>
+                    <li id="b">The best answers are voted up and rise to the top
+                    </li>
+                </ol>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap" class="question-hyperlink">Can't connect to WPA2 Enterprise PEAP</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="279762" id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,0,"adzerk776295815",4).enableDynamicSiteSelection().setZone(29); });
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk776295815"><iframe id="ados_frame_adzerk776295815_1876393" frameborder="0" scrolling="no" height="90" width="728" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/saved_resource.html"></iframe><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" border="0" style="position:absolute;" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/i.gif"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="279762">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">33</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#">favorite</a>
+        <div class="favoritecount"><b>17</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>My university uses WPA2 Enterprise encryption for students to login their wireless. In NetworkManager I have keyed in everything that they needed</p>
+
+<ul>
+<li>Security : WPA &amp; WPA2 Enterprise </li>
+<li>Authentication : Protected EAP
+(PEAP)</li>
+<li>CA certificate is not needed</li>
+<li>PEAP version : Automatic</li>
+<li>Inner
+authentication : MSCHAPv2</li>
+<li>Username and Password are correct.</li>
+</ul>
+
+<p>Everytime I try to connect, I get a window asking me to input my password over and over again</p>
+    </div>
+    <div class="post-taglist">
+        <a href="http://askubuntu.com/questions/tagged/networking" class="post-tag js-gps-track" title="show questions tagged &#39;networking&#39;" rel="tag">networking</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://askubuntu.com/q/279762" title="short permalink to this question" class="short-link" id="link-post-279762">share</a><span class="lsep">|</span><a href="http://askubuntu.com/posts/279762/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2013-04-10 02:44:21Z" class="relativetime">Apr 10 '13 at 2:44</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/48148/balraj-mccoy"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/9cbff012b49d8ac024d187091c6d27db" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/48148/balraj-mccoy">Balraj McCoy</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">429</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="7 silver badges"><span class="badge2"></span><span class="badgecount">7</span></span><span title="10 bronze badges"><span class="badge3"></span><span class="badgecount">10</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-279762" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-279762" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								5 Answers
+                                <span style="display:none;" itemprop="answerCount">5</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="295600"></a>
+<div id="answer-295600" class="answer" data-answerid="295600" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="295600">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">30</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>There is a bug report here: <a href="https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1104476">https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1104476</a></p>
+
+<p>A workaround is to remove the line</p>
+
+<pre><code>system-ca-cert=true
+</code></pre>
+
+<p>from the configuration file found in /etc/NetworkManager/system-connections/</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://askubuntu.com/a/295600" title="short permalink to this answer" class="short-link" id="link-post-295600">share</a><span class="lsep">|</span><a href="http://askubuntu.com/posts/295600/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-05-15 06:57:41Z" class="relativetime">May 15 '13 at 6:57</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/158806/chionis"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/d13ff723d0d70cc4823f8906598ba519" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/158806/chionis">chionis</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">339</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-295600" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-573473" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It worked for me, I had exactly the same issue as the OP.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/28411/vincenzo-pii" title="387 reputation" class="comment-user">Vincenzo Pii</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment573473_295600"><span title="2014-03-26 08:20:25Z" class="relativetime-clean">Mar 26 '14 at 8:20</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-585898" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">still happening on 14.04 (current beta)</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/43485/prusswan" title="274 reputation" class="comment-user">prusswan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment585898_295600"><span title="2014-04-12 07:29:25Z" class="relativetime-clean">Apr 12 '14 at 7:29</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-634478" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Yep, still in 14.04.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/25331/reece" title="131 reputation" class="comment-user">Reece</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment634478_295600"><span title="2014-06-04 20:25:19Z" class="relativetime-clean">Jun 4 '14 at 20:25</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-678870" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">still doesn't work without this line...</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/69348/sanjay-manohar" title="163 reputation" class="comment-user">Sanjay Manohar</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment678870_295600"><span title="2014-07-29 22:28:40Z" class="relativetime-clean">Jul 29 '14 at 22:28</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-684368" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@SanjayManohar Try the answer below regarding the WPA supplicant issue, or just try a different wifi card if you have one--that worked for me, without modifying the config file.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/185788/brian-z" title="421 reputation" class="comment-user">Brian Z</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment684368_295600"><span title="2014-08-05 16:13:44Z" class="relativetime-clean">Aug 5 '14 at 16:13</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-295600" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<div class="newsletter-anon">
+    <img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/apple-touch-icon.png" class="newsletter-logo">
+    <div class="newsletter-container">
+        <h2>Did you find this question interesting? Try our newsletter</h2>
+        <p class="newsletter-description">
+            Sign up for our newsletter and get our top new questions delivered to your inbox (<a href="http://stackexchange.com/newsletters/newsletter?site=askubuntu.com" id="newsletter-preview">see an example</a>).
+        </p>
+        <form id="anon-newsletter-form" data-error="There was a problem signing up for the newsletter. Please try again later.">
+            <input type="email" id="newsletter-email-input" placeholder="email address" title="your email address">
+            <input type="submit" value="Subscribe" id="newsletter-email-submit">
+        </form>
+        <div style="margin-top: 10px; float:right;" class="dno cbt newsletter-status-confirmed">
+            <b>Subscribed!</b>
+        </div>
+        <div style="margin-top: 10px; float:right;" class="dno cbt newsletter-status-unconfirmed">
+            <b>Success!</b> Please click the link in the confirmation email to activate your subscription.
+        </div>
+    </div>
+</div>
+
+<script>
+    StackExchange.ready(function () {
+        StackExchange.newsletterAd.init();
+    });
+
+    $('#anon-newsletter-form').submit(function () {
+        var $form = $(this);
+        var $input = $form.find('#newsletter-email-input');
+        var $submit = $form.find('#newsletter-email-submit');
+        var $container = $form.closest('.newsletter-container');
+
+        var email = $.trim($input.val());
+        if (email.length == 0) {
+            return false;
+        }
+        StackExchange.helpers.addSpinner($form);
+
+        $.ajax({
+            url: '/newsletter/signup/anon',
+            type: 'POST',
+            dataType: 'json',
+            data: { fkey: StackExchange.options.user.fkey, email: email, viaAnonNewsletterAd: true },
+            success: function (data) {
+                if (!data.error && (data.status == 'confirmed' || data.status == 'unconfirmed')) {
+                    $input.attr('disabled', true);
+                    $submit.remove();
+                    $container.find('.newsletter-status-' + data.status).show();
+                }
+                else {
+                    $container.showErrorMessage(data.error || $form.data('error'));
+                }
+            },
+            error: function () {
+                $container.showErrorMessage($form.data('error'));
+            },
+            complete: function () {
+                StackExchange.helpers.removeSpinner($form);
+            }
+        });
+
+        return false;
+    });
+</script>
+
+  
+<a name="354986"></a>
+<div id="answer-354986" class="answer" data-answerid="354986" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="354986">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">15</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here's a work around.</p>
+
+<ol>
+<li><p>Open a terminal (<kbd>Alt</kbd> + <kbd>F2</kbd>) and run the following commands:</p>
+
+<pre><code>cd /etc/NetworkManager/system-connections
+sudo touch SSID #SSID is the name of the profile, e.g. eduroam
+sudo nano SSID
+</code></pre></li>
+<li><p>Then edit the "SSID" profile as following:</p>
+
+<pre><code>[ipv6]
+method=auto
+
+[connection]
+id=SSID #(e.g.EDUroam)
+uuid=9e123fbc-0123-46e3-97b5-f3214e123456 #unique uuid will be created upon creation of this profile
+type=802-11-wireless
+
+[802-11-wireless-security]
+key-mgmt=wpa-eap
+auth-alg=open
+
+[802-11-wireless]
+ssid=SSID
+mode=infrastructure
+mac-address=0A:12:3C:DA:C1:A5
+security=802-11-wireless-security
+
+[802-1x]
+eap=peap;
+identity=studentid123123
+phase2-auth=mschapv2
+password=mypass123123
+
+[ipv4]
+method=auto
+</code></pre></li>
+</ol>
+
+<p>Modify the above file and it should work.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://askubuntu.com/a/354986" title="short permalink to this answer" class="short-link" id="link-post-354986">share</a><span class="lsep">|</span><a href="http://askubuntu.com/posts/354986/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://askubuntu.com/posts/354986/revisions" title="show all edits to this post">edited <span title="2013-10-07 19:54:56Z" class="relativetime">Oct 7 '13 at 19:54</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/114818/aditya"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/d166c3d398e9410f7fcbb880fdc617ac" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/114818/aditya">Aditya</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">7,052</span><span title="11 gold badges"><span class="badge1"></span><span class="badgecount">11</span></span><span title="42 silver badges"><span class="badge2"></span><span class="badgecount">42</span></span><span title="82 bronze badges"><span class="badge3"></span><span class="badgecount">82</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-10-07 19:17:37Z" class="relativetime">Oct 7 '13 at 19:17</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/199658/keith"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/41975046c925419ca089f4da1e4f0dd8" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/199658/keith">keith</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">151</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-354986" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-674245" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It works! Thanks @keith! Here are the changes I had to do: (1)  removed the line <code>system-ca-cert=true</code> and (2) replaced <code>password-flags=1</code> with <code>password=mypassword</code>.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/28249/marcelo" title="101 reputation" class="comment-user">Marcelo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment674245_354986"><span title="2014-07-24 12:57:12Z" class="relativetime-clean">Jul 24 '14 at 12:57</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-704402" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">thanks, it helped my problem!</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/297019/kwagjj" title="101 reputation" class="comment-user">kwagjj</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment704402_354986"><span title="2014-08-31 23:08:25Z" class="relativetime-clean">Aug 31 '14 at 23:08</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-354986" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="429008"></a>
+<div id="answer-429008" class="answer" data-answerid="429008" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="429008">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">7</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I had the same problem at work I followed the instructions and changed the <code>system-ca-cert=false</code> but I also had to go in and change the wireless driver settings once I made the changes it connected right up. check out the link where I got the info below </p>
+
+<p><a href="http://wireless.kernel.org/en/users/Documentation/wpa_supplicant">http://wireless.kernel.org/en/users/Documentation/wpa_supplicant</a></p>
+
+<pre><code>-o&lt;driver&gt; and -O&lt;ctrl&gt;
+
+/usr/share/dbus-1/system-services/fi.epitest.hostap.WPASupplicant.service
+
+[D-BUS Service]
+Name=fi.epitest.hostap.WPASupplicant
+Exec=/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant.log
+User=root
+
+[D-BUS Service]
+Name=fi.epitest.hostap.WPASupplicant
+Exec=/sbin/wpa_supplicant -u -onl80211 -O/var/run/wpa_supplicant
+User=root
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://askubuntu.com/a/429008" title="short permalink to this answer" class="short-link" id="link-post-429008">share</a><span class="lsep">|</span><a href="http://askubuntu.com/posts/429008/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://askubuntu.com/posts/429008/revisions" title="show all edits to this post">edited <span title="2014-03-03 19:47:49Z" class="relativetime">Mar 3 '14 at 19:47</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/23878/buzz-dee"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/xdlU1.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/23878/buzz-dee">BuZZ-dEE</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">6,485</span><span title="9 gold badges"><span class="badge1"></span><span class="badgecount">9</span></span><span title="41 silver badges"><span class="badge2"></span><span class="badgecount">41</span></span><span title="63 bronze badges"><span class="badge3"></span><span class="badgecount">63</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-03-03 19:29:16Z" class="relativetime">Mar 3 '14 at 19:29</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/250563/user250563"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/9ec5e3a46c1f02cffbcb2ea08cb4a200" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/250563/user250563">user250563</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">71</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-429008" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-910430" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Appending the second entry to my file worked for me, thanks!</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/8530/matthew-read" title="187 reputation" class="comment-user">Matthew Read</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment910430_429008"><span title="2015-06-16 21:17:41Z" class="relativetime-clean">Jun 16 '15 at 21:17</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-1112539" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Adding <code>-onl80211</code> solved for me, thanks!</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/519827/tamas-hegedus" title="101 reputation" class="comment-user">Tamas Hegedus</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment1112539_429008"><span title="2016-03-17 11:22:05Z" class="relativetime-clean">Mar 17 at 11:22</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-429008" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="480735"></a>
+<div id="answer-480735" class="answer" data-answerid="480735" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="480735">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You might also need to specify the Domain of your enterprise by adding it before the username like so:
+Domain Name\Username beside commenting/deleting the above mentioned line..</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://askubuntu.com/a/480735" title="short permalink to this answer" class="short-link" id="link-post-480735">share</a><span class="lsep">|</span><a href="http://askubuntu.com/posts/480735/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-06-09 06:33:12Z" class="relativetime">Jun 9 '14 at 6:33</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/291825/bingorabbit"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/f09cf0f7ba1864907113687f09839797" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/291825/bingorabbit">bingorabbit</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">121</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-480735" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-480735" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="279869"></a>
+<div id="answer-279869" class="answer" data-answerid="279869" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="279869">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I assume that you're using self-signed certificate (you said: "CA certificate is not needed"). If so, make sure that the certificate is trusted by you when establishing the connection.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://askubuntu.com/a/279869" title="short permalink to this answer" class="short-link" id="link-post-279869">share</a><span class="lsep">|</span><a href="http://askubuntu.com/posts/279869/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-04-10 10:55:50Z" class="relativetime">Apr 10 '13 at 10:55</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://askubuntu.com/users/139647/guardian"><div class="gravatar-wrapper-32"><img src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/ZVNuY.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://askubuntu.com/users/139647/guardian">Guardian</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">52</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-279869" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-351514" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">No, by not needed I mean they do not require us to use any certificate while connecting.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/48148/balraj-mccoy" title="429 reputation" class="comment-user owner">Balraj McCoy</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment351514_279869"><span title="2013-04-10 11:02:31Z" class="relativetime-clean">Apr 10 '13 at 11:02</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-351528" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I don't understand what's the purpose of using PEAP without the certificate, but OK. Are you able to connect on any other OSes than Ubuntu? I'm having the same WiFi infrastructure in my company, so maybe I'll be able to help.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/139647/guardian" title="52 reputation" class="comment-user">Guardian</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment351528_279869"><span title="2013-04-10 11:20:42Z" class="relativetime-clean">Apr 10 '13 at 11:20</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-351558" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I'm able to connect using Windows fine. There's a guide on Windows connection here : <a href="http://studentprojects.wordpress.com/tutorial/windows-7-configuration-guide-for-connecting-to-i-xcess/" rel="nofollow">studentprojects.wordpress.com/tutorial/…</a> which I followed on Windows and it worked fine. Tried replicating it in Ubuntu and it failed.</span>
+                    –&nbsp;<a href="http://askubuntu.com/users/48148/balraj-mccoy" title="429 reputation" class="comment-user owner">Balraj McCoy</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#comment351558_279869"><span title="2013-04-10 12:14:03Z" class="relativetime-clean">Apr 10 '13 at 12:14</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-279869" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="http://askubuntu.com/users/-1/community">Community</a><span class="mod-flair" title="moderator">♦</span> <span dir="ltr"><span title="2015-06-17 00:48:26Z" class="relativetime">Jun 17 '15 at 0:48</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="http://askubuntu.com/help/whats-reputation">reputation</a> on this site (the <a href="http://askubuntu.com/help/privileges/new-user">association bonus does not count</a>).
+<br><br>
+Would you like to answer one of these <a href="http://askubuntu.com/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://askubuntu.com/questions/tagged/networking" class="post-tag" title="show questions tagged &#39;networking&#39;" rel="tag">networking</a>  or <a href="http://askubuntu.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2013-04-10 02:44:21Z"><b>3 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>68506 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap?lastactivity" class="lastactivity-link" title="2015-01-27 17:03:55Z">1 year ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,0,"adzerk437360203",[5,17]).enableDynamicSiteSelection().setZone(56016); });
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk437360203"><div style="background-image: url( data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== ); width: 1px; height: 1px; display:none;"></div><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="http://askubuntu.com/questions/279762/cant-connect-to-wpa2-enterprise-peap#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div><img height="0px" width="0px" border="0" style="position:absolute;" src="./networking - Can&#39;t connect to WPA2 Enterprise PEAP - Ask Ubuntu_files/i(1).gif"></div>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://askubuntu.com/q/516029?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://askubuntu.com/questions/516029/connect-to-my-colleges-wpa-from-ubuntu-14-04-lts?noredirect=1&amp;lq=1" class="question-hyperlink">Connect to my College's WPA from Ubuntu 14.04 LTS</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/583203?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://askubuntu.com/questions/583203/cannot-connect-school-wifi-on-14-10?noredirect=1&amp;lq=1" class="question-hyperlink">cannot connect school WiFi on 14.10</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/443464?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://askubuntu.com/questions/443464/cant-connect-to-wifi-that-requires-username-password-only?noredirect=1&amp;lq=1" class="question-hyperlink">Can't Connect to Wifi that requires username &amp; password ONLY</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/285234?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">11</div>
+	</a>
+	<a href="http://askubuntu.com/questions/285234/cannot-connect-to-wpa2-wpa-enterprise-peap-and-mschap?noredirect=1&amp;lq=1" class="question-hyperlink">Cannot connect to WPA2/WPA Enterprise (PEAP and MSCHAP)</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/592338?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">3</div>
+	</a>
+	<a href="http://askubuntu.com/questions/592338/ubuntu-keeps-asking-for-wifi-password?noredirect=1&amp;lq=1" class="question-hyperlink">Ubuntu keeps asking for Wifi password</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/699498?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://askubuntu.com/questions/699498/cant-connect-to-wpa2-enterprise-networks-like-eduroam-with-certificate-in-15-10?noredirect=1&amp;lq=1" class="question-hyperlink">Can't connect to wpa2-enterprise networks like eduroam with certificate in 15.10</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/697567?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://askubuntu.com/questions/697567/cant-connect-to-wifi-after-upgrade-to-15-10-aka-dreaded-wpa2-enterprise-peap-n?noredirect=1&amp;lq=1" class="question-hyperlink">Can't connect to WiFI after upgrade to 15.10, aka dreaded WPA2 Enterprise/PEAP nightmare</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/687136?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://askubuntu.com/questions/687136/connecting-to-eduroam-with-ca-certs?noredirect=1&amp;lq=1" class="question-hyperlink">Connecting to eduroam with CA certs</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/672201?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://askubuntu.com/questions/672201/equivalent-ubuntu-network-configuration?noredirect=1&amp;lq=1" class="question-hyperlink">Equivalent Ubuntu network configuration</a>
+</div>
+<div class="spacer">
+	<a href="http://askubuntu.com/q/685855?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://askubuntu.com/questions/685855/cant-get-wireless-up-on-corporate-network?noredirect=1&amp;lq=1" class="question-hyperlink">can't get wireless up on corporate network</a>
+</div>					<div class="spacer more">
+				<a href="http://askubuntu.com/questions/linked/279762?lq=1">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://askubuntu.com/q/285234?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">11</div></a><a href="http://askubuntu.com/questions/285234/cannot-connect-to-wpa2-wpa-enterprise-peap-and-mschap?rq=1" class="question-hyperlink">Cannot connect to WPA2/WPA Enterprise (PEAP and MSCHAP)</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/285741?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">2</div></a><a href="http://askubuntu.com/questions/285741/how-to-connect-to-wpa2-enterprise-mschapv2?rq=1" class="question-hyperlink">How to connect to wpa2 enterprise mschapv2?</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/551651?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://askubuntu.com/questions/551651/ubuntu-14-04-cannot-connect-to-a-particular-network?rq=1" class="question-hyperlink">Ubuntu 14.04 cannot connect to a particular network</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/586300?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">3</div></a><a href="http://askubuntu.com/questions/586300/creating-a-wpa2-enterprise-connection-on-ubuntu-touch?rq=1" class="question-hyperlink">Creating a WPA2 Enterprise Connection On Ubuntu Touch</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/682135?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">1</div></a><a href="http://askubuntu.com/questions/682135/how-to-connect-to-protected-eap-peap-wifi-via-terminal?rq=1" class="question-hyperlink">How to connect to Protected EAP (PEAP) wifi via terminal</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/687136?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://askubuntu.com/questions/687136/connecting-to-eduroam-with-ca-certs?rq=1" class="question-hyperlink">Connecting to eduroam with CA certs</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/690032?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">6</div></a><a href="http://askubuntu.com/questions/690032/after-upgrade-to-15-10-wifi-to-a-corporate-network-wpa2-is-not-working-anymore?rq=1" class="question-hyperlink">After upgrade to 15.10 Wifi to a corporate network (WPA2) is not working anymore</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/692973?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://askubuntu.com/questions/692973/problem-connection-to-wpa2-enterprise-networks-using-mschapv2?rq=1" class="question-hyperlink">Problem connection to wpa2-enterprise networks using MSCHAPv2</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/699498?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">2</div></a><a href="http://askubuntu.com/questions/699498/cant-connect-to-wpa2-enterprise-networks-like-eduroam-with-certificate-in-15-10?rq=1" class="question-hyperlink">Can't connect to wpa2-enterprise networks like eduroam with certificate in 15.10</a></div><div class="spacer js-gps-track"><a href="http://askubuntu.com/q/715311?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://askubuntu.com/questions/715311/network-manager-keeps-asking-for-username-and-password-enterprise-wifi-and-ubun?rq=1" class="question-hyperlink">Network Manager keeps asking for username and password. Enterprise wifi and Ubuntu 15.10</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/56945/how-did-the-booze-rat-evolve-its-defensive-mechanism" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How did the Booze-Rat evolve its defensive mechanism?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-dba" title="Database Administrators Stack Exchange"></div><a href="http://dba.stackexchange.com/questions/151001/packages-in-data-collector-folder" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:182 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Packages in Data Collector folder
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-askubuntu" title="Ask Ubuntu"></div><a href="http://askubuntu.com/questions/831124/which-file-formats-are-used-to-make-viruses-in-ubuntu" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:89 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which file formats are used to make viruses in Ubuntu?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/94810/when-was-this-language-released" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    When was this language released?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/56834/destroy-a-planet-inside-a-blackhole" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Destroy a Planet inside a blackhole?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/77434/is-800-am-an-unreasonable-time-to-meet-with-my-graduate-students-and-post-doc" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is 8:00 AM an unreasonable time to meet with my graduate students and post-doc?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-spanish" title="Spanish Language Stack Exchange"></div><a href="http://spanish.stackexchange.com/questions/18174/cu%c3%a1l-es-la-etimolog%c3%ada-de-soroche" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:353 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    ¿Cuál es la etimología de «soroche»?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/141755/is-there-any-historical-significance-to-the-bridge-of-khazad-dum" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there any historical significance to the Bridge of Khazad-dum?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/56923/will-it-be-posthumans-rather-than-humans-who-explore-the-galaxy" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Will it be posthumans rather than humans who explore the galaxy?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/43400/im-too-shy-to-ask-but-will-you-say-yes" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    I'm too shy to ask, but will you say yes?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/56965/is-there-a-way-to-make-a-metal-sword-resistant-to-lava" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is there a way to make a metal sword resistant to lava?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-salesforce" title="Salesforce Stack Exchange"></div><a href="http://salesforce.stackexchange.com/questions/142569/how-to-catch-a-validation-error-exception-in-an-apex-test-class" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:459 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to catch a validation error exception in an apex test class
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/76861/should-i-be-concerned-about-my-boss-personal-problems" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Should I be concerned about my boss' personal problems?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/71171/if-i-let-a-friend-drive-my-car-for-a-day-should-i-tell-my-insurance-company" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    If I let a friend drive my car for a day should I tell my insurance company?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/105078/is-it-correct-to-say-my-domestic-name-is" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it correct to say my domestic name is?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/39753721/fast-algorithm-to-write-data-from-a-stdvector-to-a-text-file" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Fast algorithm to write data from a std::vector to a text file
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/141670/what-are-the-starfleet-regulations-on-crew-relationships-or-fraternizing" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What are the Starfleet regulations on crew relationships or fraternizing?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/94699/i-love-you-i-love-you-i-love-you" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    i love yOu i lOve you i love yOu!
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-magento" title="Magento Stack Exchange"></div><a href="http://magento.stackexchange.com/questions/138613/how-to-obtain-template-hints-in-admin-panel" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:479 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to obtain template hints in admin panel?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/35288/did-trump-express-support-for-the-iraq-war" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Did Trump express support for the Iraq war?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/350816/rosa-parks-is-a-mascot-for-the-civil-rights-movement" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Rosa Parks is a [mascot?] for the civil rights movement?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/88525/potion-of-longevity-and-a-9-year-old-character" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Potion of Longevity and a 9 year old character
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/35307/did-donald-trump-call-alicia-machado-miss-piggy-and-miss-housekeeping" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Did Donald Trump call Alicia Machado "Miss Piggy" and "Miss Housekeeping"?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/71191/charging-the-company-i-work-for-to-rent-from-myself" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Charging the company I work for to rent from myself
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://askubuntu.com/feeds/question/279762" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/279762/ivc/df19');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/279762/ivc/df19" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://askubuntu.com/tour">tour</a>
+                    <a href="http://askubuntu.com/help">help</a>
+                    <a href="http://blog.stackoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackexchange.com/?tab=site&amp;host=askubuntu.com">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://askubuntu.com/contact">contact us</a></b>
+                        <b><a href="http://meta.askubuntu.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="4">
+                Technology
+            </th>
+            <th colspan="2">
+                Life / Arts
+            </th>
+            <th colspan="2">
+                Culture / Recreation
+            </th>
+            <th colspan="2">
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (18)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in logical reasoning">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2016 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2016.9.29.4021
+            </div>
+                <div id="additional-notices">
+                    Ubuntu and Canonical are registered trademarks of Canonical Ltd.
+                </div>
+                </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Ask Ubuntu works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                ados_setKeywords('networking,x-community,x-host-askubuntu.com');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            
+            ga('create', 'UA-5620270-29');
+            ga('set', 'dimension2', '|networking|');             ga('send', 'pageview');
+        
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

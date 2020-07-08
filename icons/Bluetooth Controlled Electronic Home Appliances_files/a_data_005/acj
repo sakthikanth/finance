@@ -1,0 +1,15 @@
+OX_3564826628({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://medianet-d.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+      {
+        "auid":"538170220",
+        "chain_revenue":"",
+        "size":"336x280",
+        "chain":[
+        ]
+      }
+    ]
+  }
+});

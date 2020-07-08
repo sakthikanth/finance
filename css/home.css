@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 7, 2016, 5:11:12 PM
+    Author     : Sakthikanth
+*/
+
+.fin_name_cont{
+    text-align: left;
+    border: 0px;
+    border-bottom: 1px solid grey;
+}
+.each_item img{
+    max-width: 35%;
+}
+
+.item_holderss{
+    display: inline-block;
+    padding: 10px;
+}
+.img_holder{
+    max-width: 300px;
+}
+.row_hold{
+    text-align: center
+}
+.disc_holder{
+    padding: 10px;
+    font-size: 20px;
+}
+.each_item{
+    padding: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 5px 0px lightgrey;
+   // background-color: white;
+    width: 300px;
+    cursor: pointer;
+}
+.item_holderss{
+  //  cursor: pointer;
+}
+ul input{
+    border: 0px !important;;
+    border-radius: 0px !important;
+    padding: 10px !important;;
+    
+}
+
+.srch_cont{
+    position: absolutea
+}
+.each_item:hover,.each_item:active{
+
+    transform: rotate(30deg);
+        transition-duration: 1sec;
+    box-shadow: 0px 0px 45px 0px lightgrey;
+    transform-origin: center;
+    z-index: 22;
+    transition: linear linear;
+    background-color: white;
+}
+.each_item{
+    transform: rotate(0deg);
+
+    
+}

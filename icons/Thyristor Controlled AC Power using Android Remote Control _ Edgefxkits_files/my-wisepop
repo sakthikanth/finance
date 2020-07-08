@@ -1,0 +1,11 @@
+(function(){
+    var source = '//app.wisepops.com/shared/wisepops/b9d6c51a1a37a4ca0b2d3f9ab7fce618/52813.js';
+    if (typeof source === 'string' && source.length > 0) {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = source;
+        var s2 = document.getElementsByTagName('body')[0];
+        s2.appendChild(s);
+    }
+})();

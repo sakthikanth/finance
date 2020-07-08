@@ -69,11 +69,31 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/stl_accounts.css" />
+        <link rel="stylesheet" href="css/homepage.css" />
         <script src="js/jquery.js" ></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jspdf.debug.js"></script>
         <title>Velmurugan Finance</title>
     </head>
     <body>
+        <script>
+        function print_pdf(pagin,cust_id){
+            
+            
+           file_name='';
+           if(pagin!==''){
+               file_name+='pagi='+pagin+'&';
+           }
+           if(cust_id!==""){
+               file_name+="cust_id="+cust_id;
+           }
+          
+               window.location.href='pdf_stl_pending.php';
+           
+            
+        }
+        </script>
+         
   <?php include './header.php'; ?>
         <div class="container">
            <div class="col-lg-12 logs_top_holder">
@@ -81,12 +101,22 @@ and open the template in the editor.
                 STL Pendings of <?php echo $fn;  ?> Finance
             </div>
             <div class="loan_details col-lg-6">
+               
                              <div class="loan_amount_hold">
                       Sort by Customers
                     </div>
+                 
                     <div class="amnt_inp">
                         <select required name="cus_of" onchange="sort_users(this.value)">
                             <option value="all">All</option>
+                            <?php
+                            $sel="";
+                              if( isset($_REQUEST['cust_id'])){
+                                  if($_REQUEST['cust_id']==0) $sel="selected";
+                                       
+                                    }
+                            ?>
+                            <option value="gen" <?php  echo $sel;?>>General</option>
                             <?php
                             
                             q("select user_name,users_id from  users");
@@ -100,7 +130,7 @@ and open the template in the editor.
                                 $cus_use_id=$users_id[$n];
                                 }
                                 
-                                if($_REQUEST['cust_id']==$cus_use_id){
+                                if($_REQUEST['cust_id']==$cus_use_id ){
                                     $sel="selected";
                                 }else{
                                     $sel="";
@@ -111,6 +141,22 @@ and open the template in the editor.
                             ?>
                         </select>
                     </div>
+                <div>
+                     <?php
+                if(isset($_REQUEST['pagi'])){
+                    $pdf_pagi="".$_REQUEST['pagi'];
+                }else{
+                    $pdf_pagi="";
+                }
+                if(isset($_REQUEST['cust_id'])){
+                    $pdf_cust="".$_REQUEST['cust_id'];
+                }else{
+                    $pdf_cust="";
+                }
+                
+                ?>
+                    <button class="pdf_btn" onclick="print_pdf('<?php echo $pdf_pagi."','".$pdf_cust; ?>')">Print as Pdf</button>
+              </div>
                         <div class="amnt_inp" id="int_rupees_conv"></div>
 
                           
@@ -123,9 +169,11 @@ and open the template in the editor.
             <?php
             
               $p_arr=array();
-                            $year=date('Y');
-                $month=date('m');
-                $day=date('d');
+                             $year= $_SESSION['cur_year'];
+                $month= $_SESSION['cur_month'];
+                $day=$_SESSION['cur_day'];
+                
+                
                 $hr=date('g');
                 $min=date('i');
                 $noon=date('A');
@@ -151,11 +199,14 @@ and open the template in the editor.
             
             $pg_cnt=0;
             $put=1;
-            
+              $tot_pend_array=array();
                             //next int date = paid int date
-                            $r=q("select sl.fin_id as fid,sl.next_int_date as nid,sl.log_id as log_id,sl.stl_id as sid,sl.pend_month as pend_month from loan_leagure_stl as sl inner join customers_stl as c where sl.fin_id=$fin_id $pagi_word $cust_wrd and sl.stl_id=c.stl_id  order by sl.log_id desc limit 20");
-                            
+                            $r=q("select distinct sl.fin_id as fid,sl.next_int_date as nid,sl.log_id as log_id,sl.stl_id as sid,sl.pend_month as pend_month from loan_leagure_stl as sl inner join customers_stl as c where c.fin_id=$fin_id and sl.fin_id=$fin_id $pagi_word $cust_wrd   order by nid  limit 20");
+                          
+                            //      q("SELECT CURDATE() as cur_date");
                        $cur_date="$year-$month-$day";
+                   
+              
                             for($n=0;$n<count($nid);$n++){
                                 if(count($nid)==1){
                                    
@@ -198,11 +249,16 @@ and open the template in the editor.
                                 $tot_pend_amt=0;
                                 
                                 
-                                $h_ref="view_stl_user.php?stl_id=".$stl_ids;
+                                $h_ref="view_stl_user.php?stl_id=".$stl_ids."&fin_id=".$fin_id;
+                                
                                                                     q("select name as p_name,mob_no,person_status from customers_stl where fin_id=$fin_id and stl_id=$stl_ids");
                                                                     if($person_status==2 || $person_status=="2"){
                                                                         $pending_mnth=0;
                                                                     }
+                                                                    
+              q("select current_interest as ci,ext_amount from loan_leagure_stl where fin_id=$fin_id and stl_id=$stl_ids");
+                   
+                                                                    
 
                                 if($pending_mnth>1){
                                     q("select int_amount as ita from stl_interest_sts where fin_id=$fin_id and stl_id=$stl_ids");
@@ -212,12 +268,13 @@ and open the template in the editor.
                                        }else{
                                            $tot_pend_amt+=$ita[$mp];
                                        }
+                                       $tot_pend_amt+=$ext_amount;
                                    }
                                   q("select finance_name as fns from finance_accounts where fin_id=$fin_id");
 
                                      $p_arr[]=$pending_mnth;
                                      
-                                    $tot_pend_array[$pending_mnth]="
+                                    $tot_pend_array[]="
                                 <td>
                                     ".$stl_ids."
                                 </td>
@@ -236,6 +293,9 @@ and open the template in the editor.
                                 </td>
                                 <td>
                                     Rs. ".convert_rup_format($tot_pend_amt)." /-
+                                </td>
+                                <td>
+                                Rs. ".  convert_rup_format($ci+$ext_amount)."
                                 </td>
                                 <td>
                                     Pending From  ".$paid_int_date." 
@@ -286,6 +346,9 @@ and open the template in the editor.
                             Interest Amount
                         </th>
                         <th>
+                            Interest / month
+                        </th>
+                        <th>
                             pending from
                         </th>
                         <th>
@@ -294,19 +357,21 @@ and open the template in the editor.
                         </thead>
                         <tbody>
                             <?php
-                          
+                           $old=$p_arr;
                             if(count($p_arr)>0){
-                                  sort($p_arr);
-                                  $c=0;
-                            for($n=count($p_arr)-1;$n>=0;$n--){
+                              
+                                 $c=0;
+                            for($n=0;$n<count($tot_pend_array);$n++){
                                 
-                                $b=$p_arr[$n];
                                 $c++;
+                                
+                               
+                                
                                 ?><tr>
                                     <td>
                                         <?php echo $c; ?>
                                     </td>
-                                    <?php  echo $tot_pend_array[$b]; ?>
+                                    <?php  echo $tot_pend_array[$n]; ?>
                                     </tr>
                                     <?php
                                
@@ -325,7 +390,7 @@ and open the template in the editor.
                             $pg_cnt=0;
                           
                          
-                          $r=q("select sl.next_int_date as nid,sl.pend_month as pend_month,sl.log_id as log_id from loan_leagure_stl as sl inner join customers_stl as c where sl.fin_id=$fin_id $pagi_word $cust_wrd and sl.stl_id=c.stl_id  order by sl.log_id");
+                          $r=q("select distinct sl.next_int_date as nid,sl.pend_month as pend_month,sl.log_id as log_id from loan_leagure_stl as sl inner join customers_stl as c where c.fin_id=$fin_id and sl.fin_id=$fin_id $pagi_word $cust_wrd and sl.stl_id=c.stl_id  order by nid");
                             
                             $pagi_cnt=0;
                             $pagi_num=0;
@@ -449,11 +514,16 @@ and open the template in the editor.
             
         }
          function sort_users(its_id){
-            if(its_id==="all"){
+            if(its_id==="all" ){
                             urls='stl_pendings.php';
  
             }else{
-                             urls='stl_pendings.php?cust_id='+its_id;
+                if( its_id==="gen"){
+                     urls='stl_pendings.php?cust_id=0';
+                }else{
+                    urls='stl_pendings.php?cust_id='+its_id;
+                }
+                             
 
             }
                 window.location.href=urls;

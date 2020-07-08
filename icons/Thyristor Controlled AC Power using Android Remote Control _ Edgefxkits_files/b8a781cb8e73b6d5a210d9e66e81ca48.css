@@ -1,0 +1,10890 @@
+/*********************popup - invoice **********************************/
+.popup{
+    position: absolute;
+    z-index: 150;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/screenBlocker.png");
+    background-repeat: repeat;
+    left:0px;
+    top:0px;
+}
+.popup .popup-header{
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+.popup .popup-title{    
+    line-height:30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+/* video popup */
+.no-video-output{width: 560px; height: 315px;}
+/*======================= project details page styling =================================== */
+/* common stylings */
+.pd-color{color: #174762;font-weight: 700;}
+
+.category-list-section > div ~ div{margin-top: 10px;}  /* Need to be changed */
+/* project-related-info */
+.project-related-info{display: table;width: 100%;}
+.project-related-info-left, .project-related-info-right{display: table-cell;vertical-align: top;}
+
+/* market links */
+.marketing-info{overflow: auto;}
+.marketing-info-ul{overflow: auto;margin-bottom:20px;}
+.marketing-info-links{float: left;line-height: 40px;}
+.marketing-info-links ~ .marketing-info-links{margin-left: 8px;}
+.marketing-info-links > div{display: inline-block;vertical-align: middle;}
+.marketing-info-links-text{max-width: 88px;line-height: 18px;}
+/* kit type section */
+.kit-types{overflow: auto;}
+.diy-kit-section, .project-kit-section, .readymade-kit-section, .kit-type-section{float:left;width: 33.33%;}
+.diy-kit-section, .kit-type-section:nth-child(3n+1){text-align: left;}
+.project-kit-section, .kit-type-section:nth-child(3n+2){text-align: center;}
+.readymade-kit-section, .kit-type-section:nth-child(3n+3){text-align: right;}
+.diy-kit-wrapper, .kit-type-wrapper:nth-child(3n+1){background-color: #e9f2f7;}
+.project-kit-wrapper, .kit-type-wrapper:nth-child(3n+2){background-color: #e9f2da;}
+.readymade-kit-wrapper, .kit-type-wrapper:nth-child(3n+3){background-color: #f4efe0;}
+.diy-kit-wrapper, .project-kit-wrapper, .readymade-kit-wrapper, .kit-type-wrapper{text-align: center;display: inline-block;vertical-align: top;height: 300px;position:relative; width: 90%;}
+.kit-types > div > div > div {margin-top: 10px;}
+.kit-old-price{text-decoration: line-through;color: #97d4d8;}
+.kit-key-points{max-width: 125px;margin: 0 auto;}
+.kit-buy{background-color: #60c7b3;line-height: 30px;position: absolute;bottom: 0px;left: 0px; right: 0px;}
+.kit-discount-stripe, .kit-recommended-stripe, .kit-buy-icon{display: inline-block;vertical-align: middle;}
+.kit-recommended-stripe{color: white;background-color:#5bb153;}
+.kit-discount-stripe{color: black;background-color: #f39c12;}
+.project-spec-section{text-align: right;}
+/* rating section */
+.project-meta-section{min-width: 370px;line-height: 40px;}
+.model-info, .rating-box, .compare-info {display: inline-block;}
+.model-info, .rating-box{margin-right: 0px;}
+.review-summary-item{margin-bottom: 10px;}
+.rating-progress-count{width: 100%;background-color:#a3a3a2;}
+.rating-progress-count-width{background-color:#f1c40f;height:15px;}
+/* about project */
+.download-text{color: #8a95a0;}
+.about-project{display: table;width: 100%;}
+.project-abstract-section, .project-highlights-section{display: table-cell;}
+.project-highlights-section{min-width: 300px;padding-left: 40px;}
+.project-highlights-list ~ .project-highlights-list{margin-top: 20px;}
+.round-image-clip, .project-highlights-item{display: table-cell;vertical-align: middle;}
+.project-highlights-item{padding-left: 10px;}
+.round-image-clip{border-radius: 50%; border: 15px solid #A2AEB6; background-color: #a2aeb6;}
+/* review */
+.reviewer-info{color: #8c96a1;}
+.reviewer-nick-name{font-style: italic;}
+.review-details{border-bottom: 1px solid black;}
+.review-summary{background-color: #eef6fb;width: 280px; height: 230px;padding: 10px;border-radius: 5px;}
+.reviews-count{font-style: italic;}
+.review-summary-item{display: table; width: 100%;}
+.review-summary-item > div{display: table-cell;}
+.reviews-list-text, .show-all-reviews{color: #a7afb7;}
+.review-body-section{display: table;width: 100%;}
+.review-section-left, .review-section-right{display: table-cell; vertical-align: top;}
+/* ========================== sprite css =========================== */
+.pd-sprite-img{background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/images/pd-sprite.png');background-repeat: no-repeat;}
+.logo-img {width:182px;height:53px;background-position:-357px -68px;}
+.search-icon{width: 38px; height: 32px; background-position: -587px -75px;}
+.cart-icon{width: 26px; height: 26px; background-position: -1267px -78px;}
+.rating-info-img{width: 130px; height: 15px; background-position: -436px -249px;}
+/* project related info */
+.project-image-zoom{}
+/* market links */
+.market-shipped-icon{background-position:-8px -27px;width: 30px;height: 25px;}
+.market-free-icon{background-position:-43px -30px;width: 31px;height: 22px;}
+.market-delivery-icon{background-position: -79px -18px;width: 36px;height: 36px;}
+.market-money-icon{background-position:-122px -21px;width: 34px;height: 33px;}
+.market-output-icon{background-position: -163px -27px;width: 31px;height: 27px;}
+/* kit type section */
+/*.kit-recommended-stripe{background-position:-242px -7px; width: 115px; height: 24px;}
+.kit-discount-stripe{background-position:-242px -38px; width: 115px; height: 24px;} */
+.kit-buy-icon{background-position:-365px -38px; width: 22px; height: 17px;}
+/* project highlight section */
+.system-support-icon{background-position:-392px -23px; width: 28px; height: 19px;}
+.android-icon{background-position:-426px -19px; width: 23px; height: 28px;}
+.time-icon{background-position: -494px -19px; width: 29px;height: 29px;}
+.tech-support-icon{background-position: -458px -16px; width: 27px; height: 33px;}
+/* Buttons */
+.form-list input.input-text {
+    width: 254px;
+}
+.col2-set.buttons {
+    display: inline-block;
+}
+/* Authentication Errors */
+.form-list .input-box .authentication-ajaxlogin-error {
+    text-align: right;
+}
+.authentication-ajaxlogin-error, .myaccount-ajax-error {
+    color: #EB340A;
+    float: right;
+}
+.success-forgotpassword {
+	color: green;
+}
+.nobr {
+    white-space: nowrap !important;
+}
+.limiter{
+    display: none;
+}
+.clear-compare-window{
+    position: relative;
+    z-index: 1;
+    line-height: 18px;
+    text-align: center;
+    width: 66px;
+    height: 19px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: solid 1px #d1dae0;
+}
+.clear-compare-window:hover{
+    width: 66px;
+    height: 19px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: solid 1px #00a3ff;
+    color: #00a3ff;
+}
+/* auto complete search styling */
+#search_autocomplete{
+    left: 210px;
+    position: absolute;
+    top: 83px;
+    width: 480px;
+    z-index: 11;
+}
+.page404Container #search_autocomplete{
+    max-height: 156px;
+    overflow: auto;
+}
+#search_autocomplete li{
+    background-color: #68C3C4;
+    color: #174762;
+    cursor: pointer;
+    position: relative;
+}
+#search_autocomplete li ~ li{
+    border-top: 1px groove #113448;
+}
+#search_autocomplete li:hover{
+    background-color: #E9F4F4;
+}
+/* end of auto complete search styling */
+
+/* review form styling (project details) */
+#product-review-table input[type="radio"]{
+    display: none;
+    position: relative;
+}
+#product-review-table label{
+    display: block;
+    height: 17px;
+    width: 16px;
+    cursor: pointer;
+}
+.active-star{
+    background-repeat: no-repeat;
+    background-position: -592px -526px;
+    width: 17px;
+    height: 17px;
+}
+.deactive-star{
+    background-repeat: no-repeat;
+    background-position: -592px -506px;
+    width: 17px;
+    height: 17px;
+}
+/* End of review form styling */
+/* compare section styling */
+.btn-remove-container{
+    margin-right: 5px;
+    text-align: right;
+}
+.btn-remove{
+    display:inline;
+}
+.compareProductDetails .btn-remove{
+    visibility: hidden;
+}
+.compareProductDetails:hover .btn-remove{
+    visibility: visible;
+}
+/* end of compare section styling */
+.product-name{
+    display: inline-block;
+    height: 48px;
+    overflow: hidden;
+}
+.floatRight{
+    float: right;
+}
+.reviewformRatingInputField{
+    display: none;
+}
+.search-text-heading{
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-regular.eot');
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-regular.eot') format('embedded-opentype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-regular.woff') format('woff'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-regular.ttf') format('truetype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-regular.svg#OpenSansRegular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bold.eot');
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bold.eot') format('embedded-opentype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bold.woff') format('woff'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bold.ttf') format('truetype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bold.svg#OpenSansBold') format('svg');
+}
+
+
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bolditalic.eot');
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bolditalic.eot') format('embedded-opentype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bolditalic.woff') format('woff'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bolditalic.ttf') format('truetype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-bolditalic.svg#OpenSansBoldItalic') format('svg');
+}
+
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-italic.eot');
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-italic.eot') format('embedded-opentype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-italic.woff') format('woff'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-italic.ttf') format('truetype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-italic.svg#OpenSansItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'OpenSansSemibold';
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-semibold.eot');
+    src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-semibold.eot') format('embedded-opentype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-semibold.woff') format('woff'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-semibold.ttf') format('truetype'),
+         url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/opensans-semibold.svg#OpenSansSemibold') format('svg');
+}
+
+@font-face{
+	font-family: 'WebRupee';
+	src: url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/rupeefont.eot');
+	src: local('WebRupee'), url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/rupeefont.ttf') format('truetype'),  
+	url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/rupeefont.woff') format('woff'), 
+	url('http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/rupeefont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.webRupee{
+	font-family: 'WebRupee';	
+}
+
+
+/* start of commaon styling */
+body {
+	margin:0px;
+	padding:0px;
+	max-width: 100%;
+	overflow-y: hidden;
+	x-overflow-x: hidden;
+	min-width: 1024px;
+	line-height: 15px;
+	font-family: OpenSansRegular;
+	font-size: 13px;
+	color: #666;
+}
+
+.imagePreload {
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+form {
+	margin: 0px;
+}
+input{
+	padding:0px;
+	margin: 0px;
+}
+
+input[type="text"] {
+	padding:0px 10px;
+}
+table{
+    border-spacing: 0;
+    padding: 0px;
+}
+select {
+	margin: 0px;
+	outline: none;
+	padding:0px 0px 0px 10px;
+}
+.address select {
+	padding:6px 5px 6px 7px;
+}
+
+
+input[type="password"] {
+	padding:0px 10px;
+}
+
+textarea {
+	padding:10px;
+	margin: 0px;
+}
+
+img {
+	border: none;
+	outline: none;
+}
+a {
+	cursor: pointer;
+    text-decoration: none;
+}
+a:focus{
+	outline :none;
+}
+
+.leftFloat {
+	float:left;
+}
+
+.rightFloat {
+	float: right;
+}
+
+.curPointer {
+	cursor: pointer;
+}
+
+.curDefault {
+	cursor: default;
+}
+.underline {
+	text-decoration: underline;
+}
+
+.fontOpenReg {
+	font-family: OpenSansRegular;
+}
+
+.fontOpenBold {
+	font-family: OpenSansBold;
+}
+
+.fontOpenItalic{
+	font-family:OpenSansItalic;
+}
+
+.fontOpenSemiBold {
+	font-family: OpenSansSemibold;
+}
+
+.font_11 {
+	font-size: 11px;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+
+.font_17 {
+	font-size: 17px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_19 {
+	font-size: 19px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_70{
+	font-size: 70px;
+}
+
+.textColorF4{
+	color: #F47920;
+}
+
+.textColor8f{
+	color: #8f9ea7;
+}
+
+.textcolorE5 {
+	color: #e5e5e5;
+}
+
+.textColor79 {
+	color: #79a2b9;
+}
+
+.textColorFF {
+	color: #ffffff;
+}
+
+.textColorB1 {
+	color: #b1b1b1;
+}
+
+.textColor89 {
+	color: #898989;
+}
+
+.textColor68 {
+	color: #68c3c4;
+}
+
+.textColor0A {
+	color: #0a3248;
+}
+
+.textColor17 {
+	color: #174762;
+}
+
+.textColor13 {
+	color: #139ea3;
+}
+
+.textColor99 {
+	color: #999999;
+}
+
+.textColor5D {
+	color: #5d6d7e;
+}
+
+.textColor47 {
+	color: #475156
+}
+
+.textColor20 {
+	color: #207173;
+}
+
+.textColor33 {
+	color: #333333;
+}
+
+.textColor66 {
+	color: #666666;
+}
+
+.textColor2E {
+	color: #2E999C;
+}
+
+.textColor34 {
+	color: #34576A;
+}
+
+.textColor99BC {
+	color: #99BCD0;
+}
+
+.textColor11 {
+	color: #113448;
+}
+
+.textColor4F {
+	color: #4f92dd;
+}
+
+.textColor4E {
+	color: #4e91dd;
+}
+
+.textColor66c5 {
+	color: #66c5c8;
+}
+
+.textColorD5 {
+	color: #d5806d;
+}
+
+.textColor8691 {
+	color: #86919d;
+}
+
+.textColor339293 {
+	color: #339293;
+}
+
+.textColor53636c {
+	color: #53636c;
+}
+
+.textColorB47108 {
+	color: #B47108;
+}
+
+.textColor34495e {
+	color: #34495e;
+}
+
+.textColorEAF3F3 {
+	color: #eaf3f3;
+}
+
+.textColor25698F {
+	color: #25698f;
+}
+
+.textColor00A3, .link {
+	color: #00a3ff;
+}
+
+.textColorBE4A {
+	color: #be4a33
+}
+
+.textColor5050 {
+	color: #505050;
+}
+
+.textColor24495c {
+	color: #24495c;
+}
+
+.textColor4cc0c2 {
+	color: #4cc0c2
+}
+
+.textColor4d4d4d {
+	color: #4d4d4d
+}
+
+.textColor444343 {
+	color: #444343;
+}
+
+.textColor69767d {
+	color: #69767d;
+}
+
+.textColor6e8992 {
+	color: #6e8992;
+}
+
+.textColor66cccf {
+	color: #66cccf;
+}
+
+.textColor707275 {
+	color: #707275;
+}
+
+.textColor838d92 {
+	color: #838d92;
+}
+
+.textColor55636c {
+	color: #55636C;
+}
+
+.textColor686c6f {
+	color: #686c6f;
+}
+
+.textColor5b7d91 {
+	color: #5b7d91;
+}
+
+.textColor139e83{
+	color: #139E83;
+}
+
+.textColor92959a{
+	color: #92959A;
+}
+
+.textColorfed66a{
+	color: #fed66a;
+}
+
+.textColordba844{
+	color: #DBA844;
+}
+
+.textColor86ab35{
+	color: #86AB35;
+}
+
+.textColor7a8992{
+	color: #7A8992;
+}
+
+.edgefxSpriteImage {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/edgefxspritesheet.png");
+}
+
+.pRelative {
+	position: relative;
+}
+
+.pAbsolute {
+	position: absolute;
+}
+
+.textAlignCen {
+	text-align: center;
+}
+
+.textAlignLeft {
+	text-align: left;
+}
+
+.textAlignRight {
+	text-align: right;
+}
+
+.marginAuto {
+	margin: 0px auto;
+}
+
+.edgefxContainer {
+	overflow: auto;
+}
+
+.edgefxCenterContainer{
+	width: 960px;
+	margin: 0px auto;
+	height: inherit;
+}
+
+.clrBoth {
+	clear: both;
+}
+
+.edgefxTextCenter {
+	text-align: center;
+}
+
+.overflowHide {
+	overflow: hidden;
+}
+
+.overflowAuto{
+	overflow: auto;
+}
+
+.displayTableCell{
+	display: table-cell;
+}
+
+.hide{
+	display: none !important;
+}
+
+.textEllipsisCls {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 400px;
+}
+
+ul
+{
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.borderRadius {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderBottom6Radius {
+	-moz-border-radius: 0px 0px 6px 6px;
+	-webkit-border-radius:0px 0px 6px 6px;
+	border-radius: 0px 0px 6px 6px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderTopRightRadius {
+	-moz-border-radius: 3px 0px 3px 3px;
+	-webkit-border-radius:3px 0px 3px 3px;
+	border-radius: 3px 0px 3px 3px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderBottomRadius {
+	-moz-border-radius: 0px 0px 3px 3px;
+	-webkit-border-radius:0px 0px 3px 3px;
+	border-radius: 0px 0px 3px 3px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderBottomRadius6 {
+	-moz-border-radius: 0px 0px 6px 6px;
+	-webkit-border-radius:0px 0px 6px 6px;
+	border-radius: 0px 0px 6px 6px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderTopRadius {
+	-moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius:3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderTopLeftRadius {
+	-moz-border-radius: 3px 0px 0px 0px;
+	-webkit-border-radius:3px 0px 0px 0px;
+	border-radius: 3px 0px 0px 0px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderLeftRadius {
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius:3px 0px 0px 3px;
+	border-radius: 3px 0px 0px 3px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderRightRadius {
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius:0px 3px 3px 0px;
+	border-radius: 0px 3px 3px 0px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.borderOnlyTopRightRadius {
+	-moz-border-radius: 0px 3px 0px 0px;
+	-webkit-border-radius:0px 3px 0px 0px;
+	border-radius: 0px 3px 0px 0px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.displayInlineBlock {
+	display: inline-block;
+}
+
+.displayInline {
+	display: inline;
+}
+
+.vMid{
+	vertical-align: middle;
+}
+
+.margBottom10 {
+	margin-bottom: 10px;
+}
+
+.lineHeight37 {
+	line-height: 37px;
+}
+
+.marginAuto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type='button'] {
+	border: none;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	width: 15px;
+	height: 16px;
+}
+
+input[type="checkbox"] + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_1_normal.png");
+	width: 15px;
+	height: 16px;
+	
+}
+
+input[type="checkbox"]:hover + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_1_hover.png");
+	width: 15px;
+	height: 16px;
+}
+
+input[type="checkbox"]:checked + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_selected_hover.png");
+	width: 15px;
+	height: 16px;
+}
+
+input[type="checkbox"]:checked:hover + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_selected_hover.png");
+	width: 15px;
+	height: 16px;
+}
+
+.checkRadioLabel {
+	position: relative;
+	top: -4px;
+}
+
+
+input[type="radio"] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	width: 15px;
+	height: 16px;
+}
+
+input[type="radio"] + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/radio_unchecked.png");
+	width: 15px;
+	height: 16px;
+	
+}
+
+input[type="radio"]:hover + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/radio_unchecked_hover.png");
+	width: 15px;
+	height: 16px;
+}
+
+input[type="radio"]:checked + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/radio_checked.png");
+	width: 15px;
+	height: 16px;
+}
+
+input[type="radio"]:checked:hover + label::before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/radio_checked_hover.png");
+	width: 15px;
+	height: 16px;
+}
+
+textarea {
+	resize: none;
+}
+
+/* end of common styling */
+
+/* start of the banner item styling */
+.edgefxBanner {
+	width: 100%;
+	background-color:#66a4a6;
+	height: 30px;
+}
+
+.edgefxHeader {
+	/*z-index: 10;*/
+}
+
+.edgefxBannerItemContainer {
+	padding-right: 30px;
+	height: inherit;
+	line-height: 30px;
+}
+
+.edgefxCustomerCareImg{
+	background-position: -200px -37px;
+	width: 17px;
+	height: 13px;
+	margin-top: 8px;
+}
+
+.edgefxBannerItemContainer:hover .edgefxCustomerCareImg{
+	background-position: -218px -37px;
+	width: 17px;
+	height: 13px;
+}
+
+.edgefxOutputImg {
+	background-position: -2px -8px;
+	width: 8px;
+	height: 16px;
+	margin-top: 7px;
+}
+
+.edgefxOutputHolder:hover .edgefxOutputImg {
+	background-position: -76px -35px;
+	width: 8px;
+	height: 16px;
+	margin-top: 7px;
+	color: #113448
+}
+
+.edgefxDeliveryImg {
+	background-position: -42px -12px;
+	width: 22px;
+	height: 8px;
+	margin-top: 11px;
+}
+
+.edgefxDeliveryHolder:hover .edgefxDeliveryImg {
+	background-position: -110px -43px;
+	width: 22px;
+	height: 8px;
+	margin-top: 11px;
+	color: #113448
+}
+
+.edgefxFreeShippingImg {
+	background-position: -107px -12px;
+	width: 16px;
+	height: 12px;
+	margin-top: 9px;
+}
+
+.edgefxFreeShippingHolder:hover .edgefxFreeShippingImg {
+	background-position: -164px -38px;
+	width: 16px;
+	height: 12px;
+	margin-top: 9px;
+	color: #113448
+}
+
+.edgefxShippedImg {
+	background-position: -16px -9px;
+	width: 17px;
+	height: 13px;
+	margin-top: 8px;
+}
+
+.edgefxShippedHolder:hover .edgefxShippedImg {
+	background-position: -90px -38px;
+	width: 17px;
+	height: 13px;
+	margin-top: 8px;
+	color: #113448
+}
+
+.edgefxMoneybackImg {
+	background-position: -76px -8px;
+	width: 22px;
+	height: 16px;
+	margin-top: 7px;
+}
+
+.edgefxMoneybackHolder:hover .edgefxMoneybackImg {
+	background-position: -136px -36px;
+	width: 22px;
+	height: 16px;
+	margin-top: 7px;
+	color: #113448
+}
+
+.edgefxTollfree {
+	background-position: -137px -11px;
+	width: 13px;
+	height: 12px;
+	margin-top: 9px;
+}
+
+/*.edgefxTollFreeHolder:hover .edgefxTollfree {
+	background-position:  -185px -38px;
+	width: 13px;
+	height: 12px;
+	margin-top: 9px;
+	color: #113448
+}*/
+
+.edgefxTollFreeHolder  {
+	line-height: 30px;
+}
+
+.edgefxBannerItem {
+	margin-right: 8px;
+}
+
+.edgefxBannerItemContainer:last-child {
+	padding-right: 0px;
+}
+/* end of banner item styling */
+
+/* start of header styling */
+.edgefxTopnavBar {
+	height: 130px;
+	background-color: #113448;
+	position: relative;
+}
+
+.edgefxTopnavBarBackground {
+	z-index:100;
+}
+
+.edgefxTopnavBarItemHolder {
+}
+
+.edgefxPersonalInformation {
+	padding: 10px 0px;
+}
+
+.edgefxPersonalinfoItems {
+	margin-right: 22px;
+}
+
+.accountHolderName {
+	margin-right: 22px;
+}
+
+.edgefxPersonalinfoItems:last-child {
+	margin-right: 0px;
+}
+
+.edgefxLogoHolder {
+	background-position: -426px -5px;
+	width: 177px;
+	height: 48px;
+}
+
+.edgefxSearchContainer {
+	margin : 0px 33px;
+}
+
+.page404Container .edgefxSearchContainer{
+	margin: 0px;
+	width: 480px;
+}
+
+.page404Container .search-btn{
+	float: right;
+}
+
+.edgefxSearchHolder {
+	width: 440px;
+	height: 46px;
+	line-height:48px;
+	/*border: 1px solid #ffffff;*/
+	background-color: #fff;
+}
+
+.edgeFxSearchIcon {
+	margin:17px 10px 0px;
+	background-position: -364px -62px;
+	width: 16px;
+	height: 16px;
+}
+
+.edgefxGoButton {
+	height: 46px;
+	width: 40px;
+	background-color:#68c3c4;
+	border: 0px;
+}
+
+.edgefxSearch {
+	border: none;
+	width: 384px;
+	height: inherit;
+	background: #fff;
+	outline: none;
+}
+
+.edgefxSearchTip {
+	padding-top: 6px;
+}
+
+.edgefxTopnavControls {
+	height:48px;
+}
+
+.edgefxControlItem {
+	line-height: 48px;
+	margin-right: 21px;
+}
+
+.edgefxControlItem:last-child {
+	margin-right: 0px;
+}
+
+.edgeFxCartHolder {
+	height: 46px;
+	background-color:#68c3c4;
+	width: 60px;
+	/*border: 1px solid #d9d9d9;*/
+}
+
+.edgefxCartIcon {
+	background-position:  -391px -12px;
+	width: 22px;
+	height: 21px;
+	margin: 15px 8px 0px 7px
+}
+/* end of header styling */
+
+/* start of the content styling */
+.edgefxMainContentHolder {
+	/*background-color:;*/
+	/*border: 1px solid #fff;*/
+	/*top: -16px;*/
+}
+
+.edgefxContentContainer {
+	top: -16px;
+}
+
+.edgefxLeftNavigation {
+	width: 180px;
+}
+
+.edgefxFullProjectListOpt {
+	height: 37px;
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/projectListing_pattern.png');
+	line-height: 37px;
+}
+
+.edgefxFullProjectListOpt .categoryHotListShadow{
+	position: absolute;
+	top: 0px;
+}
+
+.fullProjectListSort {
+	cursor: pointer;	
+}
+
+.fullProjectListAsc {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/orderAscending.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.fullProjectListDesc {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/orderDescending.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.fullProjectListNormal{
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/orderNormal.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+.edgefxCategorySectionLabel {
+	background-color: #66cccf;
+	height: 36px;
+	line-height: 36px;
+	padding: 0px 10px;
+}
+
+.allCatImgHolder.allCatImgCollapse, .allCatImgHolder.allCatImgExpand{
+	float: right;
+    margin-top: 15px;
+}
+
+.allCatImgHolder{
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.allCatImgCollapse {
+	background-position:-1px -33px;
+	width: 14px;
+	height: 7px;
+}
+.edgefxLeftNavigation .headerItem:hover .allCatImgCollapse{
+	background-position: -51px -33px;
+	width: 14px;
+	height: 7px;
+}
+
+.edgefxLeftNavigation .headerItem .allCatImgCollapse{
+	background-position: -51px -33px;
+	width: 14px;
+	height: 7px;
+}
+
+/*.headerItem:hover .allCatImgCollapse{
+	background-position: -17px -33px;
+	width: 14px;
+	height: 7px;
+}*/
+
+.allCatImgCollapse:hover {
+	background-position: -17px -33px;
+	width: 14px;
+	height: 7px;
+}
+
+.edgefxDealsSection .allCatImgCollapse, .edgefxDealsSection .allCatImgCollapse:hover{
+	background-position: -51px -33px;
+	width: 14px;
+	height: 7px;	
+}
+
+.allCatImgExpand, .hotDealsHeader .rightHeaderImgExpand{
+	background-position: -51px -42px;
+	width: 14px;
+	height: 7px;
+}
+
+.headerItem:hover .allCatImgExpand, div.hotDealsHeader:hover .rightHeaderImgExpand{
+	background-position: -51px -42px;
+	width: 14px;
+	height: 7px;
+}
+
+div.hotDealsHeader:hover .hot-deal-title, .edgefxFluidLeftNavigation .overlayHeaderItemLeft:hover{
+	color: #67421A;
+}
+
+.hotDealsHeader .allCatImgHolder {
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.rightHeaderImgHolder {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.rightHeaderImgExpand{
+	background-position:-17px -42px;
+	width: 14px;
+	height: 7px;
+}
+
+.headerItem:hover .rightHeaderImgExpand{
+	background-position:-33px -42px;
+	width: 14px;
+	height: 7px;
+}
+
+.rightHeaderImgCollapse{
+	background-position:-17px -33px;
+	width: 14px;
+	height: 7px;
+}
+
+.headerItem:hover .rightHeaderImgCollapse{
+	background-position:-33px -33px;
+	width: 14px;
+	height: 7px;
+}
+
+.edgefxCategoryList {
+	background-color: #e9f4f4;
+}
+
+.categoryList{
+	list-style-image:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/circle.png");
+	list-style-position: inside;
+}
+
+.subCategoryList {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.subCategoryList .listItem {
+	padding-left: 35px;
+}
+
+.listItem {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding:0px 9px;
+}
+
+.unorderedList li{
+	list-style: none;
+}
+.unorderedList a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: list-item;
+}
+
+.categoryList a{
+	list-style-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/circle.png");
+    list-style-position: inside;
+}
+
+#category-wise {
+	padding: 5px 0px 5px 0px;
+}
+
+#branch-wise {
+	padding: 5px 0px 5px 0px;
+}
+
+.categoryList .categories:hover {
+	list-style-image:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/circleHover.png");
+	list-style-position: inside;
+	background-color: #66cccf;
+}
+
+.subCategoryList .subCategory:hover {
+	background-color: #66cccf;
+}
+
+
+.edgefxFullProjectListOpt ul li a, .edgefxFullProjectListOpt ul li a.categories:hover{
+	padding-top: 0px;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+.categoryHotList ul li:first-child a{
+	padding-top: 7px;
+}
+
+.categoryHotList ul li a {
+	padding-top: 7px;
+	padding-bottom: 8px;
+}
+
+.categoryHotList {
+	/*margin-top: 5px;*/
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/pattern.png");
+	width: 100%;
+	padding-bottom: 7px;
+}
+
+.edgefxFullProjectListOpt .unorderedList li a {
+	padding-bottom: 0px;
+}
+
+.categoryHotListShadow {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/hotListShadow.png");
+	height: 10px;
+	width: 100%;
+	background-repeat: repeat-x;
+}
+
+.borderSeparator {
+	margin:0px 10px;
+	border-top:1px solid #bbcaca;
+}
+
+.edgefxShowBrachHolder {
+	border-bottom: 1px solid #BBCACA;
+    margin: 0 10px;
+    padding: 10px 0px 6px 0px;
+}
+
+.edgefxFilterHolder {
+    height: 30px;
+	padding-left: 10px;
+	line-height: 29px;
+	background-color: #d7e3e5;
+}
+
+.edgefxFilterLabel {
+	overflow: hidden;
+}
+
+.edgefxCheckboxHolder {
+	margin: 0 10px;
+}
+
+.edgefxFiltersview {
+	background-color: #E9F4F4;
+}
+
+.edgefxLeftNavItemHolder {
+	margin-top:12px;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.edgefxFilterContainer {
+	padding-bottom: 0px;
+}
+
+.edgefxCatSectionLabel {
+	margin: 10px;
+}
+
+.showPricesLabel  {
+	cursor: default;
+}
+
+.kitsHeading {
+	padding-top: 18px;
+}
+
+.showPriceImageHolder {
+	background-position: -11px -253px;
+	width: 14px;
+	height: 14px;
+	margin: 8px 0px 0px 5px;
+}
+
+.edgefxFilters {
+	margin: 7px 0px 0px 18px;
+}
+
+.kitTypeIndicator {
+	width: 100%;
+	height: 2px;
+	margin-bottom: 2px;
+}
+
+.indicator-126 {
+	background-color: #139e83;
+}
+
+.indicator-127 {
+	background-color: #8f9ea7;
+}
+
+.indicator-125 {
+	background-color: #b4d964;
+}
+
+.edgefxPopularTagHeader {
+	margin: 0px 10px 0px 10px;
+	border-bottom: 1px solid #bbcaca;
+	padding-bottom: 8px;
+	
+}
+
+.popularTagCount {
+	padding-left: 5px;
+}
+
+.edgefxPopularTagPad {
+	padding: 10px 0px 0px 10px;
+}
+
+.edgefxContentMiddle  {
+	width: 780px;
+}
+
+.edgefxContentMiddleOneColumn{
+	/*width: 960px;*/
+	width: 100%;
+	min-height : 600px;
+}
+
+
+
+.findProjectHeaderBorder {
+	border-right: 1px solid #40687f;
+	width: 529px;
+}
+
+.edgefxDealsProjectSection {
+	height: 360px;
+	width: 780px;
+	/*border: 2px solid #fff;*/
+}
+
+.edgefxProjectCategorySection {
+	margin: 0px 0px 40px 18px;
+	clear: both;
+}
+
+.edgefxProjectCategory {
+	padding-top: 30px;
+	/*overflow: auto;*/
+	width: 100%;
+}
+
+.edgefxLineleft {
+	background-position: -2px -86px;
+	width: 6px;
+	height: 14px;
+}
+
+.edgefxLineRight {
+	background-position: -15px -89px;
+	width: 13px;
+	height: 8px;
+}
+
+.edgefxLineContainer {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/separator_middle.png");
+	height: 14px;
+	margin-left: 8px;
+}
+
+.edgefxProjectBoughtSeparator {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/separator_middlesmall.png");
+	height: 7px;
+}
+
+.edgefxLineMiddle {
+	margin-top: 6px;
+	border-top: 1px solid #cfcfcf;
+}
+
+.edgefxProjectsHolder {
+	/* height: 290px */ 
+	/*overflow: auto;*/
+	display: inline-block;
+	width: 100%;
+	padding-top:18px;
+}
+
+.project-listing-section {
+	padding-top: 0px;
+}
+
+/* Styles for Project Card Hover - Start */
+
+.hideClass {
+	display: none;
+}
+
+.edgefxProjectContentHolder {
+	width: 254px;
+	height: 425px;
+	position: relative;
+}
+
+.edgefxProjectContentHolder .edgefxProjectCompareOption {
+	position: absolute;
+	right: -6px;
+	top: 0px;
+}
+
+.edgefxProjectMask {
+	width: 250px;
+	height: 421px;
+	position: absolute;
+	border: 2px solid #8F9EA7;
+	top: -2px;
+	left: 0px;
+	z-index: -2;
+	border-radius: 5px;
+}
+
+.edgefxProjectIconText {
+	font-family: 'OpenSansSemibold';
+	font-size: 12px;
+	line-height: 18px;
+	height: 18px;
+}
+
+.edgefxProjectQuickViewText {
+	color: #00AEEF;
+}
+
+.edgefxProjectVideoText.edgefxProjectIconText {
+    color: #e14c40;
+    line-height: 19px;
+}
+
+.edgefxProjectDownloadText {
+	color: #15872A;
+	margin-left: 29px;
+	width: 115px;
+}
+
+.edgefxProjectContentHolder:hover .edgefxProjectMask {
+	display: block;
+}
+
+.edgefxProjectContentHolder:hover .edgefxProjectIconText {
+	display: block;
+}
+
+.edgefxProjectContentHolder:hover .edgefxProjectMetricHolder {
+	float: none;
+	clear: both;
+}
+
+.edgefxProjectContentHolder:hover .edgefxProjectMetrics {
+	position: absolute;
+	left:0px;
+	z-index: 100;
+	border: 2px solid #8F9EA7;
+	border-top: 0px;
+	border-radius: 0px 0px 5px 5px;
+	width: 250px;
+	padding-bottom: 6px;
+	overflow: visible;
+}
+
+.edgefxProjectContentHolder:hover .edgefxProjectCompareOption {
+	right: 6px;
+}
+
+.edgefxProjectContentHolder:hover .edgefxProjectIcon {
+	margin-bottom: 4px;
+	margin-left: 13px;
+}
+
+.edgefxProjectContentHolder:hover .edgefxQuickViewIcon {
+	background-position: -455px -575px;
+}
+
+.edgefxProjectMetricHolder:hover .edgefxQuickViewIcon {
+	background-position: -455px -599px;
+}
+
+.edgefxProjectMetricHolder:hover .edgefxProjectQuickViewText {
+	color: #0198D0;
+}
+
+.edgefxProjectContentHolder:hover .edgefxVideoIcon {
+	background-position: -479px -575px;
+}
+
+.edgefxProjectMetricHolder:hover .edgefxVideoIcon {
+	background-position: -479px -599px;
+}
+
+.edgefxProjectMetricHolder:hover .edgefxProjectVideoText {
+	color: #BC3025;
+}
+
+.edgefxProjectContentHolder:hover .edgefxDownloadIcon {
+	background-position: -503px -575px;
+}
+
+.edgefxProjectMetricHolder:hover .edgefxDownloadIcon {
+	background-position: -503px -599px;
+}
+
+.edgefxProjectMetricHolder:hover .edgefxProjectDownloadText {
+	color: #067019;
+}
+
+/* Styles for Project Card Hover - End */
+
+.edgefxProject {
+	height: inherit;
+	width: 225px;	
+}
+.edgefxProject {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.edgefxProject:last-child {
+	margin-right: 0px;
+}
+
+.edgefxShowAll {
+	padding-left:8px;
+}
+
+.edgefxProjectImage {
+	height: 220px;
+	width: 249px;
+	background-position: center top;
+	position: relative;
+}
+
+.dealsMiddle {
+	height: 140px;
+	max-width: 140px;
+}
+
+.edgefxProject > .edgefxProjectImage > a {
+    padding-top: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    x-height: 100%;
+    margin-left: -13px;
+}
+
+
+.edgefxDiscountImage{
+	background-position: -171px -3px;
+    height: 24px;
+    line-height: 22px;
+    padding-left: 5px;
+    right: 5px;
+    top: 20px;
+    width: 105px;
+}
+
+.edgefxProjectTitle {
+	height: 40px;
+	margin:10px 0px;
+}
+
+.edgefxFullProjectTitle{
+	height: 45px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.edgefxProjectRating {
+	background-position: -45px -87px;
+	/*width: 102px;*/
+	height: 19px;
+}
+
+.username span {
+	margin-left: 4px;
+}
+
+.edgefxRatingHolder {
+	margin: 8px 0px 5px 0px; 
+}
+
+.edgefxButtonHolder {
+	width:inherit;
+	height: 40px;
+	/*border: 1px solid #d1dae0;*/
+}
+
+.btncartHolder {
+	width: 45px;
+	/*background-color: #139d83;*/
+	height: 40px;
+}
+
+.btncartHolder .edgefxCartIcon  {
+	margin: 12px 0px 0px 11px;
+}
+
+.edgefxAmountButton {
+	width: 180px;
+	background-color: #60c7b3;
+	margin: 0px auto;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.edgefxProjectIconset {
+	padding-left: 5px;
+}
+
+.edgefxCompareLbl  {
+	padding-left: 3px;
+    padding-right: 5px;
+}
+
+.compare-chk-info{
+	background-color: #FFFFFF;
+    border: 2px solid rgba(10, 50, 72, 0.92);
+    /*height: 43px;*/
+    margin-left: -150px;
+    position: absolute;
+    text-align: left;
+    width: 215px;
+    z-index: 200;
+    padding: 3px;
+}
+
+.edgefxProjectDetailsLeftTop .compare-chk-info{
+	background-color: #FFFFFF;
+    border: 2px solid rgba(10, 50, 72, 0.92);
+    /*height: 43px;*/
+    left: 225px;
+    position: absolute;
+    text-align: left;
+    top: -8px;
+    width: 221px;
+    line-height: 15px;
+}
+
+.edgefxpopupContentHolder .edgefxProjectDetailsLeftTop .compare-chk-info{
+	background-color: #ffffff;
+    border: 2px solid rgba(10, 50, 72, 0.92);
+    line-height: 15px;
+    margin-top: -30px;
+    position: fixed;
+    margin-left: 75px;
+    left: auto;
+    top: auto;
+    text-align: left;
+    width: 221px;
+}
+
+.edgefxProjectMetrics {
+	margin-top: 6px;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	background-color: #FFFFFF; /* Need to check the problem with Z-index here */
+}
+
+.edgefxProjectIcon {
+	width: 18px;
+	height: 18px;
+}
+
+.edgefxQuickViewIcon {
+	background-position: 0 -64px;
+}
+
+.edgefxVideoIcon {
+	background-position: -79px -64px;
+}
+
+.edgefxDownloadIcon {
+	background-position: -159px -61px;
+}
+
+.edgefxProjectIcon  {
+	margin-right: 10px;
+}
+
+.edgefxProjectsBought {
+	margin: 30px 0px 0px 0px;
+}
+
+.edgefxProjectDescHolder {
+	margin-top: 25px;
+}
+
+.edgefxProjectDescImage {
+	height: 100px;
+	width: 100px;
+	/*background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/circuit.png");*/
+	background-position: center right;
+	margin-right: 20px
+}
+
+.edgefxProjectDescription  {
+	margin-top: 20px;
+	width: 617px;
+}
+
+.edgefxFooterContainer {
+	background-color: #113448;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.footerItem {
+	padding-bottom: 10px
+}
+
+.footerItemHeading {
+	padding-bottom: 16px;
+}
+
+.edgefxFooterCenter  {
+	margin: 30px auto;
+	x-z-index: 11;
+}
+
+.edgefxFooterTop {
+	height: 270px;
+}
+
+.edgefxFooterItems {
+	margin-right:40px;
+}
+
+.footerLeftTop {
+	height: 212px;
+}
+
+.footerLeftBottom {
+	height: 48px;
+}
+
+.edgefxBannerImg {
+	margin-right: 35px;
+}
+
+.edgefxBannerImg:last-child {
+	margin-right: 0px;
+}
+
+.edgefxFooterBannerItems {
+	margin:40px 0px;
+}
+
+.edgefxAllrights {
+	padding-top:20px;
+}
+
+.cashonDelivery {
+	background-position: -644px -8px;
+	width: 133px;
+	height: 64px;
+}
+
+.freeShipping {
+	background-position: -627px -89px;
+	width: 174px;
+	height: 64px;
+}
+
+.bulkOrder {
+	background-position: -633px -173px;
+	width: 156px;
+	height: 64px;
+}
+
+.guaranteeSatisfaction {
+	background-position: -588px -272px;
+	width: 182px;
+	height: 64px;
+}
+
+.happyCustomers {
+	background-position: -94px -179px;
+	width: 173px;
+	height: 64px;
+}
+
+.goDaddy {
+	background-position: -385px -71px;
+	width: 132px;
+	height: 31px;
+	margin-bottom: 10px;
+}
+
+.ccAvenue {
+	background-position: -489px -183px;
+	width: 132px;
+	height: 52px;
+}
+
+.crisillVerified {
+	background-position: -697px -495px;
+	width: 83px;
+	height: 97px;
+	margin-left: 10px;
+}
+
+.edgeFxChatAreaSectionSep {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/footer_design.png");
+	height: 167px;
+	width: 25px;
+	background-position: top right;
+}
+
+.footerInput {
+	background-color: #3a7394;
+	width: 300px;
+	/*margin-bottom: 10px;*/
+	height: 30px;
+	border: 1px solid #3a7394;
+	padding-left: 10px;
+}
+
+.footerFormBtn {
+	height: 35px;
+	width: 90px;
+	margin-top: 10px;
+	background-color: #68c3c4;
+	border: 1px solid #68C3C4;
+}
+
+.siteFeedback {
+	background-position: -284px -190px;
+	width: 118px;
+	height: 52px;
+	margin-bottom: 20px;
+}
+
+.chatWithus {
+	background-position: -494px -731px;
+	width: 108px;
+	height: 40px;
+}
+
+.footerSeparatorSection {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/footer_separator_middle.png");
+	height:8px;
+	width: 100%;
+	position: relative;
+	top:3px;
+}
+
+.edgeFxchatSection {
+	padding-top: 10px;
+	margin: 0px auto;
+}
+
+.edgefxCertificateSec {
+	width: 280px;
+	
+}
+
+.edgefxCertificateSecWrapper {
+	width: 225px
+}
+
+.edgefxNewsSubSec {
+	width: 435px;
+}
+
+.edgefxNewsSubSecWrapper {
+	width: 323px;
+}
+
+.edgefxfeedBackSec {
+	width: 190px;
+}
+
+.edgefxfeedBackSecWrapper {
+	width: 118px;
+	margin-top: 26px;
+}
+
+.edgefxConnectUs {
+	line-height: 48px;
+	margin: 0px 10px;
+}
+
+.edgefxFooterRight {
+	/*padding-left: 40px;*/
+}
+
+.connectWithusImage {
+	width: 48px;
+	height: 48px;
+}
+
+
+.edgefxFacebookIcon {
+	background-position: -1px -110px;
+}
+
+.edgefxFacebookIcon:hover {
+	background-position: -52px -110px;
+}
+
+.edgefxTwitterIcon {
+	background-position: -103px -110px;
+}
+
+.edgefxTwitterIcon:hover {
+	background-position:-154px -110px;
+}
+
+.edgefxConnect1Icon {
+	background-position: -205px -110px;
+}
+
+.edgefxConnect1Icon:hover {
+	background-position:  -256px -110px;
+}
+
+.edgefxConnect2Icon {
+	background-position: -307px -110px;
+}
+
+.edgefxConnect2Icon:hover {
+	background-position: -359px -110px;
+}
+
+.edgefxGooglePlusIcon {
+	background-position: -410px -110px;
+}
+
+.edgefxGooglePlusIcon:hover {
+	background-position: -461px -110px;
+}
+
+.edgefxBlogIcon {
+	background-position: -512px -110px;
+}
+
+.edgefxBlogIcon:hover {
+	background-position: -563px -110px;
+}
+
+.edgefxFiveStarIcon {
+	background-position: -423px -396px;
+	width: 65px; 
+	height: 11px;
+}
+
+.edgefxFourStarIcon {
+	background-position: -423px -424px;
+	width: 65px; 
+	height: 11px;
+}
+
+.edgefxThreeStarIcon {
+	background-position: -423px -452px;
+	width: 65px; 
+	height: 11px;
+}
+
+.edgefxTwoStarIcon {
+	background-position: -423px -480px;
+	width: 65px; 
+	height: 11px;
+}
+
+.edgefxOneStarIcon {
+	background-position: -423px -508px;
+	width: 65px; 
+	height: 11px;
+}
+
+.edgefxNoStarIcon {
+	background-position: -423px -536px;
+	width: 65px; 
+	height: 11px;
+}
+
+.edgefxNoStarFilter {
+	margin: 0px 0px 0px 6px; 
+}
+
+
+/* start of project find section */
+.edgefxProjectFindForm {
+	padding: 35px 0px 0px 45px;
+}
+
+.edgefxCanweHelpLabel {
+	background-position: -9px -470px;
+	width: 262px;
+	height: 68px;
+}
+
+.edgefxFindProjectElem {
+	margin-top:10px;
+}
+
+.edgefxProjectFindControls {
+	width: 420px;
+}
+
+.showDealsHolder {
+	margin-top:10px;
+}
+
+.edgefxprojectsFindButton {
+	background-color: #00a3ff;
+	height: 30px;
+	line-height: 28px;
+	padding: 0px 25px;
+}
+
+.edgefxPrjFindButtonImg {
+	background-position: -365px -37px;
+	width: 7px;
+	height: 14px;
+	margin: 8px 0px 0px 25px;
+}
+
+.edgefxDropdownHolder {
+	border: 1px solid #b9d4d5;
+	width: 418px;
+	height: 34px;
+	background-color: #fff;
+}
+
+.edgefxLeftNavigationButton {
+	margin-left:10px;
+	left: 0px;
+}
+
+.edgefxRightNavigationButton {
+	margin-right: 10px;
+	right: 0px;
+}
+
+.edgefxLeftNavigationDisable {
+	background-position:-281px -60px;
+	width: 10px;
+	height: 20px;
+	cursor: default;
+}
+
+.edgefxRightNavigationDisable {
+	background-position:-348px -60px;
+	width: 10px;
+	height: 20px;
+	cursor: default;
+}
+
+.edgefxLeftNavigationEnable {
+	background-position: -232px -60px;
+	width: 10px;
+	height: 20px;
+	margin-left:10px;
+	left: 0px;
+	cursor: pointer;
+}
+
+.edgefxRightNavigationEnable {
+	background-position: -301px -60px;
+	width: 10px;
+	height: 20px;
+}
+
+.edgefxLeftNavigationEnable:hover {
+	background-position: -249px -59px;
+	width: 10px;
+	height: 20px;
+}
+
+.edgefxRightNavigationEnable:hover {
+	background-position: -317px -60px;
+	width: 10px;
+	height: 20px;
+}
+
+.edgefxLeftNavigationEnable:active {
+	background-position: -266px -60px;
+	width: 10px;
+	height: 20px;
+}
+
+.edgefxRightNavigationEnable:active {
+	background-position: -333px -60px;
+	width: 10px;
+	height: 20px;
+}
+
+.dealsNavigationBtn {
+	top: 170px;
+}
+
+.edgefxDealsHolder {
+	height: 258px;
+	/*padding: 10px 0px 0px 0px;*/
+	width: 720px;
+}
+
+.dealsHolder {
+	width: 240px;
+	height: 100%;
+}
+
+.dealsTop {
+	width: 200px;
+	height: 66px;
+	padding: 8px 0px 7px 0px;
+}
+
+.dealsTopLeft {
+	background-position: -544px -422px;
+	width: 134px;
+	height: 64px;
+}
+
+.dealsTopRight {
+	background-position: -302px -345px;
+	width: 66px;
+	height: 66px;
+	left: -13px;
+    position: relative;
+}
+
+.dealsBottom{
+	width: 170px;
+	margin: 0px auto;
+	padding-top:10px;
+}
+
+.dealsBottomPriceHolder {
+	background-position: -4px -354px;
+	width: 168px;
+	height: 48px;
+}
+
+.dealsTopRightValue {
+	width: 180px;
+}
+
+.dealsTopRightValueHolder {
+	width: 60px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	top: 30px;
+	left: 1px;
+}
+
+.dealsPerValue {
+	width: 60px;
+	height: 20px;
+}
+
+.dealsPerValue span {
+	vertical-align: top;
+}
+
+.delasPriceHolder {
+	padding-left: 10px;
+}
+
+.dealOriginalPrice  {
+	padding: 3px 0px 4px 0px
+}
+
+.projectDecription {
+	padding: 10px 0px 5px 0px;
+}
+
+.dealsBottom .projectDecription {
+	padding: 0px 0px 5px 0px;
+}
+
+.dealsCartImage {
+	background-position: -17px -409px;
+	width: 48px;
+	height: 48px;
+}
+
+.sliderPages{
+	height: 10px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 340px;
+    width: 45px;
+}
+
+.sliderPageNode  {
+	margin-right: 5px;
+}
+/* end of project find section */
+/* end of content styling */
+
+/* Added by Narendra */
+.cart-item-remove{
+ visibility: hidden;
+}
+
+.cart-item-row:hover .cart-item-remove{
+ visibility: visible;
+}
+
+.hotdeals_showall {
+	padding-right: 10px;
+}
+.screenBlockerPopupImage{
+	x-background-color: #FFF;
+	x-background-repeat: repeat;
+	x-background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/screenBlocker.png");
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+}
+.screenBlocker {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 150;
+}
+
+.screenBlockerImage{
+	background-color: #FFF;
+	background-repeat: repeat;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/screenBlocker.png");
+}
+/*.product-listing .screenBlocker{
+	position: fixed !important;
+}*/
+
+
+.screenLoader {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/throbber-all.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.hasMessage .screenLoader{
+	x-background-position: center 45%;
+	margin-bottom: 9px;
+    margin-top: -9px;
+}
+.loadermess{
+    color: #113448;
+    margin-top: 18px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.buttonLoader {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/throbber-button.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 150;
+}
+.validation-advice{
+	color : red;
+	display: inline-block;
+	line-height: 12px;
+	max-width: 270px;
+	padding-left : 15px;
+}
+.validation-failed{
+	border-color: red !important;
+	border-style : solid;
+}
+.couponCodeInput-container .validation-message{
+    position: absolute;
+    right: 100%;
+    top: 8px;
+    width: 211px;
+    color : red;
+    margin-right: 5px;
+}
+.validation-failed:hover .validation-advice{
+	display : block;
+	position: absolute;
+}
+.cart-item-remove{
+	visibility: hidden;
+}
+.cart-item-row:hover .cart-item-remove{
+	visibility: visible;
+}
+
+.word_in_progress {
+    height: 550px;
+}
+.wipContentContainer{
+	padding : 10px 0;
+}
+.wipButtonHolder{
+	padding: 50px 12px 20px 0;
+}
+.contactusLineContainer{
+	margin-left : 0 !important;
+	margin-bottom: 10px;
+}
+.staticContainer {
+	margin-bottom: 30px;
+}
+.noResutlsIconHolder{
+	background-position: -5px -617px;
+	width: 21px;
+	height: 20px;
+}
+/*.headerListContent{
+	padding-left: 5px;
+}*/
+.searchTipsSection{
+	min-height: 400px;
+}
+.career-static-content-body{
+	padding-top : 10px;
+}
+.careers-section{
+	min-height : 400px;
+	margin-bottom : 20px;
+}
+.empty-text{
+	margin-top : 10px;
+}
+.findadealersection{
+	min-height: 400px;
+}
+.dealerSectionContent{
+	height: 100%;
+    margin-top: 10px;
+    width: 100%;
+}
+.dealer-info{
+	margin : 10px 0;
+}
+.UpdatePanel1{
+	margin-top : 10px;
+}
+.storestate, .state_dd{
+	margin-right : 10px;
+}
+.state_dd{
+	
+}
+.projectListingIcon{
+	height: 32px;
+    margin-top: -10px;
+    margin-right: 4px;
+    width: 32px;
+}
+.download-icon{
+	background : url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/download_normal.png");
+}
+.download-icon:hover{
+	background : url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/download_hover.png");
+}
+.email-icon{
+	background : url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/mail_normal.png");
+}
+.email-icon:hover{
+	background : url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/mail_hover.png");
+}
+.print-icon{
+	background : url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/print_normal.png");
+}
+.print-icon:hover{
+	background : url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/print_hover.png");
+}
+.separatorLeft{
+	margin-left: 4px;
+}
+.site-feedback-fields{
+	margin-bottom : 10px;
+}
+.site-feedback-textarea{
+	width : 357px;
+	height : 50px;
+	border: 1px solid #b6b6b6
+}
+.sitefeedFileds{
+	height: 30px;
+	width: 285px;
+	border: 1px solid #b6b6b6;
+	margin-left: 4px;
+}
+
+.sitefeedbackFieldHolders{
+	margin-bottom: 20px;
+}
+.newsletterConrm{
+	height: 33px;
+	width: 224px;
+	background-color: #F0DF81;
+	border: 1px solid #977724;
+}
+.letterMessage{
+	color: #68C3C4;
+	margin-bottom: 4px;
+	min-height: 12px; 
+}
+.staticpage-p{
+	display : none;
+	margin: 0px !important;
+}
+.lineHeight18 {
+	line-height: 18px;
+}
+/*
+.questionContainer{
+	padding-bottom : 10px;
+}*/
+.smiley {
+	font-size: 21px;
+    vertical-align: text-top;
+}
+.linkhover:hover{
+	text-decoration: underline;
+}
+.sameBillingChk{
+	margin-top: 4px;
+}
+.commentsInformationHolder, .billingInformationHolder{
+	margin-top: 30px;
+}
+.custom-mess-title {
+    margin-bottom: 8px;
+}
+.normalComment .checkoutCustMess {
+    border: 1px solid #B6B6B6;
+    height: 53px;
+    width: 278px;
+    background-color: #fff6d2;
+}
+.normalComment .borderLeftRadius {
+    border-radius: 3px;
+}
+.activeComment .textarea-cont{
+	border: 1px solid #B6B6B6;
+}
+.activeComment .checkoutCustMess {
+    background-color: #F1C40F;
+    border: 0 none;
+    height: 154px;
+    margin: 0;
+    outline: medium none;
+    width: 246px;
+}
+.activeComment .packing-ribbon{
+    height: 174px;
+    width: 32px;
+    background-color: #f1c40f;
+    background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/packingribbon.png");
+    background-position:left top;
+    background-repeat:no-repeat;
+    /*background-size: 16px 152px;*/
+}
+.activeComment .packing-box{
+ 	height: 200px;
+    width: 200px;
+    background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/packingbox.jpg");
+    background-position:left top;
+    background-repeat:no-repeat;
+}
+.product-list, .aboutusContainer,
+.findadealersection, .careers-section,
+.faqSection, .resourceContainer,
+.legalInfo, .privacyPolicyContainer,
+.site_feedback_form, .my-account,
+.opcheckout-wrapper-main,
+.edgefxCheckoutSection,
+.kitDetialsContainer,
+.checkoutSuccess, .sectionMargin {
+	margin: 30px 0;
+}
+.catHeaderTdSpace {
+	padding-left: 5px !important; 
+	/*line-height: 0px !important;*/
+}
+.projectDetailsHolder {
+	padding-top : 15px;
+}
+.edgefxStaticPageHolder{
+	margin : 30px 0 40px;
+	width: 100%;
+}
+.kitDetailsTable {
+	width: 100%;
+}
+/*Check out cash on develivery limit check*/
+.checkoutCODMsg {
+	background-color : #F0DF81;
+	border : 1px solid #977724;
+	padding : 15px 20px;
+	margin-bottom: 20px;
+}
+.cashOnDeliverySection .errorMessage{
+	text-align: left;
+	margin-left: 30px;
+}
+#alert-container .edgefxpopupHeader{
+	margin-bottom : 40px;
+}
+#alert-container .edgefxpopupContentHolder{
+	margin-bottom : 20px;
+}
+#alert-container .edgefxpopupContainer{
+	width : 661px;
+	padding-bottom : 20px;
+	background-color : #FFF;
+}
+#alert-container .popupFooterButtonHolder{
+	padding : 0px;
+	width: 100%;
+}
+.popupButton {
+    background-color: #25698F;
+    height: 14px;
+    margin-right: 20px;
+    padding: 13px 2px;
+    width: 118px;
+}
+
+.alertnoheader {
+	margin-top: 40px;
+}
+
+.contactContainer{
+	width: 100%;
+}
+.addressContainer{
+	padding-bottom: 30px;
+	width: 300px;
+}
+.contact-address{
+	margin: 20px 0px 20px 0px;
+}
+.contact-address2{
+	margin: 40px 0px 20px 0px;
+}
+.contactMap{
+	min-height: 240px;
+    width: 880px;
+}
+
+.contactFormHeader{
+	margin-bottom: 20px;
+}
+.contactLabelholder {
+	width: 60px;
+	padding-right: 13px;
+}
+.conform-message{
+	margin: 5px 0;
+}
+
+/* End of Narendra */
+/* Added by venkateshwar */
+.clearfix{
+	clear: both;
+}
+
+.pages{
+	display: none;
+}
+
+.pager{
+	float: left;
+}
+
+.edgefxProjectCategoryHeader {
+	display: table;
+	height:25px;
+	width: 100%;
+	line-height: normal;
+	position: relative;
+}
+
+.noProductsMsg {
+	background-color : #F0DF81;
+	border : 1px solid #977724;
+	padding : 15px 20px;
+	margin-bottom: 10px;
+}
+
+.categoryHeaderLbl {
+	/*display: inline-block;
+	vertical-align: top;
+	line-height: 13px;
+	padding-right: 8px;*/
+	/*white-space: nowrap;*/
+	/*vertical-align: text-top;*/
+}
+
+.edgefxLineContainer {
+	background-repeat: repeat-x;
+}
+
+.headerLineSecondColoumn {
+	white-space: nowrap;
+	/*line-height: normal;*/
+}
+
+.headerLineThirdColoumn {
+	width: 100%;
+}
+
+.answerHolder li {
+    list-style: none outside url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/bullet.png");
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.faqSection a{
+	color: #00A3FF;
+}
+.faqSection a:hover{
+	text-decoration: underline;
+}
+.faqSection strong{
+	font-family: OpenSansBold;
+	font-weight: normal;
+}
+
+/*.faq-button-layout{
+	display: inline-block;
+}*/
+
+.questionFaqHolder {
+	margin-top: 20px;
+} 
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+/* End of changes */
+/* compare section changes */
+.comparisonTable {
+	border-spacing: 15px 0px;
+}
+.headerColoumn {
+	background-color: #66cccf;
+	height: 55px;
+}
+
+.compareRowItem {
+	background-color: #e2f3f4;
+	vertical-align: top;
+	padding:10px;
+}
+
+#product_comparison .firstCol {
+	background-color: none;
+	width: 115px;
+	vertical-align: top;
+}
+
+.video-list-link {
+    background-position: -149px -282px;
+    height: 53px;
+    width: 53px;
+}
+
+.compareBuyButton {
+	background-color: #60c7b3;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.compareBuyButton .edgefxCartIcon {
+	margin: 0px;
+	margin: 7px 2px 0px 0px;
+}
+
+.compareProductDetails {
+	padding: 3px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.compareProduct{
+	position: relative;
+}
+
+.compareProductDetails + div + div + div .compareProductSeparator {
+    border: medium none;
+}
+
+.compareProductsSectionHolder{
+	padding-top: 30px;
+}
+
+.compareProductLeft {
+	width: 68px;
+	display: table-cell;
+}
+
+.kitTypeButton {
+	width: 66px;
+	border: 1px solid #999;
+	background-color: #fff;
+	height: 15px;
+	line-height: 15px;
+}
+
+.productImage {
+	max-width: 45px;
+}
+
+.compareProductRight {
+	padding-left: 15px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.productRightHeading {
+	height:44px;
+	line-height: 14px;
+	overflow: hidden;
+}
+
+
+.productRatingHolder {
+	padding: 7px 0px 10px 0px;
+	overflow: hidden;
+}
+
+.compareProductRight {
+	width: 145px;
+}
+
+.compareProductSeparator {
+    background-color: #BBCACA;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    height: 50px;
+    margin-top: -25px;
+    width: 1px;
+}
+
+.startComparisonBtn {
+	height: 40px;
+	width: 180px;
+	background-color:#25698f;
+	line-height: 40px;
+}
+
+.startComparisonBtnDisabled{
+	height: 40px;
+	width: 180px;
+	background-color:#CCC;
+	line-height: 40px;
+}
+/* end of compare section changes */
+
+.compareRowItem img{
+	max-width: 172px;
+	max-height: 172px;
+}
+
+/*
+.edgefxpopupContentHolder{
+	width: 100%;
+}*/
+/*end of project content and specifications */
+
+/* css stylings */
+.edgefxPersonalinfoItems:hover, .link:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.edgefxPersonalinfoItems a:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.edgefxControlItem a:hover{
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.edgefxShowAll a:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.prod-attach:hover, .edgefxShowAll:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.edgefxBannerItemContainer:hover {
+	color: #113448;
+}
+
+.edgefxGoButton:hover {
+	color: #113448;
+}
+
+.edgeFxCartHolder:hover span{
+	color: #113448;
+}
+.edgeFxCartHolder:hover .edgefxCartIcon {
+	background-position: -369px -12px;
+}
+
+.serachTips  {
+	padding-left: 3px;
+}
+
+.serachTips:hover  {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.edgefxProjectImage:hover + .edgefxProjectTitle a{
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.edgefxProjectTitle a:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.footerItem a:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+/* quick view */
+/*.QuickView{
+	background-color: white;
+}*/
+/* end of quick view */
+
+/* ellipsis */
+.name-ellipsis{
+    width: 100%;
+    display: block;
+    overflow:hidden;
+    max-height: 47px;
+}
+/* end ellipsis */
+
+.edgefxPriceFilters {
+	margin:10px 0px 0px 10px;
+}
+
+.ratingsHolder {
+	
+	margin:10px 0px 0px 10px;
+}
+
+.ratingImgHolder {
+	margin:2px 5px 0px 5px
+}
+
+.priceLabel {
+	padding-left:3px;
+}
+
+.ratingNumIndicator {
+	padding-top:1px;
+}
+
+.loadProjectsMore {
+	background-color: #fff;
+	border: 2px solid #97b1ba;
+	width: 250px;
+	height: 34px;
+    line-height: 34px;
+    margin: 50px auto 50px;   
+}
+
+.lazyLoadingProgress {
+	height: 42px;
+	margin: 50px 0px;
+}
+
+
+/* site feedback */
+.writeReviewHeading{
+	background-color: #F4FBFE;
+}
+/* end of site feedback */
+
+
+/* animation */
+.overlayHeaderHolder {
+	width: 960px;
+	margin:0px auto;
+	height: 35px;
+}
+
+.overlayHeaderLeft {	
+	height: 35px;
+}
+
+.topZindex{
+	z-index: 5;
+}
+
+.width180{
+	width: 180px;
+}
+
+.overlayHeaderItemLeft {
+	background-color: #FED66A;
+	color:#B47108;
+}
+
+.overlayHeaderRight {
+	width: 780px;
+	height: 36px;
+}
+
+.headerItem {
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	z-index: 10;
+	cursor: pointer;
+	top:0px;
+	/*width: 100%;*/
+}
+
+div.hotDealsHeader {
+	width: 230px;
+	background-color: #FED66A;
+}
+
+.edgefxProjectFindSection {
+	width: 540px;
+	height: 360px;
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/search_bg.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.edgefxDealsSection {
+	background-color: #fdf7e6;
+	width: 240px;
+	height: 360px;
+	overflow: hidden;
+}
+
+.dealsSection {
+	height: 360px;
+	width: 236px;
+	background-color: #FDF7E6;
+	border:2px solid #FDF7E6;
+	border-top:none;
+	/*margin-left: -2px;*/
+}
+
+.findProjectSection {
+	height: 360px;
+	width: 536px;
+	background-color: #ffffff;
+	border:2px solid #fff;
+	border-top:none;
+	top:0px;
+	z-index:10;
+}
+
+.animatedBorder {
+	border: 2px solid #66cccf;
+	border-top: none;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+
+.noBorderLeft {
+	border-left: none;
+}
+
+.categorySection {
+	background-color: #E9F4F4;
+	width: inherit;
+	/*z-index:9;*/
+	/*top:-543px*/
+	cursor: pointer;
+	
+}
+
+.hotDealsSection {
+	width: 240px;
+}
+
+.sliderPageNode img {
+	width: 10px;
+	height: 10px;
+}
+
+.findProjectHeader {
+	height: 35px; 
+	width: 540px
+}
+
+/*.dealsSectionHeader {
+	height: 35px;
+	width: 240px;
+}*/
+
+.rightHeaderItem {
+	background-color: #174762;
+	color:#fff;
+}
+/* end of animation */
+
+.edgefxContentBackground {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/bg_mask.png");
+	width: 249px;
+	height: 569px;
+	right:0px;
+	top:16px;
+}
+
+.edgefxTopnavBarBackground {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/header1.png");
+	width:423px;
+	height: 130px;
+	left:0px;
+	right:0px;
+	
+}
+.edgefxTopnavBarRightBackground {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/header2.png");
+	width: 422px;
+	height: 130px;
+	right: 0px;
+}
+
+/* Scroll Top */
+.scrolltop {
+    background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/toTopNormal.png");
+    height: 42px;
+    margin: 1px 0 0 1px;
+    width: 42px;
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 10px;
+	right: 50px;
+	bottom:200px;
+	z-index : 12;
+}
+
+.scrolltop:hover {
+    background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/toTop.gif") !important;
+    height: 42px;
+    margin: 1px 0 0 1px;
+    width: 42px;
+}
+
+/* Empty Cart Suggested Product Items*/
+.cart-edgefxProject {
+	height: inherit;
+	width: 145px;	
+}
+
+.cart-edgefxAmountButton {
+	width: 100px;
+	background-color: #60c7b3;
+	margin: 0px auto;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.emptyCartProjectTitle {
+	height: 45px;
+	overflow: hidden;
+}
+
+.cart-edgefxProject ~ .cart-edgefxProject {
+    margin-left: 27px;
+}
+/* End of Empty Cart*/
+
+/* static page top banner */
+
+.edgefxStaticPageContainer .edgefxLineContainer {
+	margin: 30px 0px;
+}
+
+.aboutOutputImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/topbanner_100.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+}
+
+.aboutKitImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/topbanner_everything.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+}
+
+.aboutCashImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/topbanner_cash.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+}
+
+.aboutMoneyImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/topbanner_moneyback.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+} 
+
+.aboutShippingImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/topbanner_freeshipping.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+	
+}
+
+.aboutBulkordersImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/selling_points_bulkorders.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+}
+.aboutHappyCustomersImage {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/selling_points_happycustomers.png");
+	background-repeat:no-repeat;
+	width: 409px;
+	height: 136px;
+}
+
+.contentHolder {
+	width:500px;
+}
+
+.edgefxLineContainer {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/separator_middle.png");
+	height: 14px;
+	margin-left: 8px;
+}
+/* end of static page top banner */
+
+/* start of FAQ static page */
+.faqGeneral {
+	padding: 30px 0px 0px;
+}
+.headerLineThirdColoumn {
+    width: 100%;
+}
+
+.whiteSpaceWrap {
+	white-space: nowrap;
+}
+
+.imgCol {
+	vertical-align: text-bottom;
+}
+
+.textCol {
+	vertical-align: super;
+}
+
+.termsConditionsBorder {
+	border-spacing: 10px;
+	margin-left : 23px;
+}
+.termsConditionsText{
+	margin-left : 55px;
+}
+/* end of FAQ static page */
+
+/* start of privacy static page styling */
+.headerLineThirdColoumn {
+    width: 100%;
+}
+
+.whiteSpaceWrap {
+	white-space: nowrap;
+}
+/* end of privacy static page styling */
+
+/* start of terms and condition page styling */
+.headerLineThirdColoumn {
+    width: 100%;
+}
+
+.whiteSpaceWrap {
+	white-space: nowrap;
+}
+
+.imgCol {
+	vertical-align: text-bottom;
+}
+
+.textCol {
+	vertical-align: super;
+}
+
+.termsConditionsBorder {
+	border-spacing: 10px;
+}
+
+.stepOneImageHolder {
+	background-position: -1832px -2px;
+	width: 50px;
+	height: 50px;
+}
+
+.stepTwoImageHolder {
+	background-position: -1884px -2px;
+	width: 50px;
+	height: 50px;
+}
+
+.stepThreeImageHolder {
+	background-position: -1832px -54px;
+	width: 50px;
+	height: 50px;
+	
+}
+
+.stepFourImageHolder {
+	background-position: -1884px -54px;
+	width: 50px;
+	height: 50px;
+}
+
+.stepFiveImageHolder {
+	background-position: -1832px -106px;
+	width: 50px;
+	height: 50px;
+}
+
+.stepSixImageHolder {
+	background-position: -1884px -106px;
+	width: 50px;
+	height: 50px;
+}
+
+.stepSevenImageHolder {
+	background-position: -1832px -158px;
+	width: 50px;
+	height: 50px;
+}
+.tcSecondCol {
+	margin-top: 14px;
+	vertical-align: middle;
+}
+/* end of terms and condition page styling */
+
+
+.thanksMsg {
+	padding-top:22px;
+}
+
+.orderConfirmationNum {
+	background-color: #F4FBFE;
+    border: 2px solid #00A3FF;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 35px;
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.ordersSummaryHolder {
+	padding: 20px 0px 15px 0px;
+	border-bottom: 1px solid #cbcbcb;
+}
+
+.projectQuantity {
+	padding-top: 3px;
+}
+
+.priceHolder {
+	padding-top: 3px;
+}
+
+.purchaseAmountHolder {
+	padding-top:20px;
+}
+
+.paymentType {
+	padding-top: 4px;
+}
+
+
+.orderConfirmSummaryHolder {
+	padding-top: 10px;
+}
+
+.purchaseOrderLeft  {
+	width: 480px;
+	margin-right:20px;
+}
+
+.purchaseShippingAddressHolder {
+	height:250px;
+	margin-top:60px;
+	width: 220px;
+	
+}
+
+.shippingAddressLabel  {
+	padding-bottom: 5px;
+}
+
+.shippingAddrLabel {
+	padding:10px 0px 0px 10px;
+}
+
+.purchaseShippingHeader {
+	 background-color: #66CCCF;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+
+.shippingDetailsHolder {
+	background-color: #E2F3F4;
+	padding-bottom: 10px;
+}
+
+/* all specific review styling */
+.all-specific-reviews-title{
+	text-decoration: underline;
+	margin: 15px 0px;
+}
+/* end of all specific review styling */
+
+.specific-product-review-section{
+	margin-top: 15px;
+    /*overflow: auto;*/
+}
+
+/* Full Project Listing */
+.fullProjectListingHeader {
+	background-color: #d4eaea;
+	height: 35px;
+	width: 100%;
+	
+}
+
+.headerLabelRow {
+	height: 30px;
+}
+
+.indicatorRow {
+	height: 5px;
+	line-height: 0px;
+	border-bottom: 1px solid #0a3248;
+}
+
+.diyKitIndicator {
+	background-color: #139E83;
+}
+
+.readymadeKitIndicator {
+	background-color: #B4D964;
+}
+
+.projectKitIndicator {
+	background-color: #8F9EA7;
+}
+
+.headerIndicator {
+	height: 5px;
+}
+
+.fullProjectListCartHolder {
+	height: 24px;
+	width: 35px;
+	padding-top: 6px;
+	margin: 3px 6px;
+}
+
+.fullProjectListCartHolder .edgefxCartIcon {
+	margin:0px 0px 0px 6px;
+}
+
+.headerListLabel {
+	vertical-align: middle;
+}
+
+.projectListFirstColHeader {
+	width: 245px;
+	padding: 0px 10px
+}
+
+.projectListSecondColHeader {
+	width:95px;
+	padding: 0px 5px;
+}
+
+.projectListThirdColHeader {
+	width: 115px;
+	padding: 0px 5px;
+	border-right: 1px solid #DBE4E4;
+}
+
+.projectListFourthColHeader {
+	width: 121px;
+	padding: 0px 5px;
+	border-right: 1px solid #DBE4E4;
+}
+
+.projectListFifthColHeader {
+	width: 115px;
+	padding: 0px 5px;
+}
+
+.projectListOddRow {
+	height:70px;
+	background-color: #fff;
+}
+
+.projectListEvenRow {
+	height: 70px;
+	background-color: #f1f1f1;
+}
+
+.diyBackground {
+	background-color: #d0ece6;
+}
+
+.readyMadeBackground {
+	background-color: #F0F7E0
+}
+
+.projectKitBackground {
+	background-color: #E9ECED
+}
+
+.diyBackground-alt {
+	background-color: #C5E0DB;
+}
+.readyMadeBackground-alt {
+	background-color: #E5ECD5;
+}
+.projectKitBackground-alt {
+	background-color: #DDE0E2;
+}
+.projectListOddRow {
+	border-spacing: 3px 0px;
+}
+
+.projectListOddRow .amountHolder, .projectListEvenRow .amountHolder {
+	line-height: 35px;
+}
+
+.fullProjectListingHolder {
+	margin-top : 20px;
+}
+
+.indicatorRow td {
+	border-bottom: 1px solid #000000;
+}
+
+.borderRightWhiteColor {
+	border-right: 1px solid #ffffff;
+}
+
+.borderleftblueColor {
+	border-left: 1px solid #00A3ff;
+}
+
+.fullProjectListDelPrice {
+	height : 11px;
+}
+/* End of Full Project Listing */
+
+.rating-box{
+	margin-top: 1px;
+}
+
+.rating-star, .rating-links{
+	display: inline;
+}
+
+.rating-links-a{
+	color: #999;
+	font-size: 12px;
+	font-family:OpenSansRegular;
+	vertical-align: middle;
+}
+
+.topSectionDropdownSep {
+	border-left: 1px solid #b9d4d5;
+	height: 25px;
+	margin: 5px 3px 0px 3px;
+}
+
+/* Reset Password Section */
+.resetPasswordTitle{
+	float:left;
+	width : 100%;
+	line-height: 25px;
+	margin: 12px 0;
+	border-bottom : 2px solid #B5B5B5;
+}
+
+.resetPWDFieldsHolder {
+	padding: 10px 0 30px 30px;
+	width : 467px;
+}
+
+.resetPWDFieldsLabel {
+	line-height: 32px;
+	padding-right : 18px;
+	width : 150px;
+}
+
+.resetPWDBtn {
+    background-color: #00A3FF;
+    border: medium none;
+    height: 35px;
+    width: 165px;
+}
+/* End of Reset Password Section */
+
+.video-max-width-ellipsis{
+	max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.highlightImage{
+	max-width: 50px;
+	display: block;
+}
+
+/* New Products Tag By Siva Kumar */
+.newProduct {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/new.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    height: 14px;
+    width: 20px;
+    margin-right:5px;
+    float : left;
+}
+
+.newProductLabel {
+	float: left;
+}
+/* End of New products */
+
+
+/* start of kit details */
+.kitDetailsHeading {
+	   border-bottom: 1px solid #D1DAE0;
+	   margin-bottom: 34px;
+	   padding-bottom: 10px;
+	   width: 100%;
+}
+
+div.kitContentsImage {
+    margin-top: 20px;
+}
+
+.kitConteintsImageHolder {
+    background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/content.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 677px;
+    margin: 65px auto 20px;
+    width: 880px;
+}
+
+.kitDetailsTableContainer {
+	padding-top: 30px;
+}
+
+.headerHeadingHolder {
+	background-color: #d4eaea;
+	height: 35px;	
+}
+
+.headerHeadingHolder td{
+	border-bottom: 1px solid #000000;
+}
+
+.kitContentsImageBanner{
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/Banner.png");
+    display: block;
+    height: 142px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 141px;
+}
+
+.kit-details-kitTypeNameDiv{
+	height: 30px;
+	line-height: 30px;
+}
+
+.kit-rupee-icon{
+	background-position:-915px -115px;
+	width: 114px;
+	height: 114px;
+}
+
+.kit-diy-icon{
+	background-position: -1043px -115px;
+	width: 114px;
+	height: 114px;
+}
+
+.kit-details-highlight-section{
+	margin-top: 80px;
+}
+
+.kit-highlight-rupee, .kit-highlight-diy{
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 22px;
+}
+
+.kit-diy-icon, .kit-rupee-icon{
+	float: left;
+}
+
+.kit-rupee-content, .kit-diy-content{
+	display: table-cell;
+    height: 114px;
+    padding-left: 8px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.kit-details-kitTypeNameIndicator{
+	height: 5px;
+}
+
+.hardWareCheckList  {
+	margin-top:46px;
+}
+
+.copyListContainer {
+	margin-top:65px;
+}
+
+.indicatorRow {
+	height: 5px;
+	line-height: 0px;
+}
+
+.diyKitIndicator {
+	background-color: #139e83;
+}
+
+.readyKitIndicator {
+	background-color: #b4d964;
+}
+
+.projectKitIndicator {
+	background-color: #8f9ea7;
+}
+
+.kitFirstCol {
+	width: 100px;
+	padding-left:10px;
+}
+
+.kitSecondCol {
+	width:340px;
+	padding: 0px 10px;
+	line-height: 20px;
+}
+
+.kitThirdCol {
+	width: 148px;
+}
+
+.kitFourthCol {
+	width: 148px;
+}
+
+.kitFifthCol {
+	width: 148px;
+}
+
+.diyKitAvailable {
+	background-position: -437px -106px;
+	width: 32px;
+	height: 32px;
+}
+
+.readyMadeKitAvailable {
+	background-position: -476px -106px;
+	width: 32px;
+	height: 32px;
+}
+
+.projectKitAvailable {
+	background-position:-437px -140px;
+	width: 32px;
+	height: 32px;
+}
+
+.kitNotAvailable {
+	background-position: -474px -140px;
+	width: 32px;
+	height: 32px;
+}
+
+.kitDetailsEvenRow {
+	background-color:#f5f5f5;
+}
+
+.contentRow {
+	height: 170px;
+}
+
+.kitDetailsSpriteImage {
+	background-image:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/edgefxskitdetailspritesheet.png")
+}
+
+.assemblePCB {
+	background-position: -1px -2px;
+	width: 100px;
+	height: 100px;
+}
+
+.plainPCB {
+	background-position: -107px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.zeroBoard {
+	background-position: -211px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.solderComponents {
+	background-position: -318px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.preProgramMicroController {
+	background-position: -423px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.detachComponents {
+	background-position: -529px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.toolKit {
+	background-position: -636px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.consumeMechanicalHardware {
+	background-position:   -743px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.readyMadeProjects {
+	background-position:  -849px -3px;
+	width: 100px;
+	height: 100px;
+}
+
+.assembleProcedure {
+	background-position:  -957px -2px;
+	width: 100px;
+	height: 100px;
+}
+
+.billMaterial {
+	background-position:  -1068px -1px;
+	width: 100px;
+	height: 100px;
+}
+
+.circuitDiagram {
+	background-position:  -1177px -2px;
+	width: 100px;
+	height: 100px;
+}
+
+.circuitVoltage {
+	background-position:  -1284px -1px;
+	width: 100px;
+	height: 100px;
+}
+
+.componentLayoutDiagram {
+	background-position:  -1392px -1px;
+	width: 100px;
+	height: 100px;
+}
+
+.kitDetailAbstract {
+	background-position: -1500px -2px;
+	width: 100px;
+	height: 100px;
+}
+
+.kitBlockDiagram {
+	background-position:-1609px -1px;
+	width: 100px;
+	height: 100px;
+}
+
+.kitCircuitDiagram {
+	background-position:-4px -126px;
+	width: 100px;
+	height: 100px;
+}
+
+.codeDiagram {
+	background-position:-109px -128px;
+	width: 100px;
+	height: 100px;
+}
+
+.componentDataSheet {
+	background-position: -218px -129px;
+	width: 100px;
+	height: 100px;
+}
+
+.projectDocumentation {
+	background-position:-4px -126px;
+	width: 100px;
+	height: 100px;
+}
+
+.seminarPresentation {
+	background-position:-334px -129px;
+	width: 100px;
+	height: 100px;
+}
+
+.kitDetailsHeader {
+	padding-bottom: 18px;
+}
+
+.designPng {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/design.png");
+	width: 100%;
+	height:560px;
+	background-repeat:no-repeat;
+	background-position: center;
+	position: relative;
+	left:-30px;
+}
+
+.audioVisualsContainer  {
+	height:900px;
+	line-height: 20px;
+}
+
+.practicalElectronicsHolder {
+	left: 500px;
+	top:50px;
+}
+
+.projectOutputHolder {
+	left: 660px;
+	top: 364px;
+}
+
+.projectComponentsUsed {
+	left: 400px;
+	top:605px;
+}
+
+.projectkitUasge {
+	left:0px;
+	top: 372px;
+}
+
+.projectkitUasge  .heading {
+	width: 218px;
+}
+
+.audioVisualContents {
+	width:300px;
+}
+
+.kitDetailsSmallHeader {
+	background-color: #D4EAEA;
+	height: 30px;
+}
+
+.smallHeaderItem {
+	width: 100px;
+}
+
+.smallTableRow {
+	height: 50px;
+}
+
+.borderLeft {
+	border-left: 1px solid #e1e1e1;
+}
+
+.borderBottom {
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.borderRight {
+	border-right: 1px solid #e1e1e1;
+}
+
+.description  {
+	padding: 5px 0px;
+}
+
+.audioVisualImage {
+	background-position: -529px -109px;
+	width: 324px;
+	height: 114px;
+	left: 35px;
+	top: 80px;
+}
+/* end of kit details */
+
+/* styles for theproject listing */
+.edgefxProjectCategoryListLabel {
+	border: 1px solid #d6dee3;
+	height: 20px;
+	border-right:none;
+	padding:0px 3px;
+	line-height: 20px;	
+}
+
+.edgefxProjectCategoryListLabelNoPlus {
+	border: 1px solid #d6dee3;
+	height: 20px;
+	padding:0px 3px;
+	line-height: 20px;	
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius:3px 0px 0px 3px;
+	border-radius: 3px 0px 0px 3px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.edgefxcategoryHolder:hover .edgefxProjectCategoryListLabelNoPlus {
+	border: 1px solid #00a3ff;
+}
+
+.categoryNumHolder {
+	width: 24px;
+	height:21px;
+	background-color:#b2e3ff;
+	text-align: center;
+	line-height: 20px;
+	font-size: 11px;
+    text-indent: -1px;
+    padding-top: 1px;
+}
+
+.edgefxcategoryHolder:hover .edgefxProjectCategoryListLabel {
+	border: 1px solid #00a3ff;
+	border-right: none;
+}
+
+.edgefxcategoryHolder:hover .categoryNumHolder {
+	background-color: #00a3ff;
+	color:#FFFFFF;
+}
+
+.projectCategoriesHolder {
+	background-color: #fff;
+	width: 125px;
+	z-index: 200;
+	border: 1px solid #00a3ff;
+	padding-bottom: 10px;
+	left:17px;
+}
+
+.categoriesSectionHolder {
+	display: none;
+}
+
+.edgefxCategoriesSection  {
+	width: 100%;
+	padding-top: 2px;
+}
+
+.headerListLabel {
+	height: 25px;
+	border-bottom: 1px solid #00a3ff;
+	line-height: 25px;
+	padding-left: 10px;
+}
+
+.listCategoryItem {
+	padding:5px 0px 0px 10px;
+}
+
+.categoriesRightLine {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/cat_rightTip.png");
+	width: 19px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.categoriesLeftLine {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/cat_leftTip.png");
+	width: 19px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.listCategoryItem:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.firstCategoryItem:hover {
+	color: #66cccf;
+	text-decoration: underline;
+}
+
+.year1stholder {
+	background-position: -254px -544px;
+	width: 19px;
+	height: 19px;
+	z-index: -1;
+	margin-right:-3px;
+}
+
+.year2ndholder {
+	background-position:-254px -568px;
+	width: 19px;
+	height: 19px;
+	z-index: -2;
+	margin-right:-3px;
+}
+
+.year3rdholder {
+	background-position: -254px -592px;
+	width: 19px;
+	height: 19px;
+	z-index: -3;
+	margin-right:-3px;
+}
+
+.year4thholder {
+	background-position:  -254px -615px;
+	width: 19px;
+	height: 19px;
+	z-index: -4;
+	margin-right:-3px;
+}
+
+.year1stholder:hover {
+	background-position: -278px -544px;
+	width: 19px;
+	height: 19px;
+}
+
+.year2ndholder:hover {
+	background-position:-278px -568px;
+	width: 19px;
+	height: 19px;
+}
+
+.year3rdholder:hover {
+	background-position: -278px -592px;
+	width: 19px;
+	height: 19px;
+}
+
+.year4thholder:hover {
+	background-position: -278px -615px;
+	width: 19px;
+	height: 19px;
+}
+
+.yearHolder:last-child {
+	margin-right: 0px;
+}
+
+/* Start of careers */
+.career-static-content{
+	margin-bottom: 30px;
+}
+
+.career-section {
+	margin-top: 15px;
+}
+
+.job-list-item{
+	border-bottom: 1px solid #D1DAE0;
+	padding-bottom: 15px;
+}
+
+.job-list-item:last-child{
+	border-bottom: none;
+}
+
+/* end of careers */
+/* start of the about us css */
+.aboutTitle {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/quote.png");
+	width: 540px;
+	height: 133px;
+	background-repeat: no-repeat;
+}
+
+.ourStoryImageContainer {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/story.png");
+	width: 330px;
+	height:164px;
+	background-repeat: no-repeat;
+}
+
+.ourVisionImageContainer {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/vision.png");
+	width:330px;
+	height:127px;
+	background-repeat: no-repeat
+}
+
+.growthImageContainer {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/growth.png");
+	width: 330px;
+	height:132px;
+	background-repeat: no-repeat;
+}
+
+.aboutHeading {
+	border-bottom: 1px solid #d1dae0;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+}
+
+.aboutContentContainer {
+	width:540px;
+	padding-left: 85px;
+}
+
+.aboutContentContainer p:first-child {
+	margin-top: 0px;
+}
+
+.edgefxFamilyContainer{
+	padding-left: 170px;
+}
+
+.familyTitle {
+	padding-left:14px;
+}
+
+.familyContentContainer {
+	padding-top: 25px
+}
+
+.ceoPic  {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/kamini.png");
+	width: 224px;
+	height: 224px;
+}
+
+.ctoPic {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/patnaik.png");
+	width: 225px;
+	height: 225px;
+}
+
+.csoPic {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/tarun.png");
+	width: 224px;
+	height: 224px;
+}
+
+.cmoPic {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/mahesh.png");
+	width: 224px;
+	height: 224px;
+}
+
+.descriptionHolder {
+	width: 520px;
+	padding-top: 30px;
+	left:-8px;
+	position: relative;
+}
+
+.descriptionHeader {
+	padding-left:14px;
+	border-bottom: 1px solid #d5dbdf;
+}
+
+.aboutusSeparator {
+	margin:50px 0px;
+}
+
+.nameHolder  {
+	padding-bottom: 10px;
+}
+
+.aboutDescription  {
+	padding: 5px 0px 0px 17px;
+}
+
+.bulletHolder {
+	width: 8px;
+}
+
+.expertiseHeading {
+	width: 487px;
+	padding-left: 8px;
+}
+
+.aboutSection {
+	padding-bottom: 45px;
+}
+
+.profileHolder {
+	padding-top: 25px;
+}
+
+.skillsExpertiseSection {
+	padding-top: 15px;
+}
+
+.trainingExpertiseSection {
+	padding-top: 20px;
+}
+
+.adavncedSkillsSection {
+	padding-top: 15px
+}
+
+.technicalSec {
+	padding-top: 10px;
+}
+
+.expertiseSec {
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+.expertiseSec:first-child {
+	padding-top: 0px;
+}
+
+.profileHeading  {
+	padding-bottom: 5px;
+}
+
+.experienceDesc {
+	padding-top: 15px;
+}
+
+#compare-error-container {
+    position: absolute;
+    right: 30%;
+    top: 46%;
+}
+
+.edgefxAddressHolder {
+	padding-top: 10px;
+	line-height: 18px;
+}
+
+/* start of resource page styling */
+.resourcePageTitleContainer {
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d1dae0;
+}
+
+.resourcePageLeftContainer {
+	width: 402px;
+	padding-right: 42px;
+}
+
+.resourcePageRightContainer {
+	width: 505px;
+}
+
+.benefitsDescription {
+	width: 490px;
+	padding-left: 6px;
+}
+
+.rightContainerTitle {
+	padding-bottom: 15px;
+}
+
+.benefitsStepsTitle {
+	padding-bottom: 5px
+}
+
+.benefitsStepsDescription  {
+	padding-bottom: 15px
+}
+
+.audioVisualContainer {
+	padding-top: 50px;
+}
+
+
+.audioVisualContainer:first-child {
+	padding-top: 0px;
+}
+
+.audioVisualTitle  {
+	padding-bottom: 5px;
+}
+
+.sampleContianers  {
+	width: 450px;
+	margin: 0px auto;
+}
+
+.sampleAudioVisuals {
+	margin: 30px 0px 15px 0px
+}
+
+.fullProjectListOptions {
+	right: 17px;
+	top: 4px;
+}
+
+.userMsgBar {
+	width: 100%;
+	background-color: #ffcc66;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: #663300;
+}
+
+.internationalLink {
+	color: #663300;
+	text-decoration: underline;
+}
+
+/*.internationalLink:hover {
+	text-decoration: underline;
+}*/
+
+.recommendationsMsg {
+	background-color: #a9e8e9;
+	border: 1px solid #339293;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 10px;
+	margin-top:20px;
+	margin-bottom: 10px;
+}
+
+#static-page-indicator{
+	display: none;
+}	
+.averageRatingLable{
+	padding-right: 5px;
+}
+
+.bd-item-icon {
+    color: #4cc0c2;
+    cursor: pointer;
+    display: inline-block;
+    height: 48px;
+    line-height: 85px;
+    margin-left: 0;
+    margin-right: 5px;
+    text-indent: 4px;
+    vertical-align: top;
+    width: 48px;
+}
+.bd-item-inactive-icon{
+    background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/bd_thumbnail_inactive.png');
+    border: 1px solid #CCCCCC;
+}
+.bd-item-active-icon{
+    background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/bd_thumbnail_active.png');
+    border: 2px solid #0a3248;
+}
+
+.blockdiagram-list-holder {
+    margin-top: 20px;
+    /*position: absolute;*/
+    bottom: 0px;
+}
+
+/* Error Validations css */
+.input-wrapper{
+	display: inline-block;
+}
+
+.error-field {
+    position: relative;
+    overflow: visible;
+    /*display: inline-block;*/
+}
+
+.error-field > input:focus, .error-field > textarea:focus, .error-field > select:focus{
+    background-color: white;
+    outline: none;
+}
+.error-field > input, .error-field > textarea, .error-field > .review-wrapper,
+.error-field select, .error-field > .customizeDropDown {
+    background-color: #ffdedf;
+    border: 1px solid red !important;
+    border-radius: 3px;
+}
+.error-field:hover{
+     /* IE Fix */   
+}
+
+/*.error-field:hover:before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top:-5px;
+    height: 9px;
+    width: 22px;
+    z-index: 152;
+    background-position:right;
+    background-repeat: no-repeat;
+}
+.error-field:hover:after {
+    content: attr(data-error);
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    z-index: 151;
+    display: block;
+    background-color: #ffdd67;
+    width: 200px;
+    min-height: 18px;
+    border: 1px solid #b07317;
+    border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+     -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}*/
+
+.error-field-right:hover{
+	/* IE Fix */
+}
+
+.error-field-left:hover{
+	/* IE Fix */
+}
+
+/*.error-field-right:hover:before{
+	left: 100%;
+    background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/error-ps-right.png');
+    margin-left: -3px;
+}
+
+.error-field-left:hover:before{
+	right: 100%;
+    background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/error-ps-left.png');
+    margin-right: -3px;
+}
+
+.error-field-right:hover:after{
+	left:100%;
+    margin-left: 14px;
+}
+
+.error-field-left:hover:after{
+	right:100%;
+    margin-right: 12px;
+}
+*/
+.special-error-field{
+	border: 1px solid red !important;
+	background-color: #ffdedf;
+}
+
+.special-error-field:focus{
+    background-color: white;
+    outline: none;
+}
+
+.validation-error-message, .tr-error-holder, #login-common-server-message{
+	/*max-width: 278px;*/
+	color: red;
+}
+
+.tr-error-holder > td{
+	text-align: right;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+#login-common-server-message{
+	height: 20px;
+    text-align: right;
+    margin: 0px 76px 5px 0px;
+}
+
+#show-write-review-message{
+	border-radius: 5px;
+    color: #29A929;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Find a dealer Added by Siva kumar */
+.dealerInfo {
+    margin: 20px 0 0 10px;
+}
+
+.dealerHeading {
+	margin: 20px 0 0 10px;
+	display: inline-block;
+}
+.dealersHeaderText{
+	margin-bottom: 8px;
+}
+
+.changeDealer {
+	padding-left:10px;
+}
+/* End of Find a dealer */
+.footerBackgroundLeftImg {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/footer_left.png");
+	width:344px;
+	height: 316px;
+	left:0px;
+	right:0px; 
+	bottom:0px;
+}
+.footerBackgroundRightImg {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/footer_right.png");
+	width:340px;
+	height: 280px;
+	right:0px; 
+	bottom:0px;
+}
+.footerBackgroundTopRightImg {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/bg_up.png");
+	width:225px;
+	height: 99px;
+	right:0px; 
+	top:0px;
+}
+.edgefxFooterBackgroundImage {
+	z-index: 0;
+}
+
+.compareRowItem .product-image-zoom{
+	height: auto;
+}
+
+.compare-list-block-diagram-holder img{
+	cursor: pointer;
+}
+
+.pd-btnposition{
+	margin-top: 19px;
+    position: absolute;
+    top: 50%;
+    z-index: 151;
+    border: none;
+    background-color: transparent;
+}
+
+.pd-prev-button-img{
+	background-position: -707px -359px;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.pd-prev-button-img-disabled{
+	background-position: -708px -401px;
+	width: 38px;
+	height: 38px;
+}
+
+.pd-next-button-img{
+	background-position: -748px -359px;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.pd-next-button-img-disabled{
+	background-position: -750px -401px;
+	width: 38px;
+	height: 38px;
+}
+
+/** Rating related CSS **/
+.rating-box{
+	line-height: 10px;
+}
+.rating-star{
+	float: left;
+    background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/images/bkg_rating.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 0;
+    height: 13px;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 69px;
+}
+.rating-percentage{
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/images/bkg_rating.gif") repeat-x scroll 0 100% rgba(0, 0, 0, 0);
+    float: left;
+    height: 13px;
+}
+.review-count{
+	margin-left: 2px;
+	
+}
+/** Rating CSS end **/
+
+
+/** Compare window **/
+.compare-window-wrapper {
+    margin-top: 30px;
+}
+
+.compare-window-wrapper > div{
+	margin-bottom: 10px;
+}
+/** end of Compare window stylings **/
+
+/** project details tag styling **/
+.tags-container{
+	position: absolute;
+    right: 60px;
+    z-index: 1;
+    max-width: 160px;
+    text-align: right;
+}
+
+.tags-container > div + div{
+	margin-top: 5px;
+}
+
+.tags-style{
+    display: inline-block;
+    line-height: 24px;
+    position: relative;
+    padding-right: 15px;
+    text-align: center;
+	height: 24px;
+	color: #EFEFEF;
+}
+
+.tags-style:after{
+	content: "";
+    position: absolute;
+    right: 100%;
+    border-width: 12px;
+    border-style: solid;
+}
+.match-tag{
+    background-color: #8A86CB;
+}
+
+.match-tag:after{
+    border-color: #8A86CB #8A86CB #8A86CB transparent;
+}
+
+.hot-deal-tag{
+	/*background-position: -395px -362px;
+	color: #b7760d;*/
+	background-color: #fed66a;
+	color: #B47108;
+}
+
+.hot-deal-tag:after{
+	border-color: #fed66a #fed66a #fed66a transparent;
+}
+.new-tag{
+	/*background-position: -395px -332px;
+	color: #FFFFFF;*/
+	background-color: #f4222b;
+}
+
+.new-tag:after{
+	border-color: #f4222b #f4222b #f4222b transparent;
+}
+
+.best-seller-tag{
+	background-color: #456789;
+}
+
+.best-seller-tag:after{
+	border-color: #456789 #456789 #456789 transparent;
+}
+
+.matching-products-container .edgefxpopupHeader{
+	background-color: #8A86CB;
+}
+/** end of project details tag styling **/
+
+.compareFooterHolder .edgefxLineContainer{
+	margin-left: 0px;
+}
+
+.specific-product-review-section .project-details-header{
+	margin-bottom: 10px;
+}
+
+/* Adde by Siva kumar */
+.printPageContainer {
+	width: 900px;
+	margin: 0px auto;
+}
+
+
+.compare-list-block-diagram-holder div{
+	text-align: center;
+}
+
+/* Added by Siva kumar*/
+.hiddenVisible {
+	visibility: hidden;
+}
+/* End */
+
+/*Added by Venkateshwar*/
+.efx-content-holder{
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.bigIconAlign{
+	margin-top: 18px;
+    position: absolute;
+    top: -50%;
+}
+
+.bigIconAlign + .errorMessage{
+	margin-left: 70px;
+}
+
+.security-code-container {
+    background-color: #E6F7F7;
+    border: 1px solid #B6B6B6;
+    padding: 3px;
+    width: 299px;
+}
+
+.security-code-wrapper > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.security-code-wrapper .sitefeedFileds{
+	width: 136px;
+	margin-left: 0px;
+	margin-right: 3px;
+}
+
+.security-field-label, .security-image-label {
+    margin-bottom: 5px;
+    margin-left: 4px;
+}
+
+.security-image-wrapper, .security-code-wrapper .input-wrapper {
+    margin-left: 4px;
+}
+
+.captcha-reload {
+    background-position: -1375px -48px;
+    height: 19px;
+    margin-top: 20px;
+    width: 20px;
+}
+
+.security-refresh-container {
+    padding-left: 2px;
+}
+
+#review-form .security-code-container{
+	width: 360px;
+}
+
+#review-form .fieldLabelHolder{
+	margin-top: 10px;
+}
+
+.tipsContainer > div{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.search-tips-category-icon{
+	background-position: -1410px -40px;
+	width: 66px;
+	height: 59px;
+}
+
+.search-tips-model-icon{
+	background-position: -1492px -37px;
+	width: 58px;
+	height: 59px;
+}
+
+.search-tips-project-icon{
+	background-position: -1572px -38px;
+	width: 58px;
+	height: 63px;
+}
+
+.tipHeaderHolder{
+	margin-bottom: 5px;
+}
+
+.tipsIconContainer {
+    padding-left: 36px;
+    width: 100px;
+}
+
+.tipsContainer {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.tipsContainer:last-child{
+	padding-bottom: 30px;
+}
+
+.searchTipsPopupContainer{
+	width: 564px;
+	height: 478px;
+}
+
+.tipsContentContainer {
+    max-width: 380px;
+}
+
+.tipsIconContainer > div{
+	margin-top: 1px;
+}
+
+.tipSuggestionHolder > div:first-child {
+    margin-bottom: 3px;
+}
+
+#site-feedback-form #product-review-table{
+	width: 100%;
+}
+
+#site-feedback-form .sitefeedFileds, #contactForm .sitefeedFileds{
+	margin-left: 0px;
+}
+
+.sitefeedback-info-icon{
+	background-position: -1375px -129px;
+	width: 50px;
+	height: 50px;
+}
+
+.sitefeedback-star-icon{
+	background-position: -1429px -129px;
+	width: 50px;
+	height: 50px;
+}
+
+.sitefeedback-pencil-icon{
+	background-position: -1483px -129px;
+	width: 50px;
+	height: 50px;
+}
+
+.sitefeedback-lock-icon{
+	background-position: -1537px -129px;
+	width: 50px;
+	height: 50px;
+}
+
+.sitefeedback-field-wrapper > div, .contactform-field-wrapper > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.sitefeedback-field-wrapper > div:first-child, .contactform-field-wrapper > div:first-child{
+    padding-left: 25px;
+    padding-right: 45px;
+}
+.contactform-field-wrapper{
+	margin-bottom: 20px;
+}
+.contactform-field-wrapper .sitefeedbackFieldHolders:last-child{
+	margin-bottom: 0;
+}
+
+.sitefeedback-field-wrapper{
+	margin-bottom: 45px;
+}
+
+.security-image-wrapper img{
+	width: 109px;
+}
+
+.sitefeedback-field-wrapper .inputLabelHolder, .contactform-field-wrapper .inputLabelHolder{
+	margin-bottom: 5px;
+}
+
+.fieldLabelHolder{
+	margin-bottom: 5px;
+}
+
+.sitefeedback-field-icon{
+	display: none;
+}
+
+.sitefeedback-field-wrapper .sitefeedback-field-icon, .contactform-field-wrapper .sitefeedback-field-icon,{
+	display: table-cell;
+}
+
+.sitefeedback-field-icon > div:first-child {
+    margin-top: 3px;
+}
+
+.sitefeedback-field-wrapper:last-child, .contactform-field-wrapper:last-child {
+	margin-bottom: 25px;
+}
+
+.sitefeedback-field-wrapper #product-review-table td.value label{
+	position: relative;
+}
+
+.sitefeedback-field-wrapper .data-table label > div{
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+
+.sitefeedback-field-wrapper .locationFieldHolder.sitefeedbackFieldHolders{
+	margin-bottom: 0px;
+}
+
+.sitefeedback-field-wrapper .site-feedback-textarea, .contactform-field-wrapper .site-feedback-textarea{
+    width: 285px;
+}
+
+.sitefeedback-field-wrapper .review-wrapper{
+	padding-bottom: 15px;
+}
+
+
+#site-feedback-form .yourRatingsHolder {
+    margin-top: 8px;
+}
+
+.edgefxBlockDiagramSpecificationHolder .blockDiagramHolder img{
+	max-width: 605px;
+	max-height: 477px;
+}
+
+.couponPopupContainer{
+	width: 470px;
+	min-height: 360px;
+	line-height: 1;
+}
+
+.noTitlePopupContainer{
+	background-color: #66CCCF;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-ms-border-radius: 7px;
+}
+
+.noTitlePopupWrapper{
+	position: absolute;
+	left: 6px;
+	right: 6px;
+	top: 6px;
+	bottom: 6px;
+	background-color: white;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	overflow: hidden;
+}
+
+.coupon-popup-wrapper{
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+}
+
+.coupon-popup-welcome-msg{
+	margin-bottom: 40px;
+}
+
+.coupon-offer-text{
+	margin-bottom: 10px;
+}
+
+.coupon-offer-text-caption{
+	margin-bottom: 40px;
+}
+
+.coupon-code-label{
+	margin-bottom: 10px;
+}
+
+.coupon-code-text-holder{
+	margin-bottom: 2px;
+}
+
+.coupon-popup-close-button{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.coupon-popup-close-button{
+	z-index: 1;
+}
+
+#coupon-popup-container.popup{
+	z-index: 151;
+}
+
+#coupon-popup-container.mini-popup {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 134;
+    height: auto;
+    width : auto;
+    -webkit-transition: all 0.5s ease, -webkit-transform 0.5s 0.5s ease;
+    -ms-transition: all 0.5s ease, -ms-transform 0.5s 0.5s ease;
+    -o-transition: all 0.5s ease, -ms-transform 0.5s 0.5s ease;
+    -moz-transition: all 0.5s ease, -moz-transform 0.5s 0.5s ease;
+    transition: all 0.5s ease, transform 0.5s 0.5s ease;
+    right: 20px;
+    bottom: 0;
+
+    /*margin-left:-157px;
+    margin-top:-25px;*/
+    
+}
+
+#coupon-popup-container{
+}
+
+div#coupon-popup-container.mini-popup.no-animation{
+	transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+}
+
+.mini-popup .coupon-popup-wrapper {
+    padding: 6px;
+    position: static;
+    background:none;
+    border-radius: none;
+}
+
+.mini-popup .coupon-popup-welcome-msg {
+    display: none;
+}
+
+.mini-popup .coupon-code-label {
+    display: none;
+}
+
+.mini-popup .coupon-code-text-holder {
+    display: none;
+}
+
+.mini-popup .edgefxpopupContainer {
+    min-height: 1px;
+    position: static;
+    width: auto;
+    box-shadow: none;
+    background-color: #F58946;
+    display: block;
+    width: 180px; /* 260px */
+    height: 50px;
+    -moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius:3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+	behavior: url(http://www.edgefxkits.com/skin/frontend/default/efk1/css/border-radius.htc);
+}
+
+.mini-popup .coupon-offer-text {
+    color: #0A3248;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 22px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.mini-popup .coupon-offer-text-caption {
+    color: #FFFFFF;
+    display: table-cell;
+    font-size: 12px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.mini-popup .coupon-popup-close-button {
+    margin: 0;
+    right: 5px;
+    top: 5px;
+/*    background-position: -33px -656px;
+	width: 9px;
+	height: 10px;*/
+}
+
+/*.mini-popup .coupon-popup-close-button:hover{
+	background-position: -33px -656px;
+	width: 9px;
+	height: 10px;
+}*/
+
+.mini-popup .text-sep{
+	display: block;
+}
+
+.customer-popup-container {
+    height: 468px;
+    width: 832px;
+}
+
+div.customer-popup-close-btn {
+    float: right;
+    position: relative;
+    z-index: 1;
+    margin: 15px 15px 0px 0px;
+}
+
+.customer-left-section, .customer-right-section{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+}
+
+.customer-right-section{
+	left: 443px;
+	right: 0px;
+	background-color: #E7F2F2;
+	padding: 20px 15px 18px 21px;
+	overflow: hidden;
+}
+
+.customer-left-section{
+	width: 443px;
+	left: 0px;
+	background-color: #FFFFFF;
+}
+
+.customer-right-section .faqQuestions{
+	margin-top: 18px;
+}
+
+.customer-right-section .faqContentHolder{
+	padding-bottom: 12px;
+	line-height: 1.2;
+}
+
+.customer-faq-content-section .faqQuestions:first-child, .customer-faq-content-section .faqQuestions:first-child .questionFaqHolder{
+	margin-top: 0px;
+}
+
+.customer-right-section .answerFaqHolder {
+    padding: 0px 0px 0px 22px;
+}
+
+.customer-right-section .questionContainer{
+	padding-bottom: 0px;
+}
+
+.customer-right-section .faqNumberHolder{
+	width: 22px;
+}
+
+.customer-left-section-wrapper{
+	padding: 20px;
+}
+
+.customer-timing-text{
+	margin-top: 40px;
+	line-height: 1.2;
+}
+
+.customer-mail-section{
+	margin-top: 35px;
+}
+
+.customer-address-section{
+	margin-top: 60px;	
+}
+
+.customer-address-domestic, .customer-address-international{
+	display: table-cell;
+}
+
+.customer-address-international {
+    padding-left: 50px;
+}
+
+.customer-popup-wrapper {
+    line-height: 1;
+}
+
+.customer-faq-content-section {
+    height: 345px;
+    margin-top: 20px;
+    overflow: auto;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+
+.toll-free-color-icon{
+	background-position: -1534px -185px;
+	width: 59px;
+	height: 49px;
+	float: left;
+}
+
+.chat-with-us-color-icon{
+	background-position:-1381px -185px;
+	width: 142px;
+	height: 54px;
+	margin-top: -10px;
+}
+
+.toll-free-content-section{
+	margin-left: 67px;
+	margin-top: 7px;
+}
+
+.customer-chat-section, .customer-toll-free-section{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 20px 0px;
+}
+
+.customer-chat-section{
+	padding-left: 30px;
+}
+
+.all-faqs-link {
+    float: right;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+.customer-mail-text a:hover, .all-faqs-link:hover {
+	color: #66CCCF;
+	text-decoration: underline;
+}
+
+.mail-color-icon{
+	background-position: -1614px -192px;
+	width: 41px;
+	height: 41px;
+	float: left;
+	margin-top: -8px;
+}
+
+.customer-left-section-title{
+	line-height: 1.2;
+}
+
+.customer-mail-text{
+	margin-left: 51px;
+	line-height: 1.2;
+}
+
+.customer-address-title {
+    margin-bottom: 5px;
+}
+
+.customer-address-title + div {
+    line-height: 15px;
+}
+
+.mapInformation .disableIframeMap{
+	float: left;
+    height: 0px;
+    min-height: 0px;
+    overflow: hidden;
+    width: 0px;
+    padding: 0px;
+}
+
+.deal-count-highlight{
+	line-height: 31px;
+}
+
+#showbyBranch + .dummyCheckBoxLabel {
+    display: none;
+}
+
+.showbyBranchHolder.checkRadioLabel:hover{
+	color: #66CCCF;
+	text-decoration: underline;
+}
+
+.hot-deal-overlay {
+    background-color: #FFFFFF;
+    /*display: none;*/
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    margin-top: 3px;
+    padding: 0 10px;
+    width: 232px;
+	height: 135px;
+	cursor: auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	-webkit-box-shadow: 4px 7px 10px rgba(0,0,0,.5);
+	-moz-box-shadow: 4px 7px 10px rgba(0,0,0,.5);
+	box-shadow: 4px 7px 10px rgba(0,0,0,.5);
+	border: solid 2px #0a3248;
+	z-index: 1;
+}
+
+.hot-deal-overlay{
+	display: none;
+}
+
+.hot-deal-tag:hover > .hot-deal-overlay{
+	display: block;
+}
+
+.hot-deal-overlay-pointer{
+    background-position: -44px -68px;
+    height: 11px;
+    position: absolute;
+    right: 20px;
+    top: -11px;
+    width: 22px;
+}
+
+.hot-deal-overlay li{
+	padding-bottom: 9px;
+    padding-top: 9px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.hot-deal-overlay li + li{
+	border-top: 1px solid #a7a5a6;
+}
+
+.projectAbstract a, .faqSection a, .customer-faq-content-section a{
+	color: #00A3FF;
+}
+
+.projectAbstract a:hover, .faqSection a:hover, .customer-faq-content-section a:hover{
+	text-decoration: underline;
+}
+
+.kitdetails-infographic-container {
+    position: absolute;
+    display: none;
+    padding: 25px;
+    -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	-webkit-box-shadow: 4px 7px 10px rgba(0,0,0,.5);
+	-moz-box-shadow: 4px 7px 10px rgba(0,0,0,.5);
+	box-shadow: 4px 7px 10px rgba(0,0,0,.5);
+	border: solid 2px #0a3248;
+	z-index: 12;
+}
+
+.kitdetails-infographic-container:hover{
+	display: block;
+}
+
+.kitdetails-infographic-container:after{
+	content: "";
+	border-style: solid;
+    border-width: 15px;
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 133px;
+	border-color: transparent transparent transparent #FFFFFF;
+	z-index: 1;
+}
+
+.kitdetails-infographic-container:before {
+    border-color: transparent transparent transparent #000000;
+    border-style: solid;
+    border-width: 17px;
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 131px;
+}
+
+.kitdetails-infographic-container .link{
+	margin-bottom: -10px;
+}
+
+.kitdetails-infographic-overlay{
+	background-position: -1941px -5px;
+	width: 367px;
+	height: 489px;
+}
+
+.diy-kitdetails-query + .kitdetails-infographic-container{
+	left: -360px;
+}
+
+.ready-kitdetails-query + .kitdetails-infographic-container{
+	left: -182px;
+}
+
+.project-kitdetails-query + .kitdetails-infographic-container{
+	left: 10px;
+}
+
+.diy-kitdetails-query:hover + .kitdetails-infographic-container{
+	display: block;
+}
+
+.ready-kitdetails-query:hover + .kitdetails-infographic-container{
+	display: block;
+}
+
+.project-kitdetails-query:hover + .kitdetails-infographic-container{
+	display: block;
+}
+
+.showPriceImageHolder.kit-details-icon{
+	display: inline-block;
+    left: 76px;
+    position: absolute;
+    top: 176px;
+    z-index: 3;
+}
+
+.showPriceImageHolder.ready-kitdetails-query {
+    left: 253px;
+}
+
+.showPriceImageHolder.kit-details-icon.project-kitdetails-query {
+    left: 445px;
+    top: 188px;
+}
+
+.kit-details-icon:hover{
+	z-index: 15;
+}
+
+/* images section */
+#image{
+	max-height: 250px;
+	max-width: 370px;
+}
+
+.more-views li{
+	float: left;
+	border:1px solid #ccc; 
+	height: 53px;
+	overflow: hidden;
+	width: 53px;
+	backgrond-color:white;
+}
+
+.more-views li + li{
+	margin-left: 4px;
+}
+
+div.more-views.MagicToolboxSelectorsContainer li > a {
+    margin: 0px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.more-views li.selected-image-border{
+	outline: 2px solid #174762;
+}
+/*.more-views li:last-child {
+    border:none
+}*/
+
+.product-image {
+    position: relative;
+}
+
+.edgefxProjectContentHolder .product-image {
+    padding-left: 13px;
+}
+
+.product-image-zoom {
+    height:300px;
+}
+
+.zoom-popup {
+    position:absolute;
+    left: 0px;
+    bottom: 20px;
+    width: 16px;
+    height: 16px;
+    background-position:-213px -283px;
+}
+
+.image-list {
+    /*max-width:48px;
+    max-height:48px;*/
+}
+
+.MagicToolboxMessage{
+	display: none;
+}
+
+.kitdetails-diy-ready-images{
+	background-position: -1941px -5px;
+	width: 367px;
+	height: 301px;
+}
+
+.kitdetails-not-diy-ready-image{
+	background-position: -1941px -336px;
+	width: 196px;
+	height: 157px;
+}
+
+.kitdetails-border {
+    border: 3px solid #CFEEE8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    margin: 7px 13px 7px 7px;
+}
+
+.kitdetails-types-structure-wrapper{
+    padding: 70px 25px 25px;	
+}
+
+.kitdetails-types-structure-wrapper > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-kitdetails-types-container {
+    padding-left: 30px;
+}
+
+div.kitdetails-rupee-paisa-container{
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.kitdetails-rupee-paisa-image{
+	background-position: -1941px -513px;
+	width: 63px;
+	height: 61px;
+}
+
+/*.zopim{
+	display: none !important;
+}
+*/
+.kitdetails-rupee-paisa-text {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border: 2px solid #329192;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: -10px;
+    text-align: left;
+    position: relative;
+    width: 117px;
+    z-index: -1;
+}
+
+.kitdetails-rupee-paisa-container > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.kit-banner {
+    background-color: #4CC0C2;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 10px;
+    padding-left: 20px;
+    position: absolute;
+    text-align: center;
+}
+.kit-banner:before {
+    content:"";
+    position: absolute;
+    left: 100%;
+    border-width: 17px;
+    border-style: solid;
+    border-color: #4CC0C2 transparent #4CC0C2 #4CC0C2;
+}
+.kit-banner:after {
+    content:"";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #398D8E transparent transparent;
+    margin-left:-6px;
+    margin-top: -6px;
+    z-index: -1;
+}
+
+.kit-banner-kitdetails{
+	left: -17px;
+    top: 17px;
+}
+
+.elprocus-container{
+	padding: 10px 10px 10px 0px;
+	line-height: 25px;
+}
+
+.elprocus-heading{
+	border-bottom: 1px solid #d1dae0;
+	font-family: OpenSansSemibold;
+	font-size: 16px;
+	color: #333333;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+
+.elprocus-container a:after{
+	content: "";
+	display: block;
+}
+
+.checkout-table-wrapper{
+	width: 100%;
+}
+
+.checkout-table.item-checkout-table{
+	margin-top: 35px;
+}
+
+/*.checkout-table.item-checkout-table th:last-child{
+	width: 90px;
+}*/
+/*.checkout-table-wrapper .checkout-table{
+	height: 100%;
+}*/
+
+/*.checkout-table-wrapper + .checkout-table-wrapper{
+	float: right;
+}*/
+
+.checkout-table{
+	border:1px solid #55c1c3;
+	margin-top:15px;
+	width: 100%;
+}
+
+.checkout-table-wrapper .checkout-table thead tr { 
+	background-color: #eeeeee;
+}
+
+.checkout-table-wrapper .checkout-table {
+	border: 1px solid #eaeaea;
+}
+
+.checkout-table tbody{
+	color: #0a3248;
+	font-family: OpenSansRegular;
+	font-size: 13px;
+}
+
+.checkout-table tbody + tbody {
+	border-top: 1px solid #55c1c3;
+	background-color: #eeeeee;
+	font-size: 13px;
+}
+
+.checkout-table tbody + tbody > tr > td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.checkout-table tbody + tbody > tr > td + td > div{
+	text-align: right;
+	margin-right: 15px;
+}
+
+.checkout-table tbody + tbody > tr > td:first-child{
+	text-align: right;
+	padding-right: 30px;
+}
+
+.checkout-table thead tr{
+	background-color: #55c1c3;
+	font-family: OpenSansBold;
+	height: 30px;
+}
+
+.checkout-table thead th{
+	padding:3px 9px;
+	text-align: left;
+	color: #000;
+}
+
+.checkout-table thead th.nocolor{
+	background-color:white;
+}
+
+.checkout-table tbody td{
+	padding:12px 12px;
+}
+
+.checkout-table-wrapper .checkout-table{
+	width: 460px;
+	height: 150px;
+}
+.checkout-table-wrapper > tbody > tr > td + td > .checkout-table{
+	margin-left: 37px;
+}
+
+.MagicToolboxContainer .MagicZoomPlus, .MagicToolboxContainer .video-viewer-container{
+	min-height: 296px;
+	max-height: 296px;
+}
+.MagicToolboxContainer .video-viewer-container{
+	display: none;
+}
+
+.categoryBoxHolder{
+	/*border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	overflow: hidden; */
+}
+/* End of changes by Venkateshwar*/
+
+/*Social sharing Icon */
+.mainDiv {
+	height: 44px;
+	width: 37px;
+}
+
+.mainDiv:last-child {
+	height: 37px;
+}
+
+/*Kitdetails Printing icon Page Css changes by Anusha*/
+.kitDetailsPrint {
+	right: 0px;
+	top: 0px;
+}
+
+.prodviewPrint {
+	top: 10px;
+	right: 0px;
+}
+
+/*comparison check box css changes related to disabling checkbox*/
+.bgMask {
+	width: 77px;
+	height: 23px;
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	position: absolute;
+}
+
+.edgefxProjectContentHolder:hover .bgMask {
+	right: 6px;
+}
+
+.edgefxProjectContentHolder .bgMask {
+	right: -6px;
+	top: 0px;
+}
+
+/*Faq UserQuestion form */
+
+/*.faqUserQuestions {
+	width: 490px;
+}*/
+
+.faqNumberHolder {
+	width: 36px;
+}
+
+.questionFaqHolderChild{
+	display: table-cell;
+	line-height: 20px;
+}
+
+.questionsHolderSection:hover .faqNumberHolder{
+       color: #174762;
+}
+
+.faqContentHolder {
+    padding-bottom: 10px;
+}
+
+.edgefxButton {
+	padding: 0px 13px;
+}
+
+.quesForm {
+	padding:6px 0px 0px 0px;
+}
+
+.faqLabelholder {
+	/*width: 100px;*/
+	width: 33px;
+	padding-right: 13px;
+}
+
+.faqSectionMainHeader {
+	width: 100%;
+}
+
+.faqSubmitButton {
+	width: 120px;
+	background-color: #25698F;
+	height: 40px;
+	border: none;
+}
+
+/*
+.faqFormContentHolder {
+	padding-top: 25px;
+}
+
+.faqFormContentHolder .formFieldsHolder{
+	text-align: right;
+}
+
+.faqFormContentHolder .input-wrapper{
+	text-align: left;
+}
+*/
+
+.faqQuestions {
+}
+
+.faqActive {
+	background-color: #00A3FF;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.answerFaqHolder > p{
+	margin: 0px;
+}
+
+.questionFaqHolder > p {
+	margin: 0px;
+}
+
+.answerFaqHolder .answerHolder {
+	padding: 0px;
+}
+ 
+.faqDeactive {
+	background-color: #FFFFFF;
+    color: #00A3FF;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.yesButtonDeactive {
+	color:	#CCCCCC;
+}
+
+.questionFaqHolder a{
+	color: #79a2b9;
+}
+
+.questionFaqHolder a:hover{
+	text-decoration: none;
+	color: #174762;
+	border-bottom: 1px solid #8C9CA7;
+}
+
+.categoryHeader {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.categoryHeaderLbl {
+	white-space: nowrap;
+}
+
+.answerFaqHolder {
+	padding: 0px 0px 15px 36px;
+}
+
+.questionContainer{
+	padding-bottom : 30px;
+}
+.form-faq {
+	min-height: 300px; 
+}
+
+.quesButton , .quesForm {
+	padding-left: 36px;
+}
+
+.faqQuesButton {
+	background-color: #00a3ff;
+	margin-left: 7px;
+	height: 30px;
+	width: 108px;
+	margin-top: -9px;
+}
+
+#faqConfirmMessage {
+	top: 43%;
+	width: 311px;
+	left: 20%;
+	position: absolute;
+}
+
+.form-faq {
+	border: 2px solid #00a3ff;
+	background-color: #f4fbfe;
+	padding: 20px 20px 20px 20px;
+	top: -5px;
+	width: 352px;
+}
+
+.faqFormFields, .contactFormFields {
+	margin-bottom: 10px; 
+}
+
+.faqFormInputFileds,.contactFormInputFileds {
+	height: 30px;
+	width: 283px;
+	border: 1px solid #b6b6b6;
+}
+
+.faq-text-area-styling {
+	min-height: 70px;
+	width: 329px;
+}
+
+.faqQusetions {
+	height: 25px;
+	
+}
+
+#faqForm .security-code-container {
+	width: 343px;
+}
+
+/*Drop down changes done by anusha */
+.customizeDropDown:hover {
+	border: 1px solid #00a3ff;
+	
+}
+
+.customizeDropDown{
+	border: 1px solid #b6b6b6;
+	width: 150px;
+	height: 30px;
+	background-color: #fff;
+}
+
+.sortDropdown .dropdownItemsHolder {
+	max-height: 176px;
+	cursor: default;
+}
+
+.findDropDown {
+	display: inline-block;
+	height: 33px;
+	width: 297px;
+}
+
+.customizeDropDown .comboTextHolder, .customizeDropDown .columListItem {
+	font-size: 12px;
+	line-height: 13px;
+	padding: 9px;
+	color: #333333;
+	cursor: default;
+}
+
+.sortDropdown .comboTextHolder {
+	padding: 5px 10px;
+}
+
+.sortDropdown .columListItem {
+	padding: 8px 10px;
+}
+
+.countryDrop .dropdownItemsHolder , .findDropDown .dropdownItemsHolder{
+	position: absolute;
+	margin-top: 1px;
+}
+
+.kittype {
+	border: 1px solid #b6b6b6;
+	height: 27px;
+	background-color: #fff;
+	width: 125px;
+	margin-top: -14px;
+}
+
+.kittype .comboTextHolder, .kittype .columListItem{
+	font-size: 12px;
+	padding-top: 6px;
+}
+
+.visibilityHide {
+	position: absolute;
+	left: -10000px;
+	width: 250px;
+}
+
+.countryMask {
+	background-color: #ffffff;
+	height: 30px;
+	width: 100%;
+	top: 0px;
+	opacity: 0.1;
+}
+
+.countryDropDown {
+	border: 1px solid #b6b6b6;
+}
+
+.countryDropDown .comboTextHolder {
+	font-size: 12px;
+	line-height: 13px;
+	padding: 9px;
+	color: #333333;
+}
+
+.sortDropdown {
+	top: -1px;
+	right: 16px;
+	height: 22px;
+}
+
+.sortDropdown .simpleDropDownArrow {
+	top: 37%;
+}
+
+.cart-kit-type-select {
+	width: 148px;	
+}
+
+.cart-kit-type-select .dropdownItemsHolder {
+	width: 148px;
+}
+
+.cart-kit-type-select .simpleDropDownArrow {
+	right: 10px;
+}
+
+.cart-kit-type-select .comboTextHolder {
+	padding: 9px 10px;
+} 
+
+.cart-kit-type-select .simpleDropDownMiddle:after {
+   background-color: #b6b6b6;
+   content: "";
+   height: 100%;
+   position: absolute;
+   right: 32px;
+   width: 1px;
+   z-index: 2;
+}
+
+.edgefxProjectCategoryListLabelNoPlus.borderRadius {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.dealsSection.topZindex { 
+	z-index: 133;
+}
+
+.supportNum {
+	margin-top: 44px;
+}
+
+.edgefxCustomerSupport {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/support_icon.png");
+	width: 48px;
+	height: 48px;
+	margin-top: -15px;
+}
+
+.supportText {
+	color: #0a3248;
+    font-family: opensansregular;
+    font-size: 13px;
+}
+
+.categoryList .categorySelection {
+	list-style-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/circleHover.png");
+	list-style-position: inside;
+	background-color: #66cccf;
+}
+
+.subCategoryList .categorySelection {
+	background-color: #66cccf;
+}
+
+.custom_video {
+	margin-right: 20px;
+}
+
+.customerDescription {
+	width: 617px;
+}
+
+.testimonialHolder {
+	margin-top: 45px;
+}
+
+.videoSection {
+	margin-top: 20px;
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.sectionSeperator {
+	border-bottom: 1px solid #d1dae0;
+	margin: 15px 0px;
+}
+
+.edgefxProjectCustomerImage {
+	height: 100px;
+	width: 100px;
+	background-position: center right;
+	margin-right: 20px;
+}
+
+.videoDescription {
+	width: 505px;
+}
+
+.videoContainerTitle {
+	padding-bottom: 15px;
+}
+
+.testimonialSeperator {
+	margin-top: 30px;
+}
+
+.testimonialRightContainer {
+	width: 390px;
+}
+
+.mapContainer {
+	width: 880px;
+}
+
+.mapInformation.edgefxpopupContainer {
+	height: 520px;
+}
+
+.contactSection  {
+	width: 50%;
+	float: left;
+}
+
+.contactFormCont {
+	width: 50%;
+	float: right;
+}
+
+.contactform-field-wrapper > div:first-child {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.contactSection .headerLineThirdColoumn {
+	width: 319px;
+}
+
+.contactfeedFileds {
+	height: 30px;
+	width: 355px;
+	border: 1px solid #b6b6b6;
+}
+
+.contact-feedback-textarea {
+	width: 355px;
+	height: 69px;	
+	border: 1px solid #b6b6b6;
+}
+
+.contactform-field-wrapper .security-code-container {
+	width: 372px;
+}
+
+.contactform-field-wrapper .security-image-wrapper img {
+	width: 141px;
+}
+
+.contactform-field-wrapper .security-code-wrapper .sitefeedFileds {
+	width: 178px;
+}
+
+.faqQuestions .questionFaqHolder:first-child {
+	margin-top: 0px;	
+}
+
+.questionContainer:first-child {
+	margin-top: 10px;
+}
+.questionContainer .questionFaqHolder {
+	margin-top: 0px;
+} 
+
+.contactFieldHolders {
+	margin-bottom: 10px;
+}
+
+.questionContainer:last-child {
+	padding-bottom: 0px;
+}
+
+.edgefxShowPriceLabel  {
+	margin: 10px 10px 0px 10px;
+}
+
+.edgefxFilterContainer.ratings-filter {
+	padding-bottom: 0px;
+}
+
+.indicator-128 {
+	background-color: #6691a4;
+}
+
+.divkitColor {
+	width: 15px;
+    height: 15px;
+    background-color: #139e83;
+    float: right;
+    margin-right: 20px;
+}
+
+.readykitColor {
+	width: 15px;
+    height: 15px;
+    background-color: #b4d964;
+    float: right;
+    margin-right: 20px;
+}
+
+.softkitColor {
+	width: 15px;
+    height: 15px;
+    background-color: #6691a4;
+    float: right;
+    margin-right: 20px;
+}
+
+.firstFilter {
+	margin-top: 15px;
+}
+
+.lastFilter {
+	margin-bottom: 11px;
+}
+
+iframe[name="google_conversion_frame"] {
+	display: none;
+}
+
+/*social sharing in order confirmation page*/
+.order-share-buttons .shareImg {
+    background: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/edgefxspritesheet.png') no-repeat -1922px -634px;
+	width: 15px;
+	height: 3px;
+	left: 5px;
+    top: 8px;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.order-share-buttons .facebook-icon {
+	background-position: -1891px -660px;
+}
+
+.order-share-buttons .facebook-icon:hover {
+	background-position: -1891px -710px;
+}
+
+.order-share-buttons .twitter-icon {
+	background-position: -1937px -660px;
+}
+
+.order-share-buttons .twitter-icon:hover {
+	background-position: -1937px -710px;
+}
+
+.order-share-buttons .plus-icon {
+	background-position: -1983px -660px;
+}
+
+.order-share-buttons .plus-icon:hover {
+	background-position: -1983px -710px;
+}
+
+.order-share-buttons {
+	transform: rotate(-90deg);
+    display: inline-block;
+    height: 0px;
+    position: relative;
+    left: -15px;
+    top: -8px;
+}
+
+.order-share-buttons .share-btn-icon {
+	transform: rotate(90deg);
+	width: 31px;
+	height: 31px;
+}
+
+.dropdownContainer {
+	position: relative;
+	width: 100%;
+	height: inherit;
+}
+.simpleDropDownBody {
+	height: inherit;
+	position: relative;
+	width: 100%;
+}
+.simpleDropDownLeft {
+	width: 3px;
+	left: 0;
+	/*background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/css/images/dropDownleft.png") repeat-x;*/
+}
+.simpleDropDownMiddle {
+	/*position: absolute;*/
+	left: 3px;
+	right: 3px;
+	/*background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/css/images/dropDownMiddle.png") repeat-x;*/
+	height: 100%;
+}
+.simpleDropDownRight {
+	width: 3px;
+	right: 0;
+	/*background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/css/images/dropDownRight.png") repeat-x;*/
+	position: absolute;
+}
+.simpleDropDownArrow {
+	position: absolute;
+	right: 7px;
+	top: 40%;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/dropDownArrow.png") no-repeat;
+	height: 7px;
+	width: 12px;
+}
+.simpleDropMenuIcon{
+	width: 52px;
+	left: 4px;
+	top: 3px;
+	z-index:99;
+	position:absolute;
+	height:100%;
+	display:none;
+	x-background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/css/images/dropDownMenuIcon.png") repeat-x;
+}
+.custondropdownIcon{
+	width: 52px;
+	left: 4px;
+	top: 3px;
+	z-index:99;
+	position:absolute;
+	height:100%;
+	display:none;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/css/images/custondropdownIcon.png") repeat-x;
+}
+.commonComboStyle {
+	position: absolute;
+	width: 4px;
+	height: 100%;
+}
+.comboTextHolder {
+	line-height:25px;
+	padding: 5px;
+}
+.columListItem {
+	height: 15px;
+	overflow: hidden;
+	padding: 10px 0px 10px 5px;
+	border: none;
+}
+.columListItem:hover{
+	background-color:#66cccf;
+}
+
+.selectionBackground {
+	background-color: #00a3ff;
+	color:#ffffff;
+}
+
+.dropdownItemsHolder {
+	width: 100%;
+	max-height: 165px;
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border:1px solid #B9D4D5;
+	border-top:none;
+	outline:none;
+	color:#174863;
+	background-color:#E8F1F1;
+	webkit-box-shadow: 1px 1px 3px #ebebeb;
+	-moz-box-shadow:1px 1px 3px #ebebeb;
+	box-shadow:1px 1px 3px #ebebeb;
+	z-index: 1000;
+	margin-left: -1px;
+	
+}
+
+.collegeIcon {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/collegeIcon.png");
+	height: 32px;
+	width: 52px;
+	margin: 1px 0px 0px 1px;
+}
+
+.priceIcon {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/cashicon.png");
+	height: 32px;
+	width: 52px;
+	margin: 1px 0px 0px 1px;
+}
+
+.categoryIcon {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/prjcticon.png");
+	height: 32px;
+	width: 52px;
+	margin: 1px 0px 0px 1px;
+}
+
+.cmbBranchHolder {
+	height:inherit; 
+	width:330px;
+}
+
+.cmbYearHolder {
+	width: 79px;
+	height: inherit;
+}
+
+.cmbPriceHolder {
+	height: inherit;
+}
+
+
+.edgefxDropdownHolder:hover {
+	border: 1px solid #00a3ff;
+}
+
+.edgefxDropdownHolder:active {
+	border: 1px solid #00a3ff;
+}
+
+/* styling for project details */
+.edgefxProjectDetailsHead {
+	border-bottom: 1px solid #d1dae0;
+}
+
+.edgefxProjectHeading {
+	margin:5px 0px 8px 0px;
+}
+
+.edgefxProjectDetailsLeft {
+	width: 410px;
+}
+
+.edgefxProjectDetailsLeftTop {
+	line-height: 36px;
+}
+
+.edgefxProjectDetailsMiddle {
+	padding-top: 8px;
+}
+
+.edgefxProjectDetailsImage {
+	background-position: -4px -675px;
+	/*width: 540px;*/
+	height: 36px;
+}
+
+.edgefxProjectDetailsImage > a {
+    margin-left: 8px;
+}
+
+.edgefxProjectDetailsImage > a:focus{
+	outline: none;
+}
+
+.edgefxProjectDetailsImage > a:first-child {
+    margin-left: 0px;
+}
+
+.shipped-within-image{
+	background-position: -4px -680px;
+	width: 102px;
+	height: 29px;
+}
+
+.free-shipping-image{
+	background-position: -118px -681px;
+	width: 107px;
+	height: 22px;
+}
+
+.cash-on-delivery-image{
+	background-position: -235px -675px;
+	width: 84px;
+	height: 36px;
+}
+
+.money-back-image{
+	background-position: -330px -677px;
+	width: 103px;
+	height: 33px;
+}
+
+.output-guaranteed-image{
+	background-position: -441px -677px;
+	width: 106px;
+	height: 33px;
+}
+
+.edgefxProjectModel {
+	vertical-align: baseline;
+}
+
+.ratingTopHolder {
+	vertical-align: top;
+}
+
+.edgefxProjectCompareOption {
+	top:3px;
+}
+
+.ratingTopHolder .rating-box .rating-links {
+	float: left;
+}
+
+.ratingTopHolder .rating-box .rating-links a{
+	vertical-align: text-bottom;
+}
+
+.edgefxProjectKitTypesHolder {
+	padding-top: 45px;
+}
+
+.edgefxProjectKitTypeStudents {
+	background-position: -815px -9px;
+	width: 354px;
+	height: 317px;
+	padding-right: 10px;
+}
+
+.edgefxProjectKitTypeInstitutions {
+	background-position: -814px -344px;
+	width: 186px;
+	height: 316px;
+}
+
+.edgefxProjectKitType {
+	border-right: 1px solid #a7a5a6;
+    margin: 53px 0 0px 0px;
+    padding: 0px 15px;
+}
+
+.edgefxProjectKitTypeInstitutions .edgefxProjectKitType {
+	padding: 0px 20px;
+}
+
+
+.edgefxProjectKitType:last-child {
+	border-right: none;
+}
+
+.edgefxProjectDIYkitImage {
+	background-position: -1028px -332px;
+	width: 146px;
+	height: 121px;
+}
+
+.discountHolder {
+	background-position: -395px -362px;
+    	height: 24px;
+    	line-height: 24px;
+    	text-indent: 10px;
+    	width: 100px;
+}
+
+.buyButton {
+	background-color: #60c7b3;
+	height: 25px;5px;
+	line-height: 25px;
+    	text-align: center;
+}
+
+.butButtonItemsHolder {
+	padding: 0px 42px;
+	line-height: 25px;
+}
+
+.buyButton .edgefxCartIcon  {
+	margin: 4px 8px 0px 0px;
+}
+
+.stockAvailableNum  {
+	padding-top: 4px;
+}
+
+.projectSpecificDetails {
+	padding: 8px 0px 7px;
+}
+
+.edgefxProjectkit .projectSpecificDetails {
+	padding: 7px 0px;
+}
+
+.edgefxProjectReadykitImage {
+	background-position:  -1031px -460px;
+	width: 146px;
+	height: 121px;
+}
+
+.discountAmount {
+	height: 20px;
+}
+
+.edgefxProjectkitImage {
+	background-position: -1031px -595px;
+	width: 146px;
+	height: 84px;
+	margin-top: 37px;
+}
+
+.projectSpecificationKitDetails {
+	padding-top: 5px;
+}
+
+.projectContentSpecification:hover {
+	text-decoration: underline;
+}
+
+.kitDetails:hover {
+	text-decoration: underline;
+}
+
+.edgefxProjectDetailsSection {
+	padding-top: 40px;
+}
+
+.edgefxProjectDetailsLeftHolder {
+	padding-right: 45px;
+    width: 605px;
+}
+
+.edgefxProjectDetailsRightHolder {
+	width: 310px;
+}
+
+.highLightImageHolder {
+	background-position: -423px -262px;
+    display: table-cell;
+    height: 28px;
+    vertical-align: top;
+    width: 23px;
+}
+
+.highLightItem {
+	padding-top: 20px;
+}
+
+.highLightDesc {
+	display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.enalargeImage {
+	background-position: -213px -283px;
+	width: 16px;
+	height: 16px;
+}
+
+.headerContentPadding {
+	padding-bottom: 16px;
+}
+
+.specificationHolder ul li:firstChild {
+	padding-top: 8px;
+}
+
+.no-project-contents {
+    margin: 20px 0;
+}
+
+.specificationHolder ul li {
+	padding-top: 10px;
+}
+
+.hardWareSpecification {
+	padding-bottom: 20px;
+}
+
+.questionAnswerHolder {
+	padding-bottom: 25px;
+}
+
+.reviewsSection {
+	width: 705px;
+}
+
+.averageReviewRatingHolder {
+	line-height: 30px;
+}
+
+.showRatingHeader {
+	padding: 15px 0px;
+}
+
+.showAll {
+	padding-left: 10px;
+}
+
+.reviewHolder {
+	padding-bottom: 10px; 
+}
+
+.relatedProjectsHolder {
+	height: 120px;
+	width: 960px;
+	overflow: hidden;
+}
+
+.projectHolder {
+	height: 100%;
+	width: 286px;
+	padding-right: 20px;
+}
+
+.projectHolder:last-child {
+	padding-right: 0px;
+}
+
+.relatedProjectsNavigationBtn {
+	top: 45px;
+	margin: 0px;
+}
+
+.relatedProjectsSectionHolder {
+	width: 920px;
+	padding:0px 20px;
+	height: 100%;
+}
+
+.edgefxProjectCategorySection .relatedProjectsSectionHolder{
+	width: 703px;
+}
+
+.edgefxProjectCategorySection .relatedProjDetailsHolder{
+	width: 100px;
+}
+
+.edgefxProjectCategorySection .relatedProjectsHolder{
+	 width: 745px;
+}
+
+.edgefxProjectCategorySection .projectHolder{
+	width: 30%;
+}
+
+.projectSectionsHolder {
+	width: 1920px;
+	height: 100%;
+}
+
+.projectImageHolder {
+	width: 100px;
+	height: 100px;
+	background-position: center;
+}
+
+.relatedProjDetailsHolder {
+	width: 140px;
+	padding-left: 10px;
+}
+
+.projectDesc {
+	height: 45px;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.writeReviewButton  {
+	height: 30px;
+	background-color: #00a3ff;
+	width: 130px;
+}
+
+.reviewFormHolder {
+	border: 2px solid #00a3ff;
+	background-color: #f4fbfe;
+	padding: 20px 20px 13px 20px;
+	top: -2px;
+}
+
+.reviewFormContentHolder {
+	padding-top: 25px;
+}
+
+.no-rating {
+	vertical-align: sub;
+}
+
+.formFieldsHolder {
+	/*width: 455px;*/
+}
+
+.write-review-table{
+	width: 100%;
+}
+
+.form-fields-holder-layout{
+	position: relative;
+}
+
+.ratings-holder-position{
+	position: absolute;
+	top: 0px;
+	right: 100px;
+}
+
+.review-text-area-styling{
+	min-height: 70px;
+}
+
+.review-button-layout{
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+}
+.reviewFormInputFileds {
+	height: 30px;
+	width: 278px;
+	border: 1px solid #b6b6b6;
+}
+
+.reviewFormFields {
+	margin-bottom: 10px;
+}
+
+.inputLabelHolder {
+	width: 55px;
+	padding-right: 13px;
+}
+
+.lineHeight30 {
+	line-height: 30px;
+}
+
+.reviewSubmitButton {
+	width: 120px;
+	background-color: #25698F;
+    height: 40px;
+    border: none;
+}
+
+.buttonHolders {
+	bottom: -85px;
+}
+
+.ratingBreakDownSection {
+	width:230px;
+	background-color: #e2f3f4;
+	height: 182px;
+}
+
+.reviewBreakDownContent {
+	padding: 9px 10px;
+}
+
+.breakDownItem {
+	margin-bottom: 9px;
+}
+
+.breakDownItem:last-child {
+	margin-bottom: 0px;
+}
+
+.ratingIndicator {
+	width: 110px;
+	background-color: #a3a3a2;
+	height: 14px;
+	margin:0px 7px
+}
+
+.ratingProgressIndicator {
+	height: inherit;
+	width: 0px;
+	background-color: #f1c40f;
+}
+
+.projectDetailsCompare {
+	top: 5px;
+}
+/* end of project details styling */
+
+
+.edgefxProjectsKitTypeStudentsDisc{
+	background-position: -1193px -235px;
+	height: 225px;
+    width: 354px;
+}
+
+.edgefxProjectsKitTypeInstitutionsDisc{
+	background-position: -1182px -10px;
+	height: 225px;
+    width: 186px;
+}
+
+.discontinued-project{
+	text-align: center;
+	line-height: 80px;
+	height: 80px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background-color: #e0e0e0;
+	margin-top: 10px;
+}
+
+.kitDetailDescriptionHeader  {
+	line-height: 22px;
+}
+
+.specificationsHolder{
+	list-style-type: disc;
+} 
+.specificationsHolder li{
+	list-style-position: inside;
+}
+
+.headerListContent{
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 30px;
+}
+
+.headerListImage{
+	display: inline-block;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+}
+
+
+/* styles for project resources */
+.projectResourcesContainer {
+	padding-top: 24px;
+}
+
+.projectResourceSection  {
+	width: 100%;
+	padding-right: 20px;
+}
+
+.projectResourcePPTSection  {
+	width: 450px;
+	padding-right: 20px;
+	vertical-align: top;
+}
+
+.projectResourcePDFSection  {
+	width:450px;
+	padding-left: 20px;
+	vertical-align: top;
+}
+
+.resourcePPTImageHolder {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resourceMaterials_ppt.png");
+	height: 42px;
+	width:42px;
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+}
+
+.resourcePDFImageHolder {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resourceMaterials_pdf.png");
+	height: 42px;
+	width:42px;
+	background-repeat: no-repeat;
+}
+
+.resourceImageTypeHolder{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resource_image.png');
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+
+.resourceDocImageHolder{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resource_doc.png');
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+
+.resourceAudioImageHolder{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resource_audio.png');
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+
+.resourceVideoTypeHolder{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resource_video.png');
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+
+.resourceOtherImageHolder{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/resource_default.png');
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+.otherInfoAlertIcon {
+	/*background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/otherInfo_alert.png");
+	width: 42px;
+	height: 42px;*/
+}
+
+.resourceItemHolder{
+	float: left;
+	width: 50%;
+}
+
+.pptpdfItemHolder {
+	padding-top:25px;
+}
+
+.pptpdfItemHolder:first-child {
+	padding-top: 0px;
+}
+
+.pptpdfDescriptionHolder {
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+	padding-left: 6px;
+}
+
+.otherInfoDescriptionHolder {
+	display: table-cell;
+	vertical-align: middle;
+	height: 47px;
+	padding-left: 6px;
+}
+
+.otherInfoItem {
+	width: 440px;
+}
+
+.detailsSpecificationIconHolder {
+	bottom: -1px;
+    left: 355px;
+}
+
+.specificationIconHolder {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/specs.png");
+	width:48px;
+	height: 48px;
+}
+
+.kitDetailsIconHolder {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/kitDetails.png");
+	width: 48px;
+	height: 48px;
+}
+
+.speclabelHolder {
+	padding-bottom: 10px;
+}
+
+.specKitLabel {
+	width:48px;
+}
+
+.marginRight20{
+	margin-right: 20px;
+}
+
+.edgefxProjectDetailsHead > .edgefxProjectHeading{
+	display: inline-block;
+    line-height: 22px;
+    margin-right: 60px;
+    max-height: 66px;
+    overflow: hidden;
+}
+
+/* share button styling */ 
+
+.share-buttons {
+    display: block;
+	position: fixed;
+	right: 18px;
+	top: 200px;
+
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 110;
+
+}
+
+.share-buttons > a{
+	display: table-cell;
+	vertical-align: top;
+	padding-left: 5px;
+}
+/*.share-button:hover{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/share_hover.png');
+	width: 60px;
+}
+.share-button-ul {
+    background-color: #FFFFFF;
+    border: 1px solid #ACACAC;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #ACACAC;
+    display: none;
+    margin-right: -60px;
+    padding: 11px 0px;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    cursor: auto;
+}
+
+.share-button:hover ul {
+    display: block;
+}
+
+.share-button-link{
+    color: #ACACAC;
+    display: block;
+    padding: 4px 15px;
+    text-align: left;
+    white-space: nowrap;
+    color: #79A2B9;
+}
+
+.share-button-link:hover{
+	color: #66CCCF;
+}
+.share-button-link:hover > div + div{
+	text-decoration: underline;
+}
+
+*/
+
+.share-btn-icon{
+	width: 37px;
+	height: 37px;
+}
+
+.shareImg {
+    background: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/edgefxspritesheet.png') no-repeat -404px -533px;
+	width: 4px;
+	height: 7px;
+	left: 17px;
+	position: relative;
+}
+
+.facebook-icon{
+	background-position: -315px -516px;
+}
+
+.facebook-icon:hover{
+	background-position: -360px -516px;
+}
+
+.twitter-icon{
+	background-position: -314px -559px;
+}
+
+.twitter-icon:hover{
+	background-position: -360px -559px;
+}
+
+.plus-icon{
+	background-position: -314px -602px;
+}
+
+.plus-icon:hover{
+	background-position: -360px -602px;
+}
+
+.share-button-link > div + div{
+	padding-left: 8px;
+}
+
+.reviewsSection .rating-box{
+	margin-top: 8px;
+}
+
+/* Changes by Venkateshwar */
+.matching-products-container{
+	height: 453px;
+	width: 790px;
+}
+
+.matching-products-section {
+    height: 373px;
+    overflow: hidden;
+    padding: 20px 30px;
+}
+
+.matching-product-section {
+    display: table-cell;
+    width: 340px;
+    height: 373px;
+    padding-right: 50px;
+}
+
+/*.matching-product-section:nth-child(2n+1){
+	margin-right: 50px;
+}*/
+
+.matching-product-image-section{
+	/*margin-bottom: 10px;*/
+}
+
+.matching-product-title-section .edgefxProjectTitle {
+    line-height: 1;
+}
+
+.matching-product-title-section .name-ellipsis{
+	height: 2.2em;
+}
+
+.matching-product-wrapper{
+	display: table;
+	position: relative;
+	left: 0px;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+
+.matching-product-top-section .edgefxProjectDetailsLeftTop td {
+    padding-right: 14px;
+    line-height: 1;
+    vertical-align: top;
+}
+
+div.matching-product-section .matching-product-top-section .rating-links-a{
+	vertical-align: top;
+}
+
+.matching-product-section .rating-box{
+	line-height: 1;
+	margin-top: 0px;
+}
+
+.matching-product-top-section .edgefxProjectDetailsLeftTop .edgefxProjectCompareOption {
+    margin-top: -2px;
+}
+
+.matching-product-section .edgefxProjectModel{
+	padding-top: 2px;
+}
+/* end of Venkateshwar changes */
+.edgefxpopupContainer {
+	/*width: 860px; */
+	display: inline-block;
+	-webkit-box-shadow: 0 0 24px 1px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 24px 1px rgba(0,0,0,.5);
+     box-shadow: 0 0 24px 1px rgba(0,0,0,.5);
+}
+
+.projectContentSpecContainer {
+	width: 860px;
+}
+
+.cartpopup {
+	width: 860px;
+}
+
+.cartEmptyErrorMsg {
+	padding: 35px 0px 57px 0px;
+}
+
+.projectInterstedListHolder {
+	padding: 0px 13px 0px 13px;
+}
+
+.emptyCartIconHolder {
+	background-position: -54px -608px;
+	width: 57px;
+	height: 57px;
+}
+
+.cartEmptyMsg {
+	line-height: 57px;
+	padding-left: 25px;
+}
+
+.popUpCloseIcon {
+	width: 40px;
+	height: 40px;
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/close_normal.png"); 
+}
+
+.edgefxpopupHeader {
+	height: 40px;
+	background-color: #2e999c;
+	padding: 0px 0px 0px 13px;
+	line-height: 40px;
+}
+
+.edgefxpopupContentHolder {
+	background-color: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+}
+.cart-container{
+	padding-bottom: 20px;
+}
+.edgefxpopupCloseFunction {
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/close_normal.png');
+	width: 40px;
+	height: 100%;
+}
+
+.edgefxpopupInfoRight {
+	padding-top: 15px;
+	padding-right: 13px;
+}
+
+.rightInfo {
+	height:10px;
+	border-left: 1px solid #b8b8b8;
+	border-right: 1px solid #e7e7e7;
+	margin-left: -4px;
+	padding:0px 7px;
+}
+
+.rightInfo:first-child {
+	border-left: none;
+	margin-left:0px;
+	padding-left:0px;
+}
+
+.rightInfo:last-child {
+	border-right: none;
+	margin-right:0px;
+	padding-right:0px
+}
+
+.rightInfo .contactNumber {
+	padding-left: 6px;
+}
+
+.edgefxCartDeliveryPaymentSec {
+	padding: 10px 13px 25px 13px;
+	height: 36px;
+
+}
+
+.edgefxCartTable {
+	width: 846px;
+}
+
+.scrollableContent {
+	width: 860px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 104px;
+}
+
+.edgefxCartHeader {
+	background-color: #6696b0;
+	height: 35px;
+}
+
+.edgefxCartHeaderTable {
+	height: 35px;
+}
+
+.headerElement  {
+	font-weight: normal;
+	padding:0px;
+}
+
+.firstCol {
+	width: 270px;
+	padding:0px 10px 0px 20px;
+}
+
+.secondCol {
+	width: 20px;
+}
+
+.secondSubCol {
+	width: 110px
+}
+
+.thirdCol {
+	width: 142px;
+}
+
+.fourthCol {
+	width: 109px;
+}
+
+.fifthCol {
+	width: 85px;
+}
+
+.sixthCol {
+	width: 90px;
+	padding-right: 10px;
+}
+
+.seventhCol {
+	width: 10px;
+	padding-right: 10px;
+}
+
+.rowElementPadding  {
+	padding-left: 10px;
+}
+
+.tableRow {
+	height: 52px;
+	background-color: #d4f0f1;
+}
+
+.rowElement {
+	border-bottom: 1px solid #94d9da;
+	border-top: 1px solid #ffffff;
+}
+
+.quantityHolder {
+	border: 1px solid #b6b6b6;
+	background-color: #fff;
+	width: 46px;
+	height: 30px;
+}
+.cart-kit-type-select{
+	border: 1px solid #b6b6b6;
+	background-color: #fff;
+}
+
+.rowElement  {
+	font-weight: normal;
+}
+
+.shippingTime {
+	margin: 10px 0px 0px 20px;
+	width: 250px;
+}
+
+.shippingParameters {
+	margin-bottom: 10px;
+}
+
+.shippingFormElem {
+	width: 184px;
+	height: 30px;
+}
+
+.inputElemCls {
+	width: 164px;
+	border: 1px solid #b6b6b6;
+	background-color: #fff;
+	padding-left: 8px;
+}
+
+.shippingTimeCalculationDetails {
+	padding: 20px;
+	width: 186px;
+	border: 2px solid #c7d1d6;
+	min-height: 112px;
+	position: relative;
+}
+
+.shippingTimeCalculationDetails .input-wrapper {
+	display: block;
+}
+
+.shippingTimeCalculationDetails .validation-error-message {
+	margin-bottom: 6px;
+}
+
+.shipEstTextHolder {
+    margin-top: 1px;
+    width: 154px;
+}
+
+.deliveryTimeBtn {
+	background-color: #25698f;
+	width: 140px;
+	height: 30px;
+}
+
+.shipEstIconHolder {
+	background-position: -449px -745px;
+	width: 26px;
+	height: 26px; 
+	margin-right: 5px;
+}
+
+.alertMessageHolder {
+	line-height: 13px;
+}
+
+.amountDetails {
+	margin-right: 12px;
+}
+
+.totalLabelsHolder  {
+	padding:12px 0px 0px 0px;
+}
+
+.cartAmountDetails {
+	margin-right: 32px;
+}
+
+.labelHolder {
+	width:266px;
+	padding-right: 20px;
+}
+
+.popupContentSeparator{
+	width: 370px;
+	margin-top: 23px;
+	margin-left: 0px;
+}
+
+.savingsLabel{
+	padding-top: 40px;
+}
+
+.totalPayableAmount {
+	padding-top: 0px;
+}
+
+.popupFooterButtonHolder {
+	padding: 20px 12px 0px 0px;
+}
+
+.continueShoppingLink{ 
+	line-height: 40px;
+	padding-right: 35px;
+}
+
+.proceedToCheckoutBtn  {
+	height: 40px;
+	width: 200px;
+	background-color: #25698F;
+	vertical-align: middle;
+}
+
+.popupErrorMsg {
+	background-color: #f7df80;
+	width: 100%;
+	padding: 13px 0px 7px 0px;
+	
+}
+
+.smallAlertIcon {
+	background-position: -2px -647px;
+    height: 20px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    left: 0px;
+}
+.smallUpdateIcon {
+	background-position: -121px -642px;
+	width: 23px;
+	height: 23px;
+}
+
+.bigAlertIcon {
+	background-position: -54px -608px;
+	width: 57px;
+	height: 57px;
+}
+
+.closeIcon {
+	background-position: -33px -656px;
+	width: 9px;
+	height: 10px;
+}
+
+.alertMSGClose {
+	right: 7px;
+	top: 7px;
+}
+
+.errorMSGHolder  {
+	margin: 0px 20px 8px 20px;
+}
+
+.errorMSGHolder:last-child{
+	margin-bottom: 0px;
+}
+
+.errorMessage li {
+	list-style-type: none;
+}
+
+.errorMessageInline {
+	line-height: 12px;
+}
+
+.errorMessage  {
+	line-height: normal;
+	margin-left: 30px;
+}
+
+.updateCartButton {
+	background-color: #00a3ff;
+	text-align: center;
+	height: 30px;
+	width: 100px;
+	/*margin-top:10px;*/
+	line-height: 30px;
+}
+
+.updateIcon {
+	background-position: -610px -735px;
+	width: 18px;
+	height: 19px;
+	margin-top: 6px;
+}
+
+.updateCartText {
+	padding: 1px 0px 0px 5px;
+}
+
+.couponInputHolder {
+	height: 32px;
+	width: 147px;
+	margin-left: 10px;
+}
+
+.couponCodeInput{
+	height: 30px;
+	width: 75px;
+	border: 1px solid #b6b6b6;
+	border-right: none;
+}
+
+.couponInputHolder .edgefxGoButton {
+	height: 32px;
+}
+
+.lineHeight32 {
+	line-height: 32px;
+}
+
+.popupTitle {
+	padding: 25px 0px 20px 15px;
+}
+
+.quickBuyHeader {
+	height: 30px;
+	background-color: #dadada;
+	font-weight: normal;
+}
+
+th {
+	font-weight: normal;
+}
+
+.quickTrackBtn {
+	background-color: #25698f;
+	height: 40px;
+	line-height: 40px;
+	margin:20px 15px 14px 429px;
+	width: 158px;
+}
+
+.buyTrackNowBtn {
+	background: none;
+	border: none;
+}
+
+.quickbuypopupContainer {
+	width:615px;
+}
+
+/* For Quick Buy Error Messages */
+.efk-quick-buy-body {
+	padding-top: 15px;
+}
+
+.err-message {
+	color: #EB340A;
+    height: 15px;
+    margin: 0 15px 10px;
+}
+
+.quickbuypopupContainer table{
+	width: 100%;
+}
+
+.quickBuyHeaderFirstCol {
+	padding-left: 15px;
+}
+
+.quickBuyStaticMsg {
+	padding: 5px 0 15px 15px;	
+}
+
+.quickBuyFirstCol {
+	width: 340px;
+	padding:10px 0px 0px 15px;
+}
+
+.quickBuyFirstCol input {
+	width:320px;
+	border: 1px solid #b6b6b6;
+	height: 28px;
+	
+}
+
+.quickBuySecondCol {
+	width: 120px;
+	padding: 10px 0px 0px 10px;
+}
+
+
+.quickBuyThirdCol {
+	width: 80px;
+	padding:10px 15px 0px 15px;
+}
+
+.quickBuyThirdCol input {
+	width: 60px;
+	height: 28px;
+	border: 1px solid #b6b6b6;
+}
+
+.edgefxBackOrderButton {
+	background-color: #00A3FF;
+    height: 30px;
+    line-height: 28px;
+    margin: 10px 15px 10px 0px;
+    width: 190px;
+}
+
+.edgefxDiffOrderButton {
+	background-color: #00A3FF;
+    height: 30px;
+    line-height: 28px;
+    margin: 10px 15px 0px 0px;
+    width: 225px;
+}
+
+.trackorderpopupContainer {
+	width: 703px;
+}
+
+.trackOrderInitial {
+	width: 100%;
+}
+
+.trackTableHeaderDesc {
+	padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.my-orders-container .trackTableHeaderDesc {
+	padding-top: 23px;
+}
+
+.track-order-container {
+    padding-top: 20px;
+}
+
+.trackOrderInitialHeader {
+	width:100%;
+	background-color: #dadada;
+	height: 40px;
+}
+
+.trackHeaderCol1 {
+	padding-left: 15px;
+	width: 10%;
+}
+
+.trackHeaderCol2 {
+	padding-left: 25px;
+}
+
+.trackHeaderCol3 {
+	padding-left: 25px;
+}
+
+.trackInitialFirst {
+	width: 114px;
+	padding:15px 0px 0px 15px;
+}
+
+.trackInitialSecond {
+	width: 20px;
+	padding: 15px 0px 0px 25px;
+}
+
+.trackOrderORHolder {
+	background-position: -152px -640px;
+	width: 24px;
+	height: 24px;
+	line-height: 23px;
+}
+
+.trackInitialThird {
+	padding: 15px 15px 0px 25px;
+}
+
+.trackInitialFirst input {
+	width: 94px;
+	height: 30px;
+	border: 1px solid #b6b6b6;
+}
+
+.trackInitialThird input {
+	width: 360px;
+	height: 30px;
+	border: 1px solid #b6b6b6;
+}
+
+.trackOrderTableHeader {
+	height: 30px;
+	background-color: #9dadb6;
+}
+
+.myOrderTabelHolder {
+	margin-top:10px;
+	display: inline-block;
+	width: 699px;
+}
+
+.trackOrderTable {
+	width: 699px;
+}
+
+.trackOrderHeader {
+	height: 100%;
+}
+
+.trackOrderContentContainer {
+	overflow: hidden;
+	position: relative;
+	height: 190px;
+	overflow-x: hidden;
+}
+
+.trackOrderTableFirstCol {
+	width: 90px;
+	padding-left: 15px;
+}
+
+.trackOrderTableSecondCol {
+	width: 90px;
+	padding-left: 10px;
+}
+
+.trackOrderTableThirdCol {
+	width: 85px;
+	padding-left: 10px;
+}
+
+.trackOrderTableFourthCol {
+	width: 60px;
+}
+
+
+.trackOrderTableFifthCol {
+	width: 296px;
+	padding-left: 10px;
+}
+
+.lastCol {
+	display: none;	
+}
+
+.trackOrderRow {
+	height: 45px;
+}
+
+.trackOrderEvenRow {
+	background-color: #f1f1f1;
+}
+
+.trackStatusImage {
+	background-position: -181px -648px;
+	width: 32px;
+	height: 16px;
+}
+
+.trackStatusMsg {
+	padding-left: 10px;
+}
+
+.edgefxBackOrderButtonImg {
+	background-position: -318px -8px;
+	width: 7px;
+	height: 14px;
+	margin:8px 10px 0px 0px; 
+}
+
+.edgefxTrackDiffButtonImg {
+	background-position: -365px -37px;
+	width: 7px;
+	height: 14px;
+	margin:8px 0px 0px 10px;
+}
+
+/* styles for login and sign popup */
+.signupLoginHolder {
+	width: 504px;
+	border:2px solid #66cccf;
+}
+
+.authentication-container {
+	background-color: #fff;
+	padding: 35px 0px;
+}
+
+.tabbar {
+	width: 100%;
+	height: 52px;
+}
+
+.loginTabBar {
+	height: 38px;
+	background-color: #fff;
+}
+
+.tabHolder {
+	width: 124px;
+	height: inherit;
+	line-height: 38px;
+}
+
+.selectedTabHolder {
+	background-color: #66cccf;
+	border:2px solid transparent;
+	border-top: none;
+	color:#174762;
+}
+
+.unselectedTabHolder {
+	background-color: #eaeaea;
+	border: 2px solid #afe3d9;
+	border-top: none;
+	color:#339293;
+}
+
+.unselectedTabHolder:hover {
+	background-color: #fff;
+}
+
+.tabHolderColor {
+	background-color: #66cccf;
+}
+.signupLoginCloseIcon {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/loginClose_normal.png");
+	width:16px;
+	height: 16px;
+	margin: 10px 10px 0px 0px;
+}
+
+.signupLoginCloseIcon:hover {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/loginClose_hover.png");
+	width: 16px;
+	height: 16px;
+}
+
+.loginBtnSet  {
+	padding-top: 15px;
+}
+
+.login-tab {
+	margin:0px 5px 0px 20px;
+}
+
+.loginSignupContentContainer {
+	width: 504px;
+	/*margin: 45px 0px;*/
+}
+
+.loginLabelFields {
+	width: 60px;
+	padding-right: 10px;
+	line-height: 32px;
+}
+
+.signupLabelFields {
+	width: 120px;
+	padding-right: 10px;
+	line-height: 32px;
+}
+
+.loginFileds {
+	width: 300px;
+	border: 1px solid #b6b6b6;
+	height: 35px;
+}
+
+.signupFileds {
+	width: 280px;
+	border: 1px solid #b6b6b6;
+	height: 35px;
+}
+
+.loginFieldsContainer {
+	margin-bottom: 7px;
+}
+
+.loginContainerWrapper {
+	width: 468px;
+	margin: 0px 30px 0px 36px;
+}
+
+.signupContainerWrapper {
+	width: 432px;
+	margin: 0px 30px 0px 20px;
+}
+
+.loginSignupBtn {
+	width: 155px;
+	height: 40px;
+	border:none;
+	background-color: #25698f;
+}
+
+.loginSignupCancelBtn {
+	padding-right: 20px;
+	line-height: 40px;
+}
+
+.loginSignupFooter {
+	height: 88px;
+	width: 100%;
+	background-color: #113448;
+	line-height: 130px;
+}
+
+.forgotPwdHolder {
+	width: 320px;
+	margin-left: 56px;
+}
+
+.forgotPWDFieldsHolder {
+	border: 2px solid #00A3FF;
+	padding: 10px;
+}
+
+.forgotPWDFields {
+	width: 232px;
+	border: 1px solid #B6B6B6;
+    height: 30px;
+}
+
+.paddingBottom20 {
+	padding-bottom: 20px;
+}
+
+
+.forgotPWDBtn{
+	height: 30px;
+	background-color: #00a3ff;
+	width: 130px; 
+}
+
+.forgotPWDLbl {
+	padding-right: 10px;
+	line-height: 32px;
+}
+
+
+/* styles for my account page */
+
+.myAccountTabPanelHolder {
+	width: 863px;
+	border: 1px solid #b6b6b6;
+	margin: 25px 0;
+}
+
+.myAccountTabHeader {
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+}
+
+.myAccountTabHeaderItem {
+	width: 287px;
+	margin-left : 1px;
+}
+.myAccSelectedTabHolder{
+	background-color: #FFF;
+}
+.changePWDInputFieldsHolder {
+	margin-bottom: 10px;
+}
+
+.changePWDInputFields {
+	height: 30px;
+	width: 276px;
+	border: 1px solid #b6b6b6;
+}
+
+.changePWDFieldsLabel {
+	width :125px;
+	padding-right: 18px;
+	line-height: 32px;
+} 
+
+.changePWDFieldsHolder {
+	padding: 0px 0px 10px 40px;
+	width: 441px;
+}
+
+.changePWDBtn {
+	background-color: #00a3ff;
+	height: 35px;
+	width: 165px;
+	border: none;
+}
+
+.myAccountTrackOrderTable {
+	width: 848px;
+}
+
+.myAccountOrdersContainer {
+	padding: 40px 0px 20px 0px
+}
+
+.myAccountOrderTableFirstCol {
+	width: 90px;
+	padding-left: 15px;
+}
+
+.myAccountOrderTableSecondCol {
+	width: 90px;
+	padding-left: 10px;
+}
+
+.myAccountOrderTableThirdCol {
+	width: 160px;
+	padding-left: 10px;
+}
+
+.myAccountOrderTableFourthCol {
+	width: 90px;
+	padding-left: 10px;
+}
+
+
+.myAccountOrderTableFifthCol {
+	width: 60px;
+	padding-left: 10px;
+}
+
+.myAccountOrderTableSixthCol {
+	width: 180px;
+	padding-left: 10px;
+}
+
+.trackOrderHeader tr{
+	height: 30px;
+}
+
+.cartItemShower {
+	padding: 20px 0px 0px 15px;
+}
+
+.myInfoContainer {
+	padding: 0px 0px 15px 40px;
+	width: 376px;
+}
+
+.ajax-message {
+	height : 50px;
+	line-height: 50px;
+	margin : 0px 0px 0px 116px;
+	width : 700px;
+}
+
+.success-msg {
+	color : #3D6611;
+}
+
+.error-msg {
+	color : #EB340A;
+}
+
+.myInfoFieldsHolder {
+	margin-bottom: 10px;
+}
+
+.myInfoFieldsLabel  {
+	width: 65px;
+	line-height: 34px;
+	padding-right: 10px;
+}
+
+.myInfoInputFields {
+	width: 278px;
+	border: 1px solid #b6b6b6;
+	height: 34px;
+}
+
+.myInfoFieldsHolder select {
+	width: 300px;
+}
+
+.myAccountTabHeaderItem:first-child {
+	margin-left : 0px;
+}
+
+.myaccount-containers {
+	/*height:458px;*/
+}
+
+
+/* project content and specifications */
+.contentSpecificationTableHeader {
+	background-color: #d4eaea;
+	border-top:1px solid #fff;
+	border-bottom: 1px solid #6c8491;
+}
+
+.contentSpecificationHeader {
+	width: 860px;
+}
+
+.kitTypeHeader {
+	height: 30px;
+	line-height: 30px;
+}
+
+.kitTypeIndicators {
+	width: 100%;
+	height: 5px
+}
+
+.diykitTypeIndicator {
+	background-color: #139e83;
+}
+
+.readymadekitTypeIndicator {
+	background-color: #b4d964;
+}
+
+.projectKitTypeIndicator {
+	background-color: #8f9ea7;
+}
+
+.manfacturerLabel {
+	padding-top: 10px;
+}
+
+.firstColSpecifications {
+	padding-top: 10px;
+}
+
+.contentCol {
+	width: 185px;
+	vertical-align: top;
+}
+
+.contentFirstCol {
+	width: 270px;
+	padding: 20px 10px 20px 20px;
+}
+
+.contentFirstColHeader {
+	width: 270px;
+	padding: 0px 10px 0px 20px;
+}
+
+.specificationContentHolder {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 505px;
+}
+
+.contentSpecificationTable {
+	width: 846px;
+	/*border-spacing: 1px 0px;*/
+}
+
+.contentDataCol {
+	width: 165px;
+	padding: 25px 10px 20px 10px;
+}
+
+.evenRow {
+	background-color: #F1F1F1;
+}
+
+.diyKitBackground {
+	background-color: #d0ece6
+}
+
+.readyKitBackground {
+	background-color: #f0f7e0;
+}
+
+.projectKitBackground {
+	background-color: #e9eced;
+}
+
+
+/* kit details */
+/*.kitDetailspopupContainer {
+    width: 860px;
+}
+
+.kitDetailsSpecificationTableHeader {
+background-color: #d4eaea;
+border-top:1px solid #fff;
+border-bottom: 1px solid #6c8491;
+}
+
+.sourceCodeImage {
+background-position:  -1371px -3px;
+width: 100px;
+height: 100px; 
+}
+
+.powerPointImage {
+background-position: -1476px -3px;
+width: 100px;
+height: 100px;
+}
+
+.ProjectDocumentImage {
+background-position: -1581px -3px;
+width: 100px;
+height: 100px;
+}
+
+.generalExplanationImage {
+background-position: -1686px -3px;
+width: 100px;
+height: 100px;
+}
+
+.majorComponentImage {
+background-position: -1371px -109px;
+width: 100px;
+height: 100px; 
+}
+
+.projectOutputImage {
+background-position: -1476px -110px;
+width: 100px;
+height: 100px;
+}
+
+.practicalElectronicsImage {
+background-position:-1581px -110px;
+width: 100px;
+height: 100px;
+}
+
+.kitDetailsContentCol {
+width: 140px;
+vertical-align: middle;
+}
+
+.kitDetailsTypeHeader {
+height: 30px;
+width: 100%;
+line-height: 30px;
+}
+
+.kitDetailDescription {
+padding-left: 10px;
+line-height: 15px;
+
+}
+
+.kitDetailDescriptionContent {
+padding-top:5px;
+}
+
+.kitContentFirstCol {
+width: 100px;
+padding: 0px 10px 0px 20px;
+}
+
+
+.kitContentSecondColHolder {
+width: 300px;
+padding: 0px 10px;
+}
+
+.kitDetailsRow {
+height: 170px
+}
+
+.diyKitAvailable {
+background-position: -1549px -229px;
+width: 32px;
+height: 32px;
+}
+
+.readymadeKitAvailable {
+background-position: -1583px -229px;
+width: 32px;
+height: 32px;
+
+}
+
+.projectKitAvailable {
+background-position: -1618px -229px;
+width: 32px;
+height: 32px;
+}
+
+.kitNotAvailable {
+background-position: -1653px -229px;
+width: 32px;
+height: 32px;
+}
+*/
+/* end of kit details */
+
+/* quick view styling */
+.edgefxProjectKitTypesHolderQuickView{
+
+}
+
+.edgefxProjectKitTypeStudentsQuickView{
+	background-position: -1221px -462px;
+	width: 252px;
+	height: 272px;
+}
+
+.edgefxProjectKitTypeInstitutionsQuickView{
+	background-position: -1489px -463px;
+	width: 126px;
+	height: 271px;
+}
+
+.edgefxProjectDIYkitImageQuickView{
+	background-position:-1552px -277px;
+	width: 106px;
+	height: 91px;
+}
+
+.edgefxProjectReadykitImageQuickView{
+	background-position:-1665px -277px;
+	width: 106px;
+	height: 91px;
+}
+
+.edgefxProjectkitImageQuickView{
+	background-position:-1551px -387px;
+	width: 106px;
+	height: 56px;
+}
+
+.edgefxProjectKitTypeQuickView{ 	
+    margin: 53px 0 0;
+    padding: 0 8px;    
+}
+
+.edgefxProjectKitTypeQuickView:first-child{
+	border-right: 1px solid #A7A5A6;
+}
+
+.edgefxProjectKitTypeQuickView.edgefxProjectkit{
+	margin-top: 85px;
+}
+
+.buyButtonItemsHolderQuickView{
+	line-height: 25px;
+    padding: 0 20px;
+}
+
+.edgefxCenterContainerQuickView{
+	height: inherit;
+    margin: 0 auto;
+    padding: 10px;
+    width: 815px;
+}
+
+.edgefxCenterContainerQuickView .edgefxProjectDetailsMiddle{
+	max-height: 505px;
+    overflow: auto;
+}
+
+.edgefxProjectDetailsRightQuickView{
+	max-width: 378px;
+}
+
+.prev-button-img{
+	background-position: -707px -359px;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.prev-button-img-disabled{
+	background-position: -708px -401px;
+	width: 38px;
+	height: 38px;
+}
+
+.next-button-img{
+	background-position: -748px -359px;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.next-button-img-disabled{
+	background-position: -750px -401px;
+	width: 38px;
+	height: 38px;
+}
+
+.popup-table-container{
+	background-color: #FFFFFF;
+    text-align: center;
+	display: table;
+	width: 100%;
+    height: 100%;
+}
+
+.popup-table-container > div{
+	display: table-cell;	
+}
+
+.table-child-side{
+	max-width: 0px;
+	vertical-align: middle;
+}
+
+.btnposition{
+	/*margin-top: 19px;*/
+    position: absolute;
+    top: 50%;
+    z-index: 151;
+    border: none;
+    background-color: transparent;
+}
+
+.quick-left-arrow{
+	left: -20px;
+}
+
+.quick-right-arrow{
+	right: -20px;
+}
+
+.edgefxProjectKitTypeStudentsQuickViewDisc{
+	background-position: -1669px -378px;
+	width: 253px;
+	height: 182px;
+}
+
+.edgefxProjectKitTypeInstitutionsQuickViewDisc{
+	background-position: -1669px -564px;
+	width: 126px;
+	height: 181px;
+}
+
+.quickview-title-ellipsis{
+	display: inline-block;
+    max-width: 815px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modelno-label{
+	display: inline-block;
+	vertical-align: top;
+}
+/* end of quick view styling */
+
+.contentSpecificationTableHolder tbody tr:nth-child(2n){
+	background-color: #F1F1F1;
+}
+
+
+/* start of quick view styling */
+.quickViewContainer {
+	width: 880px;
+	height: 561px;
+	z-index: 152;
+}
+
+.quickViewContentContainer {
+	padding: 10px 25px 10px 15px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+.quickViewLeftRightSection {
+	height: 455px;
+	background-color: #fff;
+}
+
+.quickViewLeftSection {
+}
+
+.quickViewRightSection {
+	width: 520px;
+}
+
+.vMid {
+	vertical-align: middle;
+}
+
+.quickViewKitTypeStudents {
+	background-position:-1221px -462px;
+	width: 254px;
+	height: 270px;
+}
+
+.quickViewKitTypeInstitutions {
+	background-position: -1489px -463px;
+	width: 126px;
+	height: 270px;
+}
+
+.studentsContainer {
+	padding: 40px 10px 10px 10px;
+}
+
+.studentContainerLeftImg {
+	background-position: -1552px -277px;
+	width: 106px;
+	height: 91px;
+}
+
+.studentContainerRightImg {
+	background-position: -1665px -277px;
+	width: 106px;
+	height: 91px;
+}
+
+.studentContainerLeft  {
+	padding-right:10px;
+	border-right: 1px solid #a7a5a6;
+}
+
+.studentContainerRight {
+	padding-left: 10px;
+}
+
+.quickViewAmountHolder {
+	width: 80px;
+	margin: 8px auto;
+	text-align: center;
+	
+}
+
+.actualAmount {
+	height: 24px;
+}
+
+.discountedAmount {
+	height: 24px;
+}
+
+.ProjectKitImg {
+	background-position:  -1551px -387px;
+	width: 106px;
+	height: 56px;
+}
+
+.institutionsHolder {
+	padding: 74px 10px 10px 10px;
+	
+}
+
+.quickViewRightBottom {
+	padding-top: 29px;
+}
+
+.quickSummaryHolder {
+	width: 380px;
+	padding-top:8px;
+	/*height: 95px;*/
+    line-height: 15px;
+    overflow: hidden;
+    display:inline-block;
+    position:relative;
+}
+
+.quickSummaryWrapper{
+    overflow: auto;
+    padding-right:18px;
+    width: 100%;
+    height: 95px;
+    padding-bottom: 5px;
+}
+
+.scroll-bar {
+    background-color: #999999;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.unselectable{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.viewFullDetials {
+	background-color: #25698f;
+	height : 40px;
+	width: 180px;
+	line-height: 40px;
+	text-decoration: none;
+}
+
+.whiteSpace {
+	white-space: nowrap;
+}
+
+
+.quickViewContainer .image-list-ul {
+    bottom: 7px;
+    left: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.quickViewContainer .video-viewer{
+	max-width: 320px;
+}
+
+.quickViewContainer #image{
+	max-width: 315px;
+}
+
+.quickViewContainer .zoom-popup{
+	display: none;
+}
+
+.quickViewRightTop > a ~ a {
+    margin-left: 1px;
+}
+/* end of quick view styling */
+
+.image-popup-container{
+	width: 600px;
+	height: 442px;
+}
+
+.edgefxCartHeaderTable tr {
+	height: 35px;
+}
+
+.image-popup-ellipsis {
+    height: 40px;
+    max-width: 544px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Email Full Project Listing */
+.emailprojectlistpopupContainer {
+	width : 500px;
+}
+
+.email-projectlist-container {
+    padding-top: 20px;
+}
+
+.emailInitialFirst {
+	padding: 15px 0 0 15px;
+}
+
+.emailInitialSecond {
+	padding: 15px 15px 0 25px;
+    width: 380px;
+}
+
+.emailInitialSecond input {
+    border: 1px solid #B6B6B6;
+    height: 30px;
+    width: 360px;
+}
+
+.emailBtnSet {
+	margin: 15px;
+}
+/* End of Full Project Listing */
+
+/* popup section */
+.popup-large-image{
+	max-height: 520px;
+    max-width: 880px;
+}
+
+.image-popup-body{
+	background-color: #FFFFFF;
+    text-align: center;
+    height: 520px;
+}
+
+.large-image{
+	display: inline-block;
+}
+
+.zoom-status-holder{
+	bottom: 40px;
+    height: 42px;
+    left: 50px;
+    position: absolute;
+    width: 42px;
+    display: none;
+}
+
+.popup-body:hover .zoom-status-holder{
+	display: block;
+}
+
+.zoom-status-holder.contract{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/efk_quickView_zoom-in.png');
+}
+
+.zoom-status-holder.expand{
+	background-image: url('http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/efk_quickView_zoom-out.png');
+}
+
+#cart-coupon-cancel{
+	margin-left: 9px;
+	margin-top: 9px;
+}
+
+.globalMess .errorMessage {
+	margin-left: 0px;
+}
+
+.ordersList .scrollBarContainer {
+	display: none;
+	right: 10px;
+}
+
+.ordersList:hover .scrollBarContainer {
+	display: block;
+}
+
+.fedexTableContainer .scrollBarContainer {
+	display: none;
+	right: 5px;
+}
+
+.fedexTableContainer:hover .scrollBarContainer {
+	display: block;
+}
+
+.fedexTableContainer  {
+	border-left: 1px solid #8f9aa3;
+	background-color: #d7dee4;
+	overflow: hidden;
+	position: relative;
+	height: 190px;
+	overflow-x: hidden;
+	color: #555353;
+	font-size: 11px;
+}
+
+.fedexArrowImage {
+	background-image: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/fedex_arrow.png"); 
+	width: 8px;
+	height: 15px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 56px;
+	right: 599px;
+}
+
+.maskClass {
+	padding: 14px 0px;
+	height: 17px;
+	width: 699px;
+	background-color: #d7dee4;
+}
+
+.fedexTabelHolder {
+	width: 601px;
+}
+
+.trackOrderBodyContainer {
+	width: 699px;
+}
+
+.fedexOrderRow {
+	height: 30px;
+}
+
+.fedexOrderTableFirstCol {
+	padding-left: 10px;
+	width: 132px;
+}
+
+.fedexOrderTableSecondCol {
+	padding-left: 21px;
+	width: 80px;
+}
+
+.fedexOrderTableThirdCol {
+	padding-left: 32px;
+	width: 66px;
+}
+
+.fedexOrderTableFourthCol {
+	padding-left: 64px;
+	width: 179px;
+}
+
+.fedexOrderTableHeader {
+	height: 30px;
+	background-color: #9dadb6;
+}
+
+.maskClass .trackOrderTableSecondCol {
+	padding-left: 15px;
+}
+
+.maskClass .trackOrderTableThirdCol {
+	padding-left: 13px;
+}
+
+.maskClass .trackOrderTableFourthCol {
+	padding-left: 7px;
+}
+
+.maskClass .trackOrderTableFifthCol {
+	padding-left: 13px;
+}
+
+.show-orders-list {
+	position: relative;
+}
+
+.myAccountOrderTabelHolder {
+	margin-top:10px;
+}
+
+.trackMyOrderContentContainer {
+	overflow: scroll;
+	max-height: 190px;
+	overflow-x: hidden;
+}
+
+.trackOrderBodyContainer tr:hover {
+	cursor: pointer;
+	background-color: #66cccf;
+}
+
+.selectedOrder {
+	background-color: #d7dee4;
+}
+
+.page404Holder {
+	background-color: #efefef;
+	width: 100%;
+	height: 100%;
+}
+		
+.page404Background {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/bg_404.png");
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.page404Background {
+	z-index:100;
+}
+
+.page404Container {
+	z-index: 150;
+	width: 485px;
+	margin: 0px 0px 0px 675px;
+}
+
+.page404Text {
+	padding-top: 310px;
+	
+}
+
+.searchFieldHolder{
+	width: 438px;
+	height: 40px;
+	background-color: #fff;
+}
+
+.searchInputField {
+	width: 392px;
+	height: 100%;
+	border:none;
+}
+
+.searchIconHolder {
+	background-position: -364px -62px;
+	height: 16px;
+	margin: 12px 0px 0px 10px;
+	width: 16px;
+}
+
+.go404Button {
+	width: 44px;
+	height:40px;
+	background-color: #68c3c4;
+	border:none;
+}
+
+.searchSomeThingMsg {
+	padding:35px 0px 15px 0px;
+	line-height: 24px;
+}
+
+.contact404Service {
+	line-height: 25px;
+	padding-top: 35px;
+}
+
+.mailContentContainer {
+	width: 650px;
+}
+
+.mailContainerHeader {
+	background:url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/order_email_topbar.png");
+	width: 650px;
+	height: 86px;
+}
+
+.mailContainerContent {
+	padding: 50px 0px 0px 50px;
+}
+
+.thanksMsg {
+	padding-top: 14px;
+}
+
+.mailContainerFooter {
+	background-color: #4cc0c2;
+	height: 86px;
+	margin-top: 50px;
+	padding:20px 0px 0px 50px;
+}
+
+.orderNumberHolder {
+	background-color: #F4FBFE;
+    border: 2px solid #00A3FF;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.textColor74858E {
+	color: #74858e
+}
+
+.purchaseMsg {
+	padding-top:20px;
+}
+
+.itemHolder {
+	padding-top: 20px;
+}
+
+.quantity {
+	padding:3px 0px 3px 0px
+}
+
+.mailMsgTotalAmountHolder {
+	padding: 10px 0px 5px 0px;
+}
+
+.shippingAddress {
+	padding-top: 10px;
+}
+
+.footerThanksMsg {
+	padding-bottom: 10px;
+}
+
+.heightTest {
+	width:300px;
+	max-height: 100px;
+	overflow: hidden;
+}
+
+.checkBoxHolder {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_1_hover.png");
+	width: 15px;
+	height: 16px;
+}
+.wrapper .contentHolder {
+    display: inline-block;
+    line-height: 15px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    width: 380px;
+    border: 1px solid #CCC;
+    margin-top: 20px;
+}
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    padding-right: 18px;
+    width: 100%;
+    overflow-y: auto;
+}
+.scrollBarContainer{
+    position: absolute;
+    width: 5px;
+    top: 0px;
+    bottom: 11px;
+    right: 0px;
+}
+.scrollBar {
+    background-color: #999999;
+    border-radius: 10px;
+    opacity: 0.5;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+.wrkspmaintp {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: fixed;
+	height: 408px;
+	width: 958px;
+	z-index: 111;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/backgroundImageCircuits.png") no-repeat left 1px #0b8ca0;
+	-webkit-box-shadow: 0px 0px 15px rgba(51,51,51, 0.6);
+	-moz-box-shadow: 0px 0px 15px rgba(51,51,51, 0.6);
+	box-shadow: 0px 0px 15px rgba(51,51,51, 0.6);
+	border: 1px solid #fff;
+	-ms-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-transition: bottom .6s; /* chrome */
+	-ms-transition: bottom .6s; /* IE */
+	-moz-transition: bottom .6s; /* firefox */
+	transition: bottom .6s;
+}
+
+/*right man image and left workshop*/
+.wrkspmain {
+	float: left;
+	height: 148px;
+}
+
+/*round corner image*/
+.wrkspmainbtm {
+	position: relative;
+	min-height: 210px;
+	height: auto;
+	width: 205px;
+	bottom: 0;
+	top: -66px;
+	left: -32px;
+	float: left;
+}
+
+.wrkspmainbtm img {
+	border: none;
+	outline: none;
+}
+
+/*top section*/
+.edgfx-bmain {
+	width: 752px;
+	float: left;
+	height: 148px;
+}
+
+/*left title and date*/
+.edgfx-bmainl {
+	float: left;
+	width: 60%;
+}
+
+.edgfxsvg-wrksp-fnt {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/fonts/workshopTitle.svg") no-repeat;
+	background-size: contain;
+	width: 381px;
+	height: 63px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background-position: left top;
+}
+
+.edgfx-dte {
+	color: #fff;
+	font-size: 24px;
+	margin: 0px 0 3px 0px;
+	font-weight: normal;
+	line-height: normal;
+}
+
+.edgfxbttle {
+	color: #fff;
+	margin: 0 0px 0 0px;
+	line-height: 20px;
+	width: 381px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/*right section top*/
+.edgfx-bmainr {
+	float: right;
+	width: 40%;
+}
+
+/* right close button*/
+.edgfxcls-main {
+	height: 30px;
+	padding: 5px;
+}
+
+.edgfxcls-icon {
+	float: right;
+	cursor: pointer;
+}
+
+.edgfxcls-icon a {
+	margin: 0;
+	padding: 0;
+}
+
+/*social network icon*/
+.edgfx-sicons-pup {
+	height: 35px;
+	float: right;
+	padding: 44px 20px 0 150px;
+}
+
+.edgfx-sicons-pup a {
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+/*bottom & venu section*/
+.edgfxbtstn {
+	float: left;
+	padding-bottom: 10px;
+	margin-right: 6px;
+}
+
+.edgfxwrkpmain {
+	padding: 0px 14px 0px 32px;
+    color: #acf1fb;
+    float: left;
+}
+
+.edgfxwrkp-left {
+	width: 48%;
+	float: left;
+	padding-right: 5%;
+	height: 100%;
+}
+
+.ellipsisContent {
+	height: 140px;
+	overflow: hidden;
+}
+
+.edgfxwrkp-left h1, .edgfxwrkp-right h1 {
+	font-size: 16px;
+	margin: 0;
+	padding: 12px 0;
+}
+
+.edgfxwrkp-right {
+	width: 44%;
+	float: right;
+	padding-left: 3%;
+	height: 100%;
+}
+
+.edgfxwrkp-right ul {
+	line-height: 22px;
+}
+
+.cc-icn-small {
+	padding: 0 0 8px 24px;
+	vertical-align: top;
+	background-repeat: no-repeat;
+}
+
+.hjp-icn-small {
+	background-repeat: no-repeat;
+	padding: 0 0 8px 24px;
+	vertical-align: top;
+}
+
+.lsy-icn-small {
+	background-repeat: no-repeat;
+	padding: 0 0 8px 24px;
+	vertical-align: top;
+}
+
+.afbp-icn-small {
+	background-repeat: no-repeat;
+	padding: 0 0 8px 24px;
+	vertical-align: top;
+}
+
+/*venu*/
+.edgfxvdetls {
+	width: 900px;
+	float: left;
+	height: auto;
+	padding: 0 0px 0 30px;
+	margin-top: 10px;
+}
+
+.separator-venue {
+	width: 100%;
+	height: 10px;
+	float: left;
+	color: #fff;
+	font-size: 16px;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/separator_Venue.png") no-repeat;
+}
+
+/*colleges*/
+.clgrgst {
+	width: 921px;
+	float: left;
+	height: auto;
+	padding: 8px 0px 10px 32px;
+	color: #fff;
+}
+
+.edgxclg {
+	width: 60%;
+	float: left;
+	padding-top: 8px;
+	line-height: 24px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.edgxclgrgs {
+	width: 34%;
+	float: right;
+	height: auto;
+	padding-left: 6%;
+}
+
+.edgxclgrgslks {
+	float: left;
+	margin: 13px 20px 0 20px;
+}
+
+.edgxclgrgslks a {
+	color: #acf1fb;
+	text-decoration: underline;
+}
+
+.edgxclgrgslks a:hover {
+	color: #acf1fb;
+	text-decoration: none;
+}
+
+.edgxclgrgsbtn {
+	float: right;
+	margin-right: 25px;
+}
+
+.edgxclgrgsbtn-btn {
+	background-color: #0d363c;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	cursor: pointer;
+	border-radius: 2px;
+	border: 1px solid #acf1fb;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 9px 22px;
+	text-decoration: none;
+}
+
+.edgxclgrgsbtn-btn: hover {
+	background-color: #3ea4b4;
+}
+
+.edgxclgrgsbtn-btn: active {
+	outline: none;
+}
+
+.edgxclgrgsbtn-btn: focus {
+	outline: none;
+}
+
+.customScroll {
+	overflow: hidden;
+	position: relative;
+}
+
+.scroll.scroll.scroll.scroll.scroll {
+	background-color: #acf1fb;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.ppsml-edfx {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: fixed;
+	cursor: pointer;
+	z-index: 111;
+	height: 48px;
+	border: 1px solid #fff;
+	width: 960px;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/ppsml-btm.png") no-repeat left top #0b8ca0;
+	-webkit-box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.6);
+	-moz-box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.6);
+	box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.6);
+	-webkit-transition: bottom .3s; /* chrome */
+	-ms-transition: bottom .3s; /* IE */
+	-moz-transition: bottom .3s; /* firefox */
+	transition: bottom .3s;
+	-ms-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-webkit-transition-timing-function: linear; /* Safari */
+	transition-timing-function: linear;
+}
+
+.ppsml-edfcwrp {
+	position: relative;
+	cursor: pointer;
+	min-height: 94px;
+	height: 94px;
+	width: 107px;
+	bottom: 0;
+	top: -46px;
+	left: 5px;
+	float: left;
+}
+
+.ppsml-lefttle {
+	height: auto;
+	float: left;
+	font-size: 32px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0px 0 0 0px;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/technicalWrkshpPopup.svg") no-repeat 5px top;
+	height: 36px;
+	width: 321px;
+	margin: 6px 0 0 0;
+}
+
+.ppsml-edfxclsmain {
+	margin: 0;
+	float: right;
+	padding: 0px 0 0 23px;
+}
+
+.ppsml-edfxcls {
+	position: absolute;
+	right: 6px;
+	padding: 6px 0 0 0;
+}
+
+.ppsml-edfxdes {
+	float: right;
+	text-align: right;
+	padding: 17px 20px 0 0;
+	color: #fff;
+	width: 480px;
+}
+
+.ppsml-edfxwrpr {
+	width: 100%;
+	height: 27px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.wrksp-main {
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*workshop header*/
+.workshop-mhead {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/bannerBG.png") no-repeat left top #0b8ca0;
+	height: auto;
+	overflow: hidden;
+}
+.workshop-mheaddatetp {
+	color: #fff;
+	padding: 5px 0 0 0;
+	line-height: normal;
+	font-size: 22px;
+}
+
+.workshop-mheaddate {
+	width: 940px;
+	padding: 0px 10px 18px 10px;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/divider.png") no-repeat center bottom;
+	color: #fff;
+	line-height: normal;
+}
+.wrkshp-thead {
+	text-align: center;
+	width: 100%;
+	padding: 20px 0 0 0;
+}
+
+.wrkshp-title {
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	padding: 7px 0 8px 0;
+	color: #fff;
+	margin: 0 5%;
+	line-height: 22px;
+}
+
+.wrk-vnclg-main {
+	width: 90%;
+	margin: 0 5% 15px 5%;
+	display: inline-block;
+	text-align: center;
+}
+
+.wrk-vnclg {
+	text-align: center;
+	width: 100%;
+	padding: 0 0 3px 0;
+	text-decoration: underline;
+}
+
+.wrk-vnclglsdt {
+	margin: 2px 0 0px 0;
+	line-height: 20px;
+}
+
+.edgfxclglst {
+	text-align: center;
+}
+
+/*sections1*/
+.wrksp-panel1 {
+	width: 960px;
+	height: auto;
+	padding: 45px 0 0 0;
+	display: inline-block;
+}
+
+/*left panel*/
+.wrksp-panel1-L {
+	width: 400px;
+	float: left;
+	height: auto;
+	overflow: hidden;
+}
+
+/*workshop*/
+.edgfx-wks {
+	height: auto;
+	overflow: hidden;
+	width: 400px;
+	padding: 0 0 40px 0;
+}
+
+/*title*/
+.edgfx-wks-tle {
+	width: 100%;
+}
+
+.edgfx-wks-tlesub {
+	text-transform: uppercase;
+	line-height: normal;
+}
+
+/*benefits*/
+.edgfx-bnfts {
+	height: auto;
+	overflow: hidden;
+	width: 400px;
+	padding: 0 0 40px 0;
+}
+.edgfx-bnfts ul {
+	line-height: 18px;
+	padding: 10px 0 0 0;
+}
+
+/*icons for benefits icons*/
+
+.benefitImage {
+	padding: 0 0 8px 27px;
+	vertical-align: top;
+}
+
+.rightFloat {
+	float: right;
+}
+
+.categoryHeaderLbl {
+	white-space: nowrap;
+}
+
+.headerLineThirdColoumn {
+	width: 100%;
+}
+
+.edgefxProjectCategoryHeader {
+	display: table;
+	height: 25px;
+	width: 100%;
+	line-height: normal;
+	position: relative;
+}
+
+/*right panel*/
+.wrksp-panel1-R {
+	width: 340px;
+	float: right;
+	height: auto;
+	padding: 0px 0px 40px 0px;
+	position: relative;
+}
+
+.edgfx-pdbt {
+	padding-bottom: 12px
+}
+
+/*register form*/
+.signupContainerWrapper-wrk {
+	width: 282px;
+	margin: 0px 0 0 2px;
+	float: left;
+	height: auto;
+}
+
+.textAlignRight {
+	text-align: right;
+}
+
+.wrksp-panel1-R input[type="text"] {
+	padding: 0px 10px;
+	color: #666;
+}
+.wrksp-panel1-R input[type="text"]:focus {
+	outline: none;
+}
+.registration_form .findDropDown:focus {
+	outline: none;
+}
+.leftFloat {
+	float: left;
+}
+
+.loginSignupBtn-wrk {
+	width: 125px;
+	height: 40px;
+	border: none;
+	margin-right: 3px;
+	background-color: #25698f;
+	cursor: pointer;
+}
+.wrk-wrappernumb {
+	width: 278px;;
+	border: 1px solid #b6b6b6;
+	float: left;
+	padding: 0;
+}
+.wrk-wrappernumbwrpr {
+	height: auto;
+	float: left;
+}
+.wrk-wrappernumbctrycde {
+	width: 22px;
+	height: 15px;
+	padding: 10px;
+	background: #EEE;
+	float: left;
+}
+.wrk-wrappernumb input[type="text"], .wrk-wrappernumb input[type="phone"] {
+	font-size: 14px;
+	border: none;
+	height: 35px;
+	width: 216px;
+	margin: 0;
+	outline: 0;
+	padding: 0 10px;
+	color: #55636c;
+}
+.edgfxwrk-rgst {
+	padding: 0 10px;
+	width: 258px;
+	border: 1px solid #b6b6b6;
+	height: 35px;
+}
+
+.loginFieldsContainer-wrk {
+	margin-bottom: 20px;
+	float: left;
+}
+
+.wrk-wrapper {
+	display: inline-block;
+}
+
+/*panel 2*/
+.wrksp-panel2 {
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+	padding: 0px 0;
+}
+
+.edgfx-prsdby {
+	width: 400px;
+	height: auto;
+	overflow: hidden;
+}
+
+.wrksp-panel2-rt {
+	width: 520px;
+	float: right;
+	height: auto;
+	overflow: hidden;
+	padding: 0 0px 0 40px;
+}
+
+.edgfxwrk-clr {
+	clear: both;
+}
+
+/*persons descriptions*/
+.wrk-aboutSection {
+	padding: 0px 0 30px;
+	width: 100%;
+}
+
+.wrk-descriptionHolder {
+	padding: 20px 0 0 0;
+	width: 66%;
+}
+
+.wrkrt-descriptionHolder {
+	padding: 20px 0 0 0;
+	width: 73%;
+}
+
+.wrkdescrptn {
+	padding: 10px 0px;
+	line-height: 20px;
+}
+
+.wrk-nameHolder {
+	line-height: normal;
+}
+
+/*profile pics*/
+.organizerImg {
+	width: 105px;
+	margin-right: 20px;
+	height: 105px;
+}
+
+/*testimonials*/
+.wrksp-panel3 {
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+	padding: 0px 0;
+}
+
+.wrktstm-descriptionHolder {
+	padding: 20px 0 0 0;
+	width: 86%;
+}
+
+.text207173 {
+	color: #207173;
+}
+
+.wrktest-prfpic {
+	width: 105px;
+	margin-right: 20px;
+	height: 105px;
+}
+
+.edfx-thkssbmit {
+	width: 100%;
+	overflow: hidden;
+	line-height: 18px;
+	height: auto;
+	padding: 0 0 10px 0;
+	display: none;
+	color: #1e92e4;
+	font-size: 13px;
+}
+
+.edfx-thkssbmit.failureMsg {
+	color: #eb4949;
+}
+
+.displayNone {
+	display: none;
+}
+
+.animateSlideDown {
+	bottom: -95px;
+}
+
+.animatePopupSlideDown {
+	bottom: -500px;
+}
+
+.animateSlideUpBig {
+	bottom: 0px;
+	z-index: 135;
+}
+
+.edgfx-nwrksp {
+	height: auto;
+	overflow: hidden;
+	width: 98%;
+	padding: 5px 1%;
+	line-height: normal;
+	text-align: center;
+	background: #9e9e9e;
+	margin: 10px 0;
+	color: #fff;
+}
+
+.edgfxwrkp-left p, .edgfx-wks p {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/bulletIcon.png") no-repeat left top;
+	padding: 0 0 8px 18px;
+	font-size: 16px;
+	font-family: OpenSansSemibold;
+	margin: 0px;
+	line-height: 20px;
+}
+
+.edgfx-wks p {
+	color: #55636c;
+	font-size: 13px;
+	padding: 0 0 8px 24px;
+	font-family: OpenSansRegular;
+	line-height: 18px;
+}
+
+.edgfx-wks .edgfx-wks-tle {
+	margin-bottom: 10px;
+}
+
+.edgfx-rqstbtn {
+	position: absolute;
+	display: inline;
+	top: 27px;
+	right: 136px;
+	z-index: 112;
+}
+
+.edgfx-rqstbtn img, .edgfx-rqstbtn img a {
+	border: none;
+}
+
+.edgfx-wdrqstbtn {
+	position: absolute;
+	display: inline;
+	top: 10px;
+	right: 10px;
+	z-index: 112;
+}
+
+/** workshop summary page **/
+.wrksplst-main {
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+	padding: 26px 0 0 0;
+	margin: 0 auto;
+}
+
+.wrklst-titl {
+	padding: 0 0 4px 0;
+	color: #0a3248;
+	line-height: 21px;
+	border-bottom: 1px solid #d1dae0;
+}
+
+.wrklst-rqwrkshp {
+	padding: 15px 0 3px 0;
+	width: 100%;
+	height: 19px;
+	color: #1255a8;
+	text-align: right;
+}
+
+.wrklst-rqwrkshp a {
+	margin: 0;
+	color: #1255a8;
+	text-decoration: underline;
+	padding: 0;
+}
+
+.wrklst-rqwrkshp a:hover {
+	text-decoration: none;
+}
+
+.marpad {
+	margin: 0;
+	padding: 0;
+}
+
+.wrksplst-dtls, .wrkspprslst-dtls {
+
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 22px 0 0 0;
+}
+
+.wrkspprslst-dtls:last-child {
+	margin-bottom: 0px;
+}
+.clglst-dtls:hover {
+	background: #ecf3f7;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.clglst-dtls {
+	width: 940px;
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	float: left;
+	margin: 0 0 10px 0;
+	color: #0a3248;
+	cursor: pointer;
+}
+
+.main-clgdet {
+	background: #488ab0;
+	border: 1px solid #488ab0;
+	text-align: center;
+	width: 57px;
+	float: left;
+	height: 67px;
+	border-radius: 10px;
+}
+
+.main-clgdet-88 {
+	background-color: #88979f;
+	border: 1px solid #88979f;
+	text-align: center;
+	width: 57px;
+	float: left;
+	height: 67px;
+	border-radius: 10px;
+}
+
+/*date and year*/
+.main-dat {
+	color: #fff;
+	padding: 6px 0;
+}
+
+.pdbtm-wrsplist {
+	padding-top: 10px;
+}
+.main-mnts {
+	color: #fff;
+	padding: 0 0 6px 0;
+	text-transform: uppercase;
+}
+
+.main-yer {
+	background-color: #fff;
+	color: #488ab0;
+	margin: 0 0 1px 0;
+	font-size: 14px;
+	width: 37px;
+	height: 16px;
+	border-radius: 0px 0px 10px 10px;
+	padding: 2px 10px 1px 10px;
+}
+
+.main-clgdet-88  .main-yer {
+	color: #88979f;
+}
+
+.clglst-decs {
+	float: left;
+	margin: 0 0px 0 20px;
+	width: 860px;
+}
+
+.clglst-decs h1 {
+	margin: 0;
+	padding: 0 0 9px 0;
+	color: #0a3248;
+	line-height: 15px;
+}
+
+.clglst-decs ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.clglst-decs ul li {
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/venueIcon.png") no-repeat left 2px;
+	padding: 0 0 10px 18px;
+}
+
+.registration_form .findDropDown {
+	width: 278px;
+}
+
+.edgfx-rwspwrpermain {
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.edgfx-rwspbaner {
+	width: 100%;
+	height: 122px;
+}
+
+.edgfx-rwspwrper {
+	width: 100%;
+	height: auto;
+	padding: 42px 0px 0px;
+	overflow: hidden;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/requestaworkshopBg.png") no-repeat right 155px;
+}
+
+.edgefxrwrsp-subtxt {
+	height: auto;
+	overflow: hidden;
+	padding: 10px 0 0 0;
+	line-height: normal;
+}
+
+.textc556 {
+	color: #55636c;
+}
+
+.request-edfxfrm {
+	width: 643px;
+	height: auto;
+	overflow: hidden;
+	margin: 60px 80px 0 0;
+	position: relative;
+	padding: 0;
+}
+
+.request-edfxfrm form {
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	padding: 0 0 20px 0;
+}
+
+.request-edfxfrm form .inpbox {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.request-edfxfrm form .edfxlbretsp {
+	width: 118px;
+	padding: 0 20px;
+	float: left;
+	text-align: right;
+	height: auto;
+}
+
+.request-edfxfrm form .edfxinptbxrt {
+	float: left;
+	width: 385px;
+}
+.request-edfxfrm form .edfxinptbxrt-sub {
+	margin: 0px 0 0 0;
+	float: left;
+}
+.morevenues {
+	margin: 10px 0 0 0;
+	width: 440px;
+}
+.request-edfxfrm form .addVenue {
+	padding: 0 0 0 0;
+	float: left;
+	height: 38px;
+	width: 22px;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/addVenue.png") no-repeat 5px 12px;
+	cursor: pointer;
+	display: none;
+}
+
+.request-edfxfrm form .deleteVenue {
+	padding: 0 0 0 10px;
+	display: none;
+	vertical-align: middle;
+	height: 38px;
+	width: 16px;
+	cursor: pointer;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/deleteVenue.png") no-repeat 5px 12px;
+}
+.request-edfxfrm form .edfxinptbxrt-venueads {
+	width: 440px;
+}
+
+.edfxinptbxrtnmbr {
+	width: 383px;
+	border: 1px solid #55636c;
+	float: left;
+}
+
+.edfxinptbxrtnmbrwrpr {
+	width: 385px;
+	float: left;
+}
+.edfxinptbxrtctrycde {
+	width: 20px;
+	height: 18px;
+	padding: 10px 8px;
+	background: #EEE;
+	float: left;
+}
+.edfxinptbxrtnmbr.edfxinptbxrtnmbr input[type="text"], .edfxinptbxrtnmbr.edfxinptbxrtnmbr input[type="phone"] {
+	font-size: 14px;
+	border: none;
+	height: 38px;
+	width: 327px;
+	margin: 0;
+	outline: 0;
+	padding: 0 10px;
+	color: #55636c;
+}
+.request-edfxfrm .edfxlbretsp label {
+	text-align: right;
+	line-height: 37px;
+}
+
+.secbx-lss.secbx-lss.secbx-lss.secbx-lss {
+
+}
+
+.request-edfxfrm form input[type="text"], .request-edfxfrm form input[type="password"], .request-edfxfrm form .dateFields, .request-edfxfrm form input[type="email"], .request-edfxfrm form input[type="number"], .request-edfxfrm form input[type="search"], .request-edfxfrm form input[type="tel"], .request-edfxfrm form input[type="url"], .request-edfxfrm form select {
+	border: 1px solid #55636c;
+	height: 38px;
+	width: 385px;
+	margin: 0;
+	font-size: 14px;
+	outline: 0;
+	padding: 0 10px;
+	line-height: 20px;
+	color: #55636c;
+	box-sizing: border-box;
+	font-family: OpenSansRegular;
+}
+
+.request-edfxfrm form input:focus, .request-edfxfrm form select:focus, .request-edfxfrm form input[type="url"]:focus, .request-edfxfrm form input[type="tel"]:focus, .request-edfxfrm form input[type="text"]:focus, .request-edfxfrm form textarea:focus, #workshop_Subjects:focus, .edfxinptbxrtnmbr:focus, .request-edfxfrm form .dtpkersub:focus {
+	outline: none;
+}
+
+.request-edfxfrm form select {
+	padding: 0 0 0 10px;
+}
+
+.request-edfxfrm form textarea {
+	height: 85px;
+	padding: 8px 10px;
+	width: 363px;
+	font-size: 14px;
+	color: #55636c;
+	box-sizing: none;
+	border: 1px solid #55636c;
+	font-family: OpenSansRegular;
+}
+
+.request-edfxfrm form input[type="radio"], .request-edfxfrm form input[type="checkbox"] {
+	margin: 0 4px 8px 0;
+	font-family: OpenSansRegular;
+	cursor: pointer;
+}
+
+.request-edfxfrm form .loginSignupBtn-rqwrsp {
+	width: 125px;
+	height: 40px;
+	border: none;
+	background-color: #25698f;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+}
+
+.request-edfxfrm .dummyCheckBoxLabel {
+	cursor: pointer;
+}
+
+.request-edfxfrm form .loginSignupBtn-frt {
+	float: left;
+	width: 543px;
+}
+
+.request-edfxfrm .allfrmdry {
+	height: 30px;
+	margin: 0 0px 0 158px;
+	display: inline-block;
+	font-style: italic;
+}
+.request-edfxfrm form .dtpkermain {
+	width: 100%;
+	float: left;
+}
+
+.request-edfxfrm form .dateFields {
+	width: 166px;
+	background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/CalendarIcon.png") no-repeat 10px center;
+	padding: 0px 0px 0px 33px;
+	cursor: pointer;
+}
+
+.request-edfxfrm form .dtpkersub {
+	width: 166px;
+	float: left;
+}
+
+.request-edfxfrm form .dtpkersubt {
+	width: 21px;
+	float: left;
+	padding: 10px 16px;
+}
+
+.multiListElems input[type="checkbox"] + label:before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_1_normal.png");
+	height: 16px;
+	width: 15px;
+	margin: 0 10px 0 0px;
+}
+
+.multiListElems:hover input[type="checkbox"] + label:before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_1_hover.png");
+}
+
+.multiListElems input[type="checkbox"]:checked + label:before, .multiListElems:hover input[type="checkbox"]:checked + label:before {
+	content: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/checkbox_selected_hover.png");
+}
+
+.chkbx-rwsp {
+	margin: 0 0 7px 0;
+	width: 100%;
+	padding: 3px 4px;
+	cursor: pointer;
+}
+
+.chkbx-rwsp:hover {
+	background: #e3e4e4;
+}
+
+.request-edfxfrm form .brd-edgfx {
+	float: left;
+}
+
+#workshop_Subjects {
+	border: 1px solid #55636c;
+	width: 363px;
+	padding: 10px;
+	max-height: 80px;
+	overflow-y: scroll;
+}
+
+.request-edfxfrm form .checkRadioLabel {
+	position: relative;
+	top: 1px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.registration_form .columListItem {
+	height: auto;
+}
+
+.registration_form .comboTextHolder {
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 10px;
+	color: #55636c;
+	font-size: 14px;
+}
+
+.columListItem.selectionBackground {
+	background-color: #00a3ff;
+	color: #ffffff;
+}
+
+.reqStatusMessage {
+	display: none;
+	margin-bottom: 15px;
+}
+
+.registration_form .customizeDropDown .comboTextHolder, .registration_form .customizeDropDown .columListItem {
+	cursor: pointer;
+}
+
+.registration_form .customizeDropDown:hover {
+	border: 1px solid #b6b6b6;
+}
+.error-field .wrk-wrappernumb, .error-field .edfxinptbxrtnmbr {
+	background-color: #ffdedf;
+	border: 1px solid red !important;
+	border-radius: 3px;
+}
+
+.error-field .wrk-wrappernumb input, .error-field .edfxinptbxrtnmbr input {
+	background: none;
+}
+
+.wrksplst-dtls .noWorkshops {
+	margin-bottom: 12px;
+}
+
+.reqWorkshopBackBtn {
+	padding-top: 10px;
+	height: 19px;
+	color: #1255a8;
+	display: none;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.unselectable {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.morevenues:hover .deleteVenue {
+	display: table-cell;
+}
+
+.venuesList:last-child .addVenue {
+	display: block;
+}
+
+.customCalendar table {
+    background: #FFFFFF;
+    font-family: OpenSansRegular;
+    font-size: 12px;
+    width: 232px;
+    border: none;
+    box-shadow: 0px 2px 11px rgba(54, 54, 54, 0.2);
+}
+
+.customCalendar {
+    background: none;
+    border: none;
+    font-family: OpenSansRegular;
+    font-size: 12px;
+    margin: 1px 0 0 0;
+}
+
+.customCalendar tbody td.selected {
+    border: none;
+}
+.customCalendar .combo{
+     background:#e3e4e4;
+    border: medium none;
+    padding: 0;
+}
+.customCalendar .combo .hilite {
+    background:#cbcbcb;
+    color: #000;
+}
+.customCalendar .combo .active {
+    background:#0b8ca0;
+    border: medium none;
+    color: #fff;
+    padding: 0;
+}
+.customCalendar thead tr{
+	height: 30px;
+	font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.customCalendar thead .daynames {
+	background-color: #FFFFFF;
+}
+
+.customCalendar thead .title {
+	font-weight: normal;
+	border: 0px;
+	background-color: #0b8ca0;
+	text-transform: uppercase;
+}
+
+.customCalendar thead .name {
+	background-color: #FFFFFF;
+	border: none;
+	padding: 0px;
+	font-size: 12px;
+}
+
+.customCalendar tbody {
+	background-color: #FFFFFF;
+}
+
+.customCalendar tbody .day {
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    font-family: OpenSansRegular;
+    padding: 7px 10px;
+    border: none;
+    width: inherit;
+    margin: 0;
+
+}
+
+.customCalendar .daysrow .day:hover {
+    background-color: #cee8ec;
+    border: none;
+    padding:0;
+}
+
+.customCalendar .day.selected,
+.customCalendar .day.selected:hover {
+    height: 28px;
+    width: 10px;
+    color: #FFFFFF;
+    background-color: #0b8ca0;
+    cursor: default;
+    padding: 0 10px;
+}
+
+.customCalendar .today.selected, .customCalendar .today.selected:hover {
+	cursor: pointer;
+}
+
+.customCalendar tbody .rowhilite td {
+    background: none;
+    border: none;
+}
+
+.customCalendar tbody td.today {
+    background:#e3e4e4;
+    color: #000;
+    font-weight: normal;
+    cursor: pointer;
+    
+}
+.customCalendar tfoot .footrow{
+	height: 25px;
+	cursor: pointer;
+}
+
+.customCalendar tfoot .ttip {
+    background-color: #0b8ca0;
+    border: none;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    font-size: 14px;
+    padding: 10px 0;
+    
+}
+
+.customCalendar tbody .day.othermonth {
+	font-size: 12px;
+	color: #0b8ca0;
+}
+
+.customCalendar tbody .day.othermonth.oweekend,
+.customCalendar tbody td.weekend {
+	color: #EB4949;
+}
+
+.customCalendar .daysrow .day.disabled:hover,
+.customCalendar .daysrow .day.othermonth.disabled:hover,
+.customCalendar .daysrow .day.disabled,
+.customCalendar .daysrow .day.othermonth.disabled {
+	color: #999;
+	background-color: #FFFFFF;
+    cursor: default;
+}
+
+.customCalendar tbody .day.othermonth.oweekend.disabled,
+.customCalendar tbody td.weekend.disabled{
+    color: #f9d6d6!important;
+}
+
+.customCalendar thead tr:nth-child(1) .button:nth-child(1) {
+    background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/leftArrow.png") no-repeat 20px 10px #0b8ca0;
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    border: none;
+    padding: 10px 0;
+      border-radius: 4px 0 0 0;
+     -webkit-border-radius: 4px 0 0 0;
+     -moz-border-radius:4px 0 0 0;
+     -ms-border-radius:4px 0 0 0;
+     cursor: pointer;
+}
+
+.customCalendar thead tr:nth-child(1) .button:nth-child(2) {
+    padding: 10px 0;
+}
+
+.customCalendar thead tr:nth-child(1) .button:nth-child(3) {
+    background: url("http://www.edgefxkits.com/skin/frontend/default/efk1/skinning-images/assets/rightArrow.png") no-repeat 5px 10px #0b8ca0;
+    width:20px;
+    height: 15px;
+    text-align: center;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+       border-radius: 0 4px 0 0;
+     -webkit-border-radius: 0 4px 0 0;
+     -moz-border-radius:0 4px 0 0;
+     -ms-border-radius:0 4px 0 0;
+}
+

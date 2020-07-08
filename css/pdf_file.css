@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 25, 2017, 5:13:35 PM
+    Author     : Sakthikanth
+*/
+
+td{
+    font-size: 16px;
+}
+td{
+    border: 1px solid lightgrey;
+    text-align: left
+}
+th{
+    
+    border: 1px solid lightgrey;
+    
+}
+table{
+    border: 1px solid lightgrey
+}
+.PG_ttl{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: maroon;
+    
+}
+.pagi_hold{
+    text-align: center;
+}
+
+td button{
+    border: 1px solid green;
+    background-color: green;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+td button:hover{
+    color: green;
+    background-color: transparent;
+    border: 1px solid green;
+}
+.ttl_info{
+    font-size: 25px;
+    text-align: right;
+    color: maroon;
+    padding: 10px;
+}
+.logs_top_holder{
+    text-align: right;
+    
+}
+.logs_top_holder .loan_details{
+    padding: 10px;
+    
+}
+.loan_details div{
+   display: inline-block;
+}
+.loan_amount_hold{
+    font-size: 18px;
+    color: cadetblue;
+    padding-right: 20px;
+}
+.logs_top_holder select{
+    padding: 10px;
+    border: 1px solid lightgray;
+    
+}
